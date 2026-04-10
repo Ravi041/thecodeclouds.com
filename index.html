@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Cloud Clouds — Portfolio</title>
+  <title>Ravindra Kumar — Platform Engineering & DevOps</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
@@ -16,7 +16,7 @@
       --sky-dusk: #c9bde8;
       --mist: #f0f6fc;
       --ink: #1e2a38;
-      --ink-soft: #3d5068;
+      --ink-soft: #0d1621;
       --cloud-white: rgba(255,255,255,0.85);
       --accent: #7fa8cc;
       --accent2: #b59dd4;
@@ -32,7 +32,6 @@
       overflow-x: hidden;
     }
 
-    /* ── Sky gradient background ── */
     body::before {
       content: '';
       position: fixed;
@@ -46,7 +45,6 @@
       pointer-events: none;
     }
 
-    /* ── Animated clouds (CSS) ── */
     .cloud-layer {
       position: fixed;
       top: 0; left: 0;
@@ -64,40 +62,24 @@
       filter: blur(2px);
       animation: drift linear infinite;
     }
-
-    .cloud::before, .cloud::after {
-      content: '';
-      position: absolute;
-      background: inherit;
-      border-radius: 50%;
-    }
-
+    .cloud::before, .cloud::after { content: ''; position: absolute; background: inherit; border-radius: 50%; }
     .cloud-1 { width: 200px; height: 60px; top: 8%; left: -220px; animation-duration: 80s; animation-delay: 0s; opacity: 0.5; }
     .cloud-1::before { width: 100px; height: 80px; top: -40px; left: 30px; }
     .cloud-1::after  { width: 80px; height: 60px; top: -30px; left: 100px; }
-
     .cloud-2 { width: 280px; height: 70px; top: 20%; left: -300px; animation-duration: 120s; animation-delay: -30s; opacity: 0.35; }
     .cloud-2::before { width: 130px; height: 90px; top: -50px; left: 50px; }
     .cloud-2::after  { width: 100px; height: 70px; top: -35px; left: 140px; }
-
     .cloud-3 { width: 160px; height: 50px; top: 50%; left: -180px; animation-duration: 100s; animation-delay: -55s; opacity: 0.4; }
     .cloud-3::before { width: 80px; height: 65px; top: -35px; left: 20px; }
     .cloud-3::after  { width: 70px; height: 50px; top: -25px; left: 80px; }
-
     .cloud-4 { width: 240px; height: 65px; top: 70%; left: -260px; animation-duration: 95s; animation-delay: -10s; opacity: 0.3; }
     .cloud-4::before { width: 110px; height: 80px; top: -45px; left: 40px; }
     .cloud-4::after  { width: 90px; height: 60px; top: -30px; left: 120px; }
-
     .cloud-5 { width: 180px; height: 55px; top: 35%; left: -200px; animation-duration: 110s; animation-delay: -75s; opacity: 0.45; }
     .cloud-5::before { width: 90px; height: 70px; top: -40px; left: 25px; }
     .cloud-5::after  { width: 75px; height: 55px; top: -28px; left: 90px; }
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(calc(100vw + 320px)); } }
 
-    @keyframes drift {
-      from { transform: translateX(0); }
-      to   { transform: translateX(calc(100vw + 320px)); }
-    }
-
-    /* ── Layout ── */
     .wrapper {
       position: relative;
       z-index: 2;
@@ -106,7 +88,6 @@
       padding: 0 2rem;
     }
 
-    /* ── Nav ── */
     nav {
       position: sticky;
       top: 0;
@@ -117,7 +98,6 @@
       -webkit-backdrop-filter: blur(18px);
       border-bottom: 1px solid rgba(255,255,255,0.4);
     }
-
     nav .inner {
       max-width: 820px;
       margin: 0 auto;
@@ -126,7 +106,6 @@
       justify-content: space-between;
       align-items: center;
     }
-
     .nav-logo {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.3rem;
@@ -135,7 +114,6 @@
       color: var(--ink);
       text-decoration: none;
     }
-
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a {
       font-size: 0.8rem;
@@ -147,14 +125,20 @@
     }
     .nav-links a:hover { color: var(--ink); }
 
-    /* ── Hero ── */
+    /* Hero */
     .hero {
       min-height: 92vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 8rem 0 6rem;
-      text-align: center;
+    }
+
+    .hero-layout {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4rem;
+      align-items: center;
     }
 
     .hero-eyebrow {
@@ -167,233 +151,302 @@
 
     .hero-name {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(3.5rem, 9vw, 7rem);
+      font-size: clamp(3rem, 8vw, 6rem);
       font-weight: 300;
       line-height: 1;
       letter-spacing: -0.01em;
       color: var(--ink);
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
-
-    .hero-name em {
-      font-style: italic;
-      color: var(--accent2);
-    }
+    .hero-name em { font-style: italic; color: var(--accent2); }
 
     .hero-tagline {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      font-size: clamp(1rem, 2.2vw, 1.3rem);
       font-weight: 300;
       font-style: italic;
       color: var(--ink-soft);
-      margin-bottom: 3rem;
+      margin-bottom: 1.5rem;
       line-height: 1.5;
     }
 
-    .hero-cta {
-      display: inline-flex;
-      gap: 1rem;
-      justify-content: center;
+    .hero-tags {
+      display: flex;
       flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 2rem;
+    }
+    .tag {
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      border: 1px solid rgba(127,168,204,0.5);
+      color: var(--ink-soft);
+      background: rgba(255,255,255,0.5);
     }
 
+    .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
     .btn {
       font-size: 0.78rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      padding: 0.85rem 2.2rem;
+      padding: 0.85rem 2rem;
       border-radius: 100px;
       text-decoration: none;
       transition: all 0.25s;
     }
-
-    .btn-primary {
-      background: var(--ink);
-      color: white;
-    }
+    .btn-primary { background: var(--ink); color: white; }
     .btn-primary:hover { background: var(--accent); transform: translateY(-2px); }
-
-    .btn-ghost {
-      border: 1px solid var(--ink-soft);
-      color: var(--ink-soft);
-    }
+    .btn-ghost { border: 1px solid var(--ink-soft); color: var(--ink-soft); }
     .btn-ghost:hover { border-color: var(--ink); color: var(--ink); transform: translateY(-2px); }
 
-    /* ── Section shared ── */
-    section { padding: 6rem 0; }
+    /* Photo */
+    .hero-photo-wrap { position: relative; flex-shrink: 0; }
+    .hero-photo-ring {
+      position: absolute;
+      inset: -14px;
+      border-radius: 50%;
+      border: 1px solid rgba(181,157,212,0.4);
+      animation: spin 25s linear infinite;
+    }
+    .hero-photo-ring::before {
+      content: '';
+      position: absolute;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--accent2);
+      top: 16px; left: 50%;
+      transform: translateX(-50%);
+    }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
+    .hero-photo {
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 15%;
+      border: 3px solid rgba(255,255,255,0.7);
+      display: block;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 8px 32px rgba(127,168,204,0.3);
+    }
+    .hero-photo-placeholder {
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #c9d8ee, #c0b8e0);
+      border: 3px solid rgba(255,255,255,0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(30,42,56,0.5);
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 8px 32px rgba(127,168,204,0.3);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(127,168,204,0.3);
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--ink);
+      display: block;
+    }
+    .stat-label { font-size: 0.68rem; color: var(--ink-soft); letter-spacing: 0.1em; text-transform: uppercase; }
+
+    /* Sections */
+    section { padding: 6rem 0; }
     .section-label {
       font-size: 0.72rem;
       letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--accent2);
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
-
     .section-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 300;
       line-height: 1.1;
       color: var(--ink);
       margin-bottom: 2.5rem;
     }
-
     .section-title em { font-style: italic; color: var(--accent2); }
 
-    /* ── About ── */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.6fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .about-portrait {
-      aspect-ratio: 3/4;
-      background:
-        radial-gradient(ellipse at 30% 30%, rgba(255,255,255,0.6), transparent 60%),
-        linear-gradient(135deg, #c9d8ee, #c0b8e0);
-      border-radius: 60% 40% 55% 45% / 50% 50% 50% 50%;
+    .divider {
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1rem;
-      font-style: italic;
-      color: rgba(30,42,56,0.5);
+      gap: 1rem;
+      margin-bottom: 3rem;
+      opacity: 0.35;
     }
+    .divider-line { flex: 1; height: 1px; background: var(--accent); }
+    .divider-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent2); }
 
-    .about-body p {
-      font-size: 1.05rem;
-      line-height: 1.85;
-      color: var(--ink-soft);
-      margin-bottom: 1.2rem;
-    }
-
-    .about-body p strong {
-      font-weight: 400;
-      color: var(--ink);
-    }
-
-    /* ── Work / Projects ── */
-    .projects-grid {
+    /* Experience */
+    .exp-item {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-    }
-
-    .project-card {
-      background: var(--cloud-white);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.7);
-      border-radius: 20px;
-      padding: 2rem;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 16px 40px rgba(100,140,180,0.18);
-    }
-
-    .project-card.featured {
-      grid-column: span 2;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 160px 1fr;
       gap: 2rem;
-      align-items: center;
+      padding: 2rem 0;
+      border-bottom: 1px solid rgba(127,168,204,0.2);
     }
-
-    .project-thumb {
-      aspect-ratio: 16/9;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #c8dbee, #d0bce8);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 0.9rem;
-      font-style: italic;
-      color: rgba(30,42,56,0.45);
-    }
-
-    .project-tag {
-      display: inline-block;
-      font-size: 0.68rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--accent2);
-      margin-bottom: 0.75rem;
-    }
-
-    .project-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem;
-      font-weight: 400;
-      color: var(--ink);
-      margin-bottom: 0.6rem;
-      line-height: 1.2;
-    }
-
-    .project-card p {
-      font-size: 0.9rem;
-      line-height: 1.7;
-      color: var(--ink-soft);
-      margin-bottom: 1.2rem;
-    }
-
-    .project-link {
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s;
-    }
-    .project-link:hover { border-color: var(--accent); }
-
-    /* ── Blog / Writing ── */
-    .posts-list { display: flex; flex-direction: column; gap: 0; }
-
-    .post-item {
-      display: grid;
-      grid-template-columns: 100px 1fr;
-      gap: 2rem;
-      align-items: baseline;
-      padding: 1.6rem 0;
-      border-bottom: 1px solid rgba(100,140,180,0.18);
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-    .post-item:first-child { border-top: 1px solid rgba(100,140,180,0.18); }
-    .post-item:hover { opacity: 0.7; }
-
-    .post-date {
-      font-size: 0.78rem;
-      letter-spacing: 0.06em;
-      color: var(--accent2);
-      font-weight: 300;
-    }
-
-    .post-title {
+    .exp-item:last-child { border-bottom: none; }
+    .exp-time { font-size: 0.78rem; color: var(--ink-soft); line-height: 1.6; }
+    .exp-company { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent2); margin-bottom: 0.25rem; }
+    .exp-role {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.35rem;
       font-weight: 400;
       color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+    .exp-desc { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.75; margin-bottom: 0.75rem; }
+    .exp-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .pill {
+      font-size: 0.68rem;
+      padding: 0.2rem 0.65rem;
+      border-radius: 100px;
+      border: 1px solid rgba(127,168,204,0.4);
+      color: var(--ink-soft);
+      background: rgba(255,255,255,0.5);
+    }
+
+    /* Skills */
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+    .skill-card {
+      background: var(--cloud-white);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.7);
+      border-radius: 16px;
+      padding: 1.5rem;
+      transition: transform 0.3s;
+    }
+    .skill-card:hover { transform: translateY(-3px); }
+    .skill-card-title {
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid rgba(127,168,204,0.2);
+    }
+    .skill-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .skill-pill {
+      font-size: 0.74rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 100px;
+      border: 1px solid rgba(127,168,204,0.35);
+      color: var(--ink-soft);
+      background: rgba(255,255,255,0.6);
+    }
+
+    /* Certifications */
+    .certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; }
+    .cert-card {
+      background: var(--cloud-white);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.7);
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      transition: transform 0.25s;
+    }
+    .cert-card:hover { transform: translateY(-2px); }
+    .cert-badge {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      padding: 0.4rem 0.6rem;
+      border-radius: 8px;
+      flex-shrink: 0;
+      text-align: center;
+      min-width: 44px;
+    }
+    .cert-badge.gcp { background: rgba(66,133,244,0.12); color: #4285f4; border: 1px solid rgba(66,133,244,0.25); }
+    .cert-badge.k8s { background: rgba(57,208,196,0.12); color: #1b8a82; border: 1px solid rgba(57,208,196,0.25); }
+    .cert-badge.aws { background: rgba(240,136,62,0.12); color: #c96a10; border: 1px solid rgba(240,136,62,0.25); }
+    .cert-badge.oci { background: rgba(200,50,50,0.1); color: #b03030; border: 1px solid rgba(200,50,50,0.2); }
+    .cert-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 0.2rem;
       line-height: 1.3;
     }
+    .cert-meta { font-size: 0.75rem; color: var(--ink-soft); }
 
-    .post-excerpt {
-      font-size: 0.88rem;
-      color: var(--ink-soft);
-      margin-top: 0.3rem;
-      line-height: 1.55;
+    /* Achievements */
+    .achieve-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+    .achieve-card {
+      background: var(--cloud-white);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.7);
+      border-radius: 16px;
+      padding: 1.75rem;
+      transition: transform 0.3s;
     }
+    .achieve-card:hover { transform: translateY(-3px); }
+    .achieve-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--accent2);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .achieve-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 0.4rem;
+    }
+    .achieve-desc { font-size: 0.82rem; color: var(--ink-soft); line-height: 1.65; }
 
-    /* ── Contact ── */
+    /* Talks */
+    .talks-list { display: flex; flex-direction: column; gap: 0; }
+    .talk-item {
+      display: grid;
+      grid-template-columns: 90px 1fr auto;
+      gap: 1.5rem;
+      align-items: baseline;
+      padding: 1.4rem 0;
+      border-bottom: 1px solid rgba(127,168,204,0.18);
+      text-decoration: none;
+    }
+    .talk-item:first-child { border-top: 1px solid rgba(127,168,204,0.18); }
+    .talk-type { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent2); }
+    .talk-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.3;
+      margin-bottom: 0.2rem;
+    }
+    .talk-event { font-size: 0.82rem; color: var(--ink-soft); }
+    .talk-year { font-size: 0.78rem; color: var(--accent2); }
+
+    /* Contact */
     .contact-box {
       background: var(--cloud-white);
       backdrop-filter: blur(16px);
@@ -403,24 +456,16 @@
       padding: 4rem;
       text-align: center;
     }
-
     .contact-box p {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-style: italic;
       color: var(--ink-soft);
-      max-width: 520px;
+      max-width: 500px;
       margin: 0 auto 2.5rem;
       line-height: 1.7;
     }
-
-    .contact-links {
-      display: flex;
-      gap: 1.5rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
+    .contact-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
     .contact-link {
       font-size: 0.78rem;
       letter-spacing: 0.14em;
@@ -433,7 +478,6 @@
     }
     .contact-link:hover { color: var(--ink); border-color: var(--ink); }
 
-    /* ── Footer ── */
     footer {
       padding: 2.5rem 0;
       text-align: center;
@@ -444,31 +488,18 @@
       z-index: 2;
     }
 
-    /* ── Divider ── */
-    .divider {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 3rem;
-      opacity: 0.35;
-    }
-    .divider-line { flex: 1; height: 1px; background: var(--accent); }
-    .divider-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent2); }
-
-    /* ── Responsive ── */
     @media (max-width: 640px) {
-      .about-grid { grid-template-columns: 1fr; }
-      .projects-grid { grid-template-columns: 1fr; }
-      .project-card.featured { grid-column: span 1; grid-template-columns: 1fr; }
+      .hero-layout { grid-template-columns: 1fr; }
+      .hero-photo-wrap { margin: 0 auto; }
+      .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
+      .talk-item { grid-template-columns: 1fr; gap: 0.25rem; }
       .contact-box { padding: 2.5rem 1.5rem; }
-      .post-item { grid-template-columns: 1fr; gap: 0.25rem; }
       nav .inner { flex-direction: column; gap: 1rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Animated clouds -->
   <div class="cloud-layer" aria-hidden="true">
     <div class="cloud cloud-1"></div>
     <div class="cloud cloud-2"></div>
@@ -477,14 +508,14 @@
     <div class="cloud cloud-5"></div>
   </div>
 
-  <!-- Navigation -->
   <nav>
     <div class="inner">
       <a href="#" class="nav-logo">the cloud clouds</a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#writing">Writing</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#talks">Talks</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -492,98 +523,287 @@
 
   <!-- Hero -->
   <div class="wrapper">
-    <section class="hero" id="top">
-      <p class="hero-eyebrow">Portfolio &amp; blog</p>
-      <h1 class="hero-name">Ravindra Kumar</h1>
-      <p class="hero-tagline">Designer · Writer · Dreamer<br>drifting somewhere above the clouds</p>
-      <div class="hero-cta">
-        <a href="#work" class="btn btn-primary">View my work</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-      <div class="divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
-      <p class="section-label">About</p>
-      <div class="about-grid">
-        <div class="about-portrait">your photo here</div>
-        <div class="about-body">
-          <h2 class="section-title">A few words<br><em>about me</em></h2>
-          <p>Hi, I'm <strong>Your Name</strong> — a <strong>designer and writer</strong> based in <strong>Your City</strong>. I believe in the beauty of slow ideas, the power of a well-placed word, and the peace that comes from looking up at the sky.</p>
-          <p>I spend my days crafting <strong>digital experiences</strong> that feel as light and honest as a clear afternoon. My work lives at the intersection of design, storytelling, and the occasional afternoon nap.</p>
-          <p>When I'm not at my desk, you'll find me cloud-watching, reading on rooftops, or hunting for the perfect cup of tea.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Work -->
-    <section id="work">
-      <div class="divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
-      <p class="section-label">Selected work</p>
-      <h2 class="section-title">Projects I'm<br><em>proud of</em></h2>
-      <div class="projects-grid">
-        <div class="project-card featured">
-          <div class="project-thumb">project image</div>
-          <div>
-            <span class="project-tag">Design · 2024</span>
-            <h3>Project Title One</h3>
-            <p>A brief description of this project — what you made, what problem it solved, and what made it special. Keep it poetic and personal.</p>
-            <a href="#" class="project-link">View case study →</a>
+    <section class="hero">
+      <div class="hero-layout">
+        <div>
+          <p class="hero-eyebrow">Platform Engineering · DevOps · GCP Professional</p>
+          <h1 class="hero-name">Ravindra <em>Kumar</em></h1>
+          <p class="hero-tagline">Senior Cloud DevOps Engineer @ Admiral India<br>Building platforms above the clouds since 2018</p>
+          <div class="hero-tags">
+            <span class="tag">GCP Professional</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">ArgoCD</span>
+            <span class="tag">Azure DevOps</span>
+            <span class="tag">Istio · Service Mesh</span>
+            <span class="tag">Helm</span>
+            <span class="tag">Terragrunt</span>
+          </div>
+          <div class="hero-cta">
+            <a href="#experience" class="btn btn-primary">View Work</a>
+            <a href="https://www.linkedin.com/in/ravindra-kumar36" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+            <a href="https://github.com/ravi041" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+          </div>
+          <div class="hero-stats">
+            <div><span class="stat-num">6+</span><span class="stat-label">Years</span></div>
+            <div><span class="stat-num">9+</span><span class="stat-label">Certs</span></div>
+            <div><span class="stat-num">10K+</span><span class="stat-label">Followers</span></div>
+            <div><span class="stat-num">500+</span><span class="stat-label">Connections</span></div>
           </div>
         </div>
-        <div class="project-card">
-          <div class="project-thumb" style="margin-bottom: 1.5rem;">project image</div>
-          <span class="project-tag">Illustration · 2024</span>
-          <h3>Project Title Two</h3>
-          <p>A short description of this project and what it meant to you.</p>
-          <a href="#" class="project-link">Explore →</a>
-        </div>
-        <div class="project-card">
-          <div class="project-thumb" style="margin-bottom: 1.5rem;">project image</div>
-          <span class="project-tag">Writing · 2023</span>
-          <h3>Project Title Three</h3>
-          <p>A short description of this project and what it meant to you.</p>
-          <a href="#" class="project-link">Read more →</a>
+
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <!--
+            Add your photo: save as photo.jpg next to index.html, then replace the div below with:
+            <img src="photo.jpg" alt="Ravindra Kumar" class="hero-photo" />
+          -->
+          <div class="hero-photo-placeholder">RK</div>
         </div>
       </div>
     </section>
 
-    <!-- Writing -->
-    <section id="writing">
+    <!-- Experience -->
+    <section id="experience">
       <div class="divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
-      <p class="section-label">Writing</p>
-      <h2 class="section-title">From the<br><em>journal</em></h2>
-      <div class="posts-list">
-        <a href="#" class="post-item">
-          <span class="post-date">Mar 2025</span>
-          <div>
-            <div class="post-title">On the art of doing nothing well</div>
-            <div class="post-excerpt">Why rest isn't laziness, and why the sky deserves more of our attention.</div>
+      <p class="section-label">Career</p>
+      <h2 class="section-title">Work <em>Experience</em></h2>
+
+      <div class="exp-item">
+        <div class="exp-time">Jun 2024 – Present<br><span style="color:var(--accent2);font-size:0.72rem;">Senior Role</span></div>
+        <div>
+          <div class="exp-company">Admiral India · Gurugram · Hybrid</div>
+          <div class="exp-role">Senior Cloud DevOps Engineer</div>
+          <p class="exp-desc">Leading Platform Engineering and Developer Relations for Admiral Group PLC (UK). Building the GCP cloud platform for Tibco API microservices. Architecting GitOps workflows, service mesh with Istio, and multi-cloud delivery pipelines for a major UK insurance group.</p>
+          <div class="exp-pills">
+            <span class="pill">GCP</span><span class="pill">Terragrunt</span><span class="pill">Azure DevOps</span><span class="pill">ArgoCD</span><span class="pill">Helm</span><span class="pill">Istio</span><span class="pill">Service Mesh</span><span class="pill">Developer Relations</span>
           </div>
-        </a>
-        <a href="#" class="post-item">
-          <span class="post-date">Jan 2025</span>
-          <div>
-            <div class="post-title">Notes on light: winter edition</div>
-            <div class="post-excerpt">Documenting the way January light falls differently through every window.</div>
-          </div>
-        </a>
-        <a href="#" class="post-item">
-          <span class="post-date">Oct 2024</span>
-          <div>
-            <div class="post-title">What cloud-watching taught me about design</div>
-            <div class="post-excerpt">Every cloud is a prototype. Every sky is a mood board.</div>
-          </div>
-        </a>
-        <a href="#" class="post-item">
-          <span class="post-date">Jul 2024</span>
-          <div>
-            <div class="post-title">The quiet pleasure of a blank page</div>
-            <div class="post-excerpt">A meditation on starting and the spaces before words arrive.</div>
-          </div>
-        </a>
+        </div>
       </div>
+
+      <div class="exp-item">
+        <div class="exp-time">Jun 2021 – May 2024<br><span style="color:var(--ink-soft);font-size:0.72rem;">3 years</span></div>
+        <div>
+          <div class="exp-company">Admiral India · Gurugram · Hybrid</div>
+          <div class="exp-role">Cloud DevOps Engineer</div>
+          <p class="exp-desc">Deployed microservices via Azure pipeline, created and maintained CI/CD pipelines for GCP-based infrastructure. Managed Kubernetes clusters and drove infrastructure automation across the software delivery lifecycle.</p>
+          <div class="exp-pills">
+            <span class="pill">GCP</span><span class="pill">Terraform</span><span class="pill">Kubernetes</span><span class="pill">Azure Pipelines</span><span class="pill">Docker</span><span class="pill">Istio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-time">Oct 2019 – Jun 2021<br><span style="color:var(--ink-soft);font-size:0.72rem;">1 yr 9 mos</span></div>
+        <div>
+          <div class="exp-company">Publicis Sapient · Gautam Buddha Nagar, UP</div>
+          <div class="exp-role">Associate Infrastructure L2</div>
+          <p class="exp-desc">AWS Certified Solutions Architect & Certified Oracle Cloud Infrastructure practitioner. Continuous delivery and infrastructure automation using Ansible across AWS and GKE environments.</p>
+          <div class="exp-pills">
+            <span class="pill">AWS</span><span class="pill">GKE</span><span class="pill">Ansible</span><span class="pill">Terraform</span><span class="pill">CI/CD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-time">Sep 2018 – Sep 2019<br><span style="color:var(--ink-soft);font-size:0.72rem;">1 yr 1 mo</span></div>
+        <div>
+          <div class="exp-company">Atos Syntel · Gurgaon, Haryana</div>
+          <div class="exp-role">Associate Consultant</div>
+          <p class="exp-desc">IT Infrastructure and Linux Support Engineer. Provided system administration, infrastructure support, and foundational cloud engineering services.</p>
+          <div class="exp-pills">
+            <span class="pill">Linux</span><span class="pill">IT Infrastructure</span><span class="pill">System Administration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
+      <p class="section-label">Expertise</p>
+      <h2 class="section-title">Technical <em>Skills</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-title">Cloud Platforms</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Google Cloud (GCP)</span><span class="skill-pill">AWS</span><span class="skill-pill">Microsoft Azure</span><span class="skill-pill">Oracle Cloud</span><span class="skill-pill">GKE</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">Containers & Orchestration</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Kubernetes</span><span class="skill-pill">Docker</span><span class="skill-pill">Helm</span><span class="skill-pill">ArgoCD</span><span class="skill-pill">Istio</span><span class="skill-pill">Service Mesh</span><span class="skill-pill">Kustomize</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">Infrastructure as Code</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Terraform</span><span class="skill-pill">Terragrunt</span><span class="skill-pill">Ansible</span><span class="skill-pill">Pulumi</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">CI/CD & GitOps</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Azure DevOps</span><span class="skill-pill">GitHub Actions</span><span class="skill-pill">Jenkins</span><span class="skill-pill">GitLab CI</span><span class="skill-pill">ArgoCD GitOps</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">Observability & Security</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Prometheus</span><span class="skill-pill">Grafana</span><span class="skill-pill">Datadog</span><span class="skill-pill">ELK Stack</span><span class="skill-pill">OPA / Gatekeeper</span><span class="skill-pill">Vault</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">Languages & Scripting</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Bash / Shell</span><span class="skill-pill">Python</span><span class="skill-pill">YAML</span><span class="skill-pill">HCL</span><span class="skill-pill">JSON</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+      <div class="divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
+      <p class="section-label">Credentials</p>
+      <h2 class="section-title">Certifi<em>cations</em></h2>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-badge gcp">GCP</div>
+          <div>
+            <div class="cert-name">Professional Cloud DevOps Engineer</div>
+            <div class="cert-meta">Google · Dec 2025 – Dec 2027</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge gcp">GCP</div>
+          <div>
+            <div class="cert-name">Professional Cloud Security Engineer</div>
+            <div class="cert-meta">Google · Dec 2024 – Dec 2026</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge gcp">GCP</div>
+          <div>
+            <div class="cert-name">Professional Cloud Architect</div>
+            <div class="cert-meta">Google · Jul 2024 – Jul 2026</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge k8s">CKS</div>
+          <div>
+            <div class="cert-name">Certified Kubernetes Security Specialist</div>
+            <div class="cert-meta">The Linux Foundation · Sep 2022</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge k8s">CKA</div>
+          <div>
+            <div class="cert-name">Certified Kubernetes Administrator</div>
+            <div class="cert-meta">The Linux Foundation · Jan 2022</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge aws">AWS</div>
+          <div>
+            <div class="cert-name">Certified Solutions Architect – Associate</div>
+            <div class="cert-meta">Amazon Web Services · Feb 2020</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge oci">OCI</div>
+          <div>
+            <div class="cert-name">Cloud Infrastructure Foundations 2020 Certified Associate</div>
+            <div class="cert-meta">Oracle · Jul 2020</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge oci">OCI</div>
+          <div>
+            <div class="cert-name">Cloud Infrastructure 2019 Certified Architect Associate</div>
+            <div class="cert-meta">Oracle · Jul 2020</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge oci">OCI</div>
+          <div>
+            <div class="cert-name">Cloud Infrastructure 2019 Cloud Operations Certified Associate</div>
+            <div class="cert-meta">Oracle · Jul 2020</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+      <div class="divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
+      <p class="section-label">Highlights</p>
+      <h2 class="section-title">Achieve<em>ments</em></h2>
+      <div class="achieve-grid">
+        <div class="achieve-card">
+          <div class="achieve-num">3×</div>
+          <div class="achieve-label">GCP Professional</div>
+          <p class="achieve-desc">Three active Google Cloud Professional certifications — DevOps, Security, and Architect.</p>
+        </div>
+        <div class="achieve-card">
+          <div class="achieve-num">10K+</div>
+          <div class="achieve-label">LinkedIn Followers</div>
+          <p class="achieve-desc">Built a thriving DevOps community through knowledge sharing and hands-on cloud content.</p>
+        </div>
+        <div class="achieve-card">
+          <div class="achieve-num">5 yrs</div>
+          <div class="achieve-label">At Admiral India</div>
+          <p class="achieve-desc">Grew from Cloud Engineer to Senior Platform Engineer owning GCP infra for a UK insurance giant.</p>
+        </div>
+        <div class="achieve-card">
+          <div class="achieve-num">9+</div>
+          <div class="achieve-label">Certifications</div>
+          <p class="achieve-desc">Across GCP, AWS, Kubernetes (CKA & CKS), and Oracle — covering the full cloud spectrum.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Talks -->
+    <section id="talks">
+      <div class="divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
+      <p class="section-label">Speaking</p>
+      <h2 class="section-title">Tech <em>Talks</em></h2>
+      <div class="talks-list">
+        <div class="talk-item">
+          <span class="talk-type">Talk</span>
+          <div>
+            <div class="talk-title">GitOps at Scale with ArgoCD & Kubernetes</div>
+            <div class="talk-event">Update with your event name</div>
+          </div>
+          <span class="talk-year">2024</span>
+        </div>
+        <div class="talk-item">
+          <span class="talk-type">Workshop</span>
+          <div>
+            <div class="talk-title">Securing Kubernetes — CKS Best Practices</div>
+            <div class="talk-event">Update with your event name</div>
+          </div>
+          <span class="talk-year">2023</span>
+        </div>
+        <div class="talk-item">
+          <span class="talk-type">Talk</span>
+          <div>
+            <div class="talk-title">Terragrunt for Multi-Environment GCP Infrastructure</div>
+            <div class="talk-event">Update with your event name</div>
+          </div>
+          <span class="talk-year">2023</span>
+        </div>
+        <div class="talk-item">
+          <span class="talk-type">Internal</span>
+          <div>
+            <div class="talk-title">Service Mesh with Istio — From Zero to Production</div>
+            <div class="talk-event">Admiral India</div>
+          </div>
+          <span class="talk-year">2022</span>
+        </div>
+      </div>
+      <p style="margin-top:1.25rem;font-size:0.82rem;color:var(--ink-soft);font-style:italic;">✏️ Replace the talk titles and event names with your actual ones from LinkedIn.</p>
     </section>
 
     <!-- Contact -->
@@ -591,20 +811,19 @@
       <div class="divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
       <div class="contact-box">
         <p class="section-label">Contact</p>
-        <h2 class="section-title" style="margin-bottom:1rem;">Let's find each<br><em>other up there</em></h2>
-        <p>Whether you have a project in mind, a question about my work, or just want to talk about clouds — my inbox is always open.</p>
+        <h2 class="section-title" style="margin-bottom:1rem;">Let's <em>connect</em></h2>
+        <p>Open to Platform Engineering, Cloud Architecture, and DevOps opportunities. Hybrid or Remote · Ghaziabad, India</p>
         <div class="contact-links">
+          <a href="https://www.linkedin.com/in/ravindra-kumar36" target="_blank" class="contact-link">LinkedIn</a>
+          <a href="https://github.com/ravi041" target="_blank" class="contact-link">GitHub</a>
           <a href="mailto:hello@thecloudclouds.com" class="contact-link">hello@thecloudclouds.com</a>
-          <a href="https://twitter.com/" class="contact-link" target="_blank">Twitter</a>
-          <a href="https://instagram.com/" class="contact-link" target="_blank">Instagram</a>
-          <a href="https://linkedin.com/" class="contact-link" target="_blank">LinkedIn</a>
         </div>
       </div>
     </section>
   </div>
 
   <footer>
-    <p>© 2025 thecloudclouds.com &nbsp;·&nbsp; Made with quiet afternoons</p>
+    <p>© 2026 Ravindra Kumar · thecloudclouds.com · Senior Cloud DevOps Engineer</p>
   </footer>
 
 </body>
