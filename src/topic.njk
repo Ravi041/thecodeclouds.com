@@ -1,0 +1,13 @@
+---
+layout: base.njk
+nav: topics
+pagination:
+  data: topics
+  size: 1
+  alias: topic
+permalink: "/topics/{{ topic.slug }}/"
+eleventyComputed:
+  title: "{{ topic.name }}"
+  description: "{{ topic.description }}"
+---
+<div class="container page-body"><header class="page-header"><a class="breadcrumb" href="/topics/">← All topics</a><p class="eyebrow">FIELD NOTES / {{ topic.name | upper }}</p><h1>{{ topic.name }}</h1><p>{{ topic.description }}</p></header><nav class="filter-list" aria-label="Filter articles by topic"><a href="/blog/">All articles</a>{% for item in topics %}<a href="/topics/{{ item.slug }}/" {% if item.slug == topic.slug %}aria-current="page"{% endif %}>{{ item.name }}</a>{% endfor %}</nav><div class="article-grid archive-grid">{% for post in collections.posts | inTopic(topic.name) %}{% include 'card.njk' %}{% else %}<p>The first field note on this topic is still being written. <a href="/blog/">Explore the notebook →</a></p>{% endfor %}</div></div>

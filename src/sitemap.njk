@@ -1,0 +1,10 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for path in ['/', '/blog/', '/topics/', '/learning/', '/about/', '/privacy/', '/disclosure/'] %}<url><loc>{{ path | absolute }}</loc></url>{% endfor %}
+  {% for topic in topics %}<url><loc>{{ site.url }}/topics/{{ topic.slug }}/</loc></url>{% endfor %}
+  {% for post in collections.posts %}<url><loc>{{ post.url | absolute }}</loc><lastmod>{{ (post.data.updated or post.date) | isoDate }}</lastmod></url>{% endfor %}
+</urlset>

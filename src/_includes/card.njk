@@ -1,0 +1,13 @@
+<article class="article-card">
+  <a class="article-visual visual-{{ post.data.category | topicSlug }}{% if post.data.coverImage %} has-image{% endif %}" href="{{ post.url }}" tabindex="-1" aria-hidden="true">
+    {% if post.data.coverImage %}<img src="{{ post.data.coverImage }}" alt="" loading="lazy" width="640" height="360">{% else %}
+    <span class="visual-kicker">FIELD NOTES / {{ post.data.category | upper }}</span>
+    <span class="visual-title">{{ post.data.coverLabel or post.data.category }}</span>
+    <span class="visual-bottom"><span>{{ post.data.coverCode or '// learn by doing' }}</span><span>↗</span></span>
+    {% endif %}
+  </a>
+  <div class="card-meta"><a href="/topics/{{ post.data.category | topicSlug }}/">{{ post.data.category }}</a><span>{{ post.templateContent | readingTime }} min read</span></div>
+  <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+  <p>{{ post.data.description }}</p>
+  <div class="card-byline"><span class="avatar-small" aria-hidden="true">RK</span><span>{{ site.author }}</span><span class="byline-date">{{ post.date | dateLabel }}</span></div>
+</article>

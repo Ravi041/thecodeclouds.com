@@ -1,0 +1,9 @@
+---
+layout: base.njk
+---
+<article class="post container">
+  <header class="post-header"><a class="breadcrumb" href="/blog/">← All articles</a><a class="topic-label" href="/topics/{{ category | topicSlug }}/">{{ category }}</a><h1>{{ title }}</h1><p class="post-description">{{ description }}</p><div class="post-byline"><span class="avatar">RK</span><div><a href="/about/">{{ site.author }}</a><span><time datetime="{{ page.date | isoDate }}">{{ page.date | dateLabel }}</time> · {{ content | readingTime }} min read{% if updated %} · Updated {{ updated | dateLabel }}{% endif %}</span></div></div></header>
+  {% if coverImage %}<img class="post-cover" src="{{ coverImage }}" alt="{{ coverImageAlt }}" width="1200" height="675">{% endif %}
+  {% if coverImage and coverCredit %}<p class="cover-credit">{{ coverCredit }}</p>{% endif %}
+  <div class="post-grid"><div class="prose">{{ content | safe }}<div class="post-end"><p>Found this useful?</p><a href="/feed.xml">Get the next field note in your RSS reader ↗</a><a href="{{ site.linkedin }}" rel="noopener noreferrer">Share feedback with Ravindra on LinkedIn ↗</a></div></div><aside class="post-sidebar"><span class="eyebrow">KEEP EXPLORING</span><h2>One topic.<br>A little deeper.</h2><a href="/topics/{{ category | topicSlug }}/">More on {{ category }} ↗</a><hr><p>Looking for a structured learning path?</p><a href="/learning/">Courses & learning resources ↗</a></aside></div>
+</article>

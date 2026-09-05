@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: The notebook
+description: Practical articles on Kubernetes, cloud, Terraform, and building your engineering skills.
+nav: blog
+pagination:
+  data: collections.posts
+  size: 9
+  alias: posts
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+---
+<div class="container page-body"><header class="page-header"><p class="eyebrow">THE NOTEBOOK</p><h1>A little less theory.<br>A little more <em>doing.</em></h1><p>Clear explanations, practical checklists, and things worth remembering the next time you open a terminal.</p></header>
+<nav class="filter-list" aria-label="Filter articles by topic"><a href="/blog/" aria-current="page">All articles</a>{% for topic in topics %}<a href="/topics/{{ topic.slug }}/">{{ topic.name }}</a>{% endfor %}</nav>
+<div class="article-grid archive-grid">{% for post in posts %}{% include 'card.njk' %}{% endfor %}</div>
+{% if pagination.pages.length > 1 %}<nav class="pagination" aria-label="Article archive pages">{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Previous</a>{% endif %}{% for href in pagination.hrefs %}<a href="{{ href }}" {% if page.url == href %}aria-current="page"{% endif %}>{{ loop.index }}</a>{% endfor %}{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next →</a>{% endif %}</nav>{% endif %}
+</div>

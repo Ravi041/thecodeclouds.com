@@ -1,0 +1,14 @@
+{% if featured.data.coverImage %}
+<div class="featured-image"><img src="{{ featured.data.coverImage }}" alt="{{ featured.data.coverImageAlt }}" width="1200" height="675" fetchpriority="high"></div>
+{% else %}
+<div class="feature-terminal">
+  <div class="terminal-top"><span class="terminal-dots" aria-hidden="true">● ● ●</span><span>field-notes / {{ featured.data.category | topicSlug }}</span><span aria-hidden="true">↗</span></div>
+  <div class="terminal-content"><span class="terminal-label">{{ featured.data.category | upper }}, WITHOUT THE GUESSWORK</span>
+    {% if featured.data.coverKind == 'pod-debug' %}
+    <p class="terminal-headline">Keep calm.<br><span>Read the events.</span></p><div class="terminal-command"><span>$</span> kubectl get pods -n demo</div><div class="terminal-output"><span>NAME</span><span>READY</span><span>STATUS</span><span>web-7c9d</span><span>0/1</span><span class="terminal-error">Pending</span></div><div class="terminal-command"><span>$</span> kubectl describe pod web-7c9d -n demo</div><p class="terminal-comment"># Start with evidence, not a restart.</p>
+    {% else %}
+    <p class="terminal-headline"><span>{{ featured.data.coverLabel or featured.data.title }}</span></p><div class="terminal-command">{{ featured.data.coverCode or '// a little more understanding' }}</div><p class="terminal-comment"># Learn something. Try it. Make it yours.</p>
+    {% endif %}
+  </div><div class="terminal-footer"><span class="status-dot"></span> READ → TRY → UNDERSTAND <span class="terminal-number">01</span></div>
+</div>
+{% endif %}

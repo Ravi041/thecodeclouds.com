@@ -1,0 +1,18 @@
+---
+layout: base.njk
+description: Practical guides for the people building in the cloud. Explore Kubernetes, DevOps, Terraform, and your next learning opportunity.
+---
+<div class="container">
+  <section class="intro"><div><p class="eyebrow"><span class="status-dot"></span> A FIELD GUIDE TO BUILDING IN THE CLOUD</p><h1>Less noise.<br>More <em>know-how.</em></h1></div><div class="intro-aside"><p>Practical guides, lessons learned, and useful resources for your cloud-native journey.</p><a class="text-link" href="/about/">Notes from Ravindra Kumar <span aria-hidden="true">↗</span></a></div></section>
+  {% set featured = collections.posts[0] %}
+  {% if featured %}
+  <section class="featured" aria-labelledby="featured-heading">
+    <div class="featured-copy"><p class="eyebrow">THE LATEST FIELD NOTE <span class="line"></span></p><a class="topic-label" href="/topics/{{ featured.data.category | topicSlug }}/">{{ featured.data.category }}</a><h2 id="featured-heading"><a href="{{ featured.url }}">{{ featured.data.title }}</a></h2><p>{{ featured.data.description }}</p><div class="feature-author"><span class="avatar">RK</span><div><strong>{{ site.author }}</strong><span>{{ featured.date | dateLabel }} · {{ featured.templateContent | readingTime }} min read</span></div></div><a class="button button-dark" href="{{ featured.url }}">Read the guide <span aria-hidden="true">↗</span></a></div>
+    {% include 'featured-art.njk' %}
+  </section>
+  {% endif %}
+  <nav class="topic-strip" aria-label="Explore topics"><span>EXPLORE</span>{% for topic in topics %}<a href="/topics/{{ topic.slug }}/">{{ topic.name }} <span aria-hidden="true">↗</span></a>{% endfor %}</nav>
+  <div class="editorial-grid"><section class="latest" aria-labelledby="latest-heading"><div class="section-heading"><div><p class="eyebrow">FROM THE NOTEBOOK</p><h2 id="latest-heading">Worth your next read.</h2></div><a class="text-link" href="/blog/">All articles <span aria-hidden="true">↗</span></a></div><div class="article-grid">{% for post in collections.posts | take(4) %}{% include 'card.njk' %}{% endfor %}</div></section>
+  <aside class="sidebar"><section class="learning-note"><span class="eyebrow">INVEST IN YOURSELF</span><div class="learning-symbol" aria-hidden="true">↗</div><h2>Your next skill<br>starts here.</h2><p>Official learning resources. Clearly labelled course offers. One place to find your next step.</p><a class="button button-light" href="/learning/">Explore learning <span aria-hidden="true">↗</span></a><span class="small-note">No unverified discounts. No made-up deals.</span></section><section class="author-note"><span class="eyebrow">BEHIND THE NOTES</span><div class="author-note-heading"><span class="avatar">RK</span><h3>Hi, I’m Ravindra.</h3></div><p>Cloud engineer, platform builder, and a believer in learning out loud. This is where I share the useful bits.</p><a class="text-link" href="/about/">A little about me <span aria-hidden="true">↗</span></a></section><a class="rss-note" href="/feed.xml"><span class="rss-icon" aria-hidden="true">◔</span><div><strong>Your feed. Your pace.</strong><span>Follow new articles with RSS.</span></div><span aria-hidden="true">↗</span></a></aside></div>
+  <section class="closing-note"><p class="eyebrow">SMALL STEPS. REAL PROGRESS.</p><h2>The cloud moves fast.<br>Good fundamentals <em>stay with you.</em></h2><a href="/topics/" class="button button-dark">Find your next topic <span aria-hidden="true">↗</span></a></section>
+</div>
