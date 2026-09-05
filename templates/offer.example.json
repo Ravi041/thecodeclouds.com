@@ -1,0 +1,15 @@
+{
+  "id": "replace-with-provider-course-slug",
+  "draft": true,
+  "title": "Replace with the real course title",
+  "provider": "Provider name",
+  "description": "Who this course is for and what is included.",
+  "url": "https://example.com/replace-with-approved-provider-or-affiliate-link",
+  "offer": "Replace with the provider-approved discount wording",
+  "code": "REPLACE-WITH-REAL-CODE-OR-REMOVE",
+  "verifiedAt": "2026-09-05T09:00:00Z",
+  "expiresAt": "2026-09-06T23:59:59Z",
+  "terms": "Replace with regional, eligibility, plan, and refund restrictions.",
+  "affiliate": false,
+  "sponsored": false
+}

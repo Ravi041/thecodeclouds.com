@@ -1,0 +1,5 @@
+[
+  { "name": "Microsoft Learn", "mark": "ML", "topic": "Cloud & DevOps", "description": "Explore Microsoft's learning paths for Azure, development, and cloud fundamentals.", "url": "https://learn.microsoft.com/training/", "color": "blue" },
+  { "name": "Google Cloud training", "mark": "GC", "topic": "Cloud", "description": "Find learning paths, hands-on training, and certification resources from Google Cloud.", "url": "https://cloud.google.com/learn/training", "color": "green" },
+  { "name": "Linux Foundation Training", "mark": "LF", "topic": "Linux & Kubernetes", "description": "Explore Linux, Kubernetes, and cloud-native courses from the Linux Foundation.", "url": "https://training.linuxfoundation.org/", "color": "violet" }
+]

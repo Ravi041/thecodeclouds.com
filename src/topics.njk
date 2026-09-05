@@ -1,0 +1,8 @@
+---
+layout: base.njk
+title: Explore topics
+description: Find your next practical guide by topic, from Kubernetes and Terraform to cloud delivery and learning.
+nav: topics
+permalink: /topics/
+---
+<div class="container page-body"><header class="page-header"><p class="eyebrow">CHOOSE YOUR NEXT RABBIT HOLE</p><h1>Go a little <em>deeper.</em></h1><p>Start with the thing you are building, the problem you are debugging, or the skill you want to understand.</p></header><div class="topic-grid">{% for topic in topics %}{% set articles = collections.posts | inTopic(topic.name) %}<article class="topic-card"><div class="eyebrow"><span>0{{ loop.index }} / TOPIC</span><span>{{ articles.length }} {{ 'ARTICLE' if articles.length == 1 else 'ARTICLES' }}</span></div><h2><a href="/topics/{{ topic.slug }}/">{{ topic.name }}</a></h2><p>{{ topic.description }}</p><a class="text-link" href="/topics/{{ topic.slug }}/">Explore {{ topic.name }} <span aria-hidden="true">↗</span></a></article>{% endfor %}</div></div>
