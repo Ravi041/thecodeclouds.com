@@ -38,6 +38,10 @@ $env:PLAYWRIGHT_CHANNEL = 'chrome'
 npm.cmd run test:browser
 ```
 
+### Dependency audit
+
+`npm run audit:deps` fails on any high or critical npm advisory. The only way past it, other than upgrading, is a reviewed entry in `audit-exceptions.json`: one advisory in one package, with the reason it does not affect this site and an expiry date at most 120 days after review. Expired exceptions block the build again, and the check reports exceptions that no longer match anything so they can be deleted. Prefer fixing over excepting.
+
 `npm run build` replaces only the generated `_site/` directory. Never hand-edit `_site/`; draft removal and expiry need a clean build. A development preview is not the final release artifact.
 
 ## Publish a new article

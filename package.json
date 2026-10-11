@@ -9,6 +9,7 @@
     "build": "node scripts/build.mjs",
     "test": "node --test",
     "test:browser": "node scripts/browser-check.mjs",
+    "audit:deps": "node scripts/audit.mjs",
     "check": "npm run build && npm test"
   },
   "devDependencies": {
