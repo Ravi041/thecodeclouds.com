@@ -1,0 +1,9 @@
+[
+  {
+    "id": "GHSA-vfj7-8cjw-p6xm",
+    "package": "braces",
+    "reason": "No patched braces release exists (3.0.3 is the latest). It is reached only through chokidar, the file watcher that Eleventy 3.1.6 (latest stable) uses for `eleventy --serve`; production builds do not watch files, and every glob comes from this repository's own configuration. Remove when braces or a stable Eleventy release ships a fix.",
+    "reviewedAt": "2026-10-11",
+    "expiresAt": "2026-12-31T00:00:00Z"
+  }
+]

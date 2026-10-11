@@ -36,7 +36,7 @@ jobs:
       - name: Install locked dependencies
         run: npm ci --ignore-scripts
       - name: Dependency audit
-        run: npm audit --audit-level=high
+        run: npm run audit:deps
       - name: Build and test publication
         run: npm run check
       - name: Install isolated test browser
