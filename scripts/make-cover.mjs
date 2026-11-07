@@ -16,6 +16,7 @@ const themes = {
   'Cloud Security': { bg: 'linear-gradient(135deg,#0d1b2a 0%,#1f3b57 100%)', accent: '#ffac91', chip: '#ffd9cc', motif: 'security' },
   'Cloud Networking': { bg: 'linear-gradient(135deg,#0b3530 0%,#127566 100%)', accent: '#83dfcc', chip: '#c9f0e6', motif: 'network' },
   'Cloud & DevOps': { bg: 'linear-gradient(135deg,#3a2306 0%,#9a5a12 100%)', accent: '#ffd28a', chip: '#ffe0a1', motif: 'pipeline' },
+  'AI Engineering': { bg: 'linear-gradient(135deg,#1e0b33 0%,#6b2a8f 100%)', accent: '#f5b8ff', chip: '#f6dcff', motif: 'terminal' },
   'Terraform': { bg: 'linear-gradient(135deg,#2a1552 0%,#5b33a8 100%)', accent: '#cdb6ff', chip: '#e9e0ff', motif: 'plan' },
   'Career & Learning': { bg: 'linear-gradient(135deg,#4a1e12 0%,#a24a30 100%)', accent: '#ffd4c5', chip: '#ffe6dc', motif: 'path' }
 };
@@ -48,6 +49,13 @@ const motifs = {
     <path d="M340 200 h30 m-12 -12 l12 12 l-12 12" stroke="${a}" stroke-width="4" fill="none"/>
     <rect x="40" y="270" width="320" height="14" rx="7" fill="#ffffff22"/><rect x="40" y="270" width="230" height="14" rx="7" fill="${a}"/>
     <text x="40" y="140" font-family="ui-monospace,Menlo,monospace" font-size="22" fill="${a}">requests waiting: 6</text></svg>`,
+  terminal: a => `<svg viewBox="0 0 400 400" width="400" height="400"><rect x="30" y="70" width="340" height="260" rx="16" fill="#00000055" stroke="${a}" stroke-width="2"/>
+    <circle cx="58" cy="96" r="7" fill="#ff8a8a"/><circle cx="80" cy="96" r="7" fill="#ffd28a"/><circle cx="102" cy="96" r="7" fill="#8ff0b0"/>
+    <text x="56" y="150" font-family="ui-monospace,Menlo,monospace" font-size="24" fill="${a}">&gt; plan the change</text>
+    ${[[56,180,220],[56,210,170],[56,240,250]].map(([x,y,w])=>`<rect x="${x}" y="${y}" width="${w}" height="12" rx="6" fill="${a}" opacity=".45"/>`).join('')}
+    <text x="56" y="295" font-family="ui-monospace,Menlo,monospace" font-size="24" fill="#8ff0b0">✓ tests pass</text></svg>`,
+  bars: a => `<svg viewBox="0 0 400 400" width="400" height="400">${[[60,230],[120,280],[180,250],[240,300],[300,210]].map(([x,h],i)=>`<rect x="${x}" y="${340-h}" width="44" height="${h}" rx="6" fill="${a}" opacity="${0.4+i*0.12}"/>`).join('')}
+    <line x1="40" y1="340" x2="370" y2="340" stroke="${a}" stroke-width="3"/></svg>`,
   path: a => `<svg viewBox="0 0 400 400" width="400" height="400"><path d="M60 330 C140 330 120 230 200 230 S260 130 340 120" fill="none" stroke="${a}" stroke-width="5" stroke-dasharray="2 12" stroke-linecap="round"/>
     ${[[60,330],[200,230],[340,120]].map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${16+i*6}" fill="${i===2?a:'none'}" stroke="${a}" stroke-width="4"/>`).join('')}</svg>`
 };

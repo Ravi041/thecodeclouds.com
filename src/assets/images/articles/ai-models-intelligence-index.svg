@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 616" width="900" height="616" font-family="system-ui,-apple-system,Segoe UI,sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Artificial Analysis Intelligence Index, November 2026</title><desc id="d">Bar chart: Gemini 4 Carbon high 60, Claude Opus 5.5 max 59, GPT-6 Astra max 57, GPT-6.1 Sol and Claude Sonnet 5.5 55, Claude Fable 5.1 50, Kimi K3.1 Pro 46, Claude Haiku 5.5 36, Grok 4.7 35, Qwen3.8 Max 34, DeepSeek V4.1 Flash 33, GLM-5.3 32. Cost per task shown beside each bar.</desc>
+<rect width="900" height="616" fill="#fbfcfa" rx="14"/>
+<text x="30" y="42" font-size="22" font-weight="700" fill="#1d2a26">Intelligence Index vs. cost to run it</text>
+<text x="30" y="68" font-size="14" fill="#5b6b64">Artificial Analysis, read 7 Nov 2026. Higher is better. Right column: USD to run the full index.</text>
+<text x="238" y="112" font-size="14" text-anchor="end" fill="#1d2a26">Gemini 4 Carbon (high)</text>
+<rect x="250" y="96" width="420" height="24" rx="5" fill="#2f6fd6"/>
+<text x="678" y="113" font-size="14" font-weight="700" fill="#1d2a26">60</text>
+<text x="870" y="113" font-size="14" text-anchor="end" fill="#5b6b64">$7.76</text>
+<text x="238" y="150" font-size="14" text-anchor="end" fill="#1d2a26">Claude Opus 5.5 (max)</text>
+<rect x="250" y="134" width="413" height="24" rx="5" fill="#c8643b"/>
+<text x="671" y="151" font-size="14" font-weight="700" fill="#1d2a26">59</text>
+<text x="870" y="151" font-size="14" text-anchor="end" fill="#5b6b64">$10.04</text>
+<text x="238" y="188" font-size="14" text-anchor="end" fill="#1d2a26">GPT-6 Astra (max)</text>
+<rect x="250" y="172" width="399" height="24" rx="5" fill="#1f8a70"/>
+<text x="657" y="189" font-size="14" font-weight="700" fill="#1d2a26">57</text>
+<text x="870" y="189" font-size="14" text-anchor="end" fill="#5b6b64">$6.24</text>
+<text x="238" y="226" font-size="14" text-anchor="end" fill="#1d2a26">GPT-6.1 Sol (max)</text>
+<rect x="250" y="210" width="385" height="24" rx="5" fill="#1f8a70"/>
+<text x="643" y="227" font-size="14" font-weight="700" fill="#1d2a26">55</text>
+<text x="870" y="227" font-size="14" text-anchor="end" fill="#5b6b64">$1.27</text>
+<text x="238" y="264" font-size="14" text-anchor="end" fill="#1d2a26">Claude Sonnet 5.5 (max)</text>
+<rect x="250" y="248" width="385" height="24" rx="5" fill="#c8643b"/>
+<text x="643" y="265" font-size="14" font-weight="700" fill="#1d2a26">55</text>
+<text x="870" y="265" font-size="14" text-anchor="end" fill="#5b6b64">$10.02</text>
+<text x="238" y="302" font-size="14" text-anchor="end" fill="#1d2a26">Claude Fable 5.1 (xhigh)</text>
+<rect x="250" y="286" width="350" height="24" rx="5" fill="#c8643b"/>
+<text x="608" y="303" font-size="14" font-weight="700" fill="#1d2a26">50</text>
+<text x="870" y="303" font-size="14" text-anchor="end" fill="#5b6b64">$10.85</text>
+<text x="238" y="340" font-size="14" text-anchor="end" fill="#1d2a26">Kimi K3.1 Pro</text>
+<rect x="250" y="324" width="322" height="24" rx="5" fill="#7a5bd1"/>
+<text x="580" y="341" font-size="14" font-weight="700" fill="#1d2a26">46</text>
+<text x="870" y="341" font-size="14" text-anchor="end" fill="#5b6b64">$3.68</text>
+<text x="238" y="378" font-size="14" text-anchor="end" fill="#1d2a26">Claude Haiku 5.5 (max)</text>
+<rect x="250" y="362" width="252" height="24" rx="5" fill="#c8643b"/>
+<text x="510" y="379" font-size="14" font-weight="700" fill="#1d2a26">36</text>
+<text x="870" y="379" font-size="14" text-anchor="end" fill="#5b6b64">$0.41</text>
+<text x="238" y="416" font-size="14" text-anchor="end" fill="#1d2a26">Grok 4.7 (xhigh)</text>
+<rect x="250" y="400" width="245" height="24" rx="5" fill="#444c56"/>
+<text x="503" y="417" font-size="14" font-weight="700" fill="#1d2a26">35</text>
+<text x="870" y="417" font-size="14" text-anchor="end" fill="#5b6b64">$7.77</text>
+<text x="238" y="454" font-size="14" text-anchor="end" fill="#1d2a26">Qwen3.8 Max</text>
+<rect x="250" y="438" width="238" height="24" rx="5" fill="#d4851f"/>
+<text x="496" y="455" font-size="14" font-weight="700" fill="#1d2a26">34</text>
+<text x="870" y="455" font-size="14" text-anchor="end" fill="#5b6b64">$10.02</text>
+<text x="238" y="492" font-size="14" text-anchor="end" fill="#1d2a26">DeepSeek V4.1 Flash (max)</text>
+<rect x="250" y="476" width="231" height="24" rx="5" fill="#3a7bbf"/>
+<text x="489" y="493" font-size="14" font-weight="700" fill="#1d2a26">33</text>
+<text x="870" y="493" font-size="14" text-anchor="end" fill="#5b6b64">$0.60</text>
+<text x="238" y="530" font-size="14" text-anchor="end" fill="#1d2a26">GLM-5.3 (max)</text>
+<rect x="250" y="514" width="224" height="24" rx="5" fill="#8a6b3b"/>
+<text x="482" y="531" font-size="14" font-weight="700" fill="#1d2a26">32</text>
+<text x="870" y="531" font-size="14" text-anchor="end" fill="#5b6b64">$5.01</text>
+<rect x="30" y="575" width="12" height="12" rx="2" fill="#c8643b"/><text x="47" y="586" font-size="13" fill="#5b6b64">Anthropic</text>
+<rect x="142" y="575" width="12" height="12" rx="2" fill="#2f6fd6"/><text x="159" y="586" font-size="13" fill="#5b6b64">Google</text>
+<rect x="230" y="575" width="12" height="12" rx="2" fill="#1f8a70"/><text x="247" y="586" font-size="13" fill="#5b6b64">OpenAI</text>
+<rect x="318" y="575" width="12" height="12" rx="2" fill="#7a5bd1"/><text x="335" y="586" font-size="13" fill="#5b6b64">Moonshot</text>
+<rect x="422" y="575" width="12" height="12" rx="2" fill="#444c56"/><text x="439" y="586" font-size="13" fill="#5b6b64">xAI</text>
+<rect x="486" y="575" width="12" height="12" rx="2" fill="#d4851f"/><text x="503" y="586" font-size="13" fill="#5b6b64">Alibaba</text>
+<rect x="582" y="575" width="12" height="12" rx="2" fill="#3a7bbf"/><text x="599" y="586" font-size="13" fill="#5b6b64">DeepSeek</text>
+<rect x="686" y="575" width="12" height="12" rx="2" fill="#8a6b3b"/><text x="703" y="586" font-size="13" fill="#5b6b64">Zhipu</text>
+</svg>
