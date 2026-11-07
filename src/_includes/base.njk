@@ -15,10 +15,14 @@
   <meta property="og:title" content="{{ title or site.name }}">
   <meta property="og:description" content="{{ description or site.description }}">
   <meta property="og:url" content="{{ page.url | absolute }}">
-  <meta name="twitter:card" content="{{ 'summary_large_image' if coverImage else 'summary' }}">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title or site.name }}">
   <meta name="twitter:description" content="{{ description or site.description }}">
-  {% if coverImage %}<meta property="og:image" content="{{ coverImage | absolute }}"><meta property="og:image:alt" content="{{ coverImageAlt }}"><meta name="twitter:image" content="{{ coverImage | absolute }}"><meta name="twitter:image:alt" content="{{ coverImageAlt }}">{% endif %}
+  {% if coverImage %}<meta property="og:image" content="{{ coverImage | absolute }}"><meta property="og:image:alt" content="{{ coverImageAlt }}"><meta name="twitter:image" content="{{ coverImage | absolute }}"><meta name="twitter:image:alt" content="{{ coverImageAlt }}">{% endif %}{% if not coverImage %}<meta property="og:image" content="{{ (socialImage or site.defaultImage) | absolute }}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{{ title or site.name }} on The Code Clouds"><meta name="twitter:image" content="{{ (socialImage or site.defaultImage) | absolute }}">{% endif %}
+  {% if layout == 'post.njk' %}<meta property="article:published_time" content="{{ page.date | isoDate }}"><meta property="article:section" content="{{ category }}">
+  <script type="application/ld+json">{{ { "@context": "https://schema.org", "@type": "BlogPosting", "headline": title, "description": description, "datePublished": page.date | isoDate, "dateModified": (updated or page.date) | isoDate, "articleSection": category, "image": (coverImage or socialImage or site.defaultImage) | absolute, "mainEntityOfPage": page.url | absolute, "author": { "@type": "Person", "name": site.author, "url": "/about/" | absolute, "sameAs": [site.linkedin, site.github] }, "publisher": { "@type": "Organization", "name": site.name, "url": site.url, "logo": { "@type": "ImageObject", "url": "/assets/images/og-default.jpg" | absolute } } } | json | safe }}</script>{% elif page.url == '/' %}
+  <script type="application/ld+json">{{ { "@context": "https://schema.org", "@type": "WebSite", "name": site.name, "url": site.url, "description": site.description, "potentialAction": { "@type": "SearchAction", "target": site.url + "/search/?q={search_term_string}", "query-input": "required name=search_term_string" } } | json | safe }}</script>{% elif page.url == '/about/' %}
+  <script type="application/ld+json">{{ { "@context": "https://schema.org", "@type": "ProfilePage", "mainEntity": { "@type": "Person", "name": site.author, "jobTitle": "Cloud and platform engineer", "url": "/about/" | absolute, "sameAs": [site.linkedin, site.github] } } | json | safe }}</script>{% endif %}
   {% if noindex %}<meta name="robots" content="noindex, follow">{% endif %}
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="/feed.xml">
@@ -49,7 +53,7 @@
   </header>
   <main id="main">{{ content | safe }}</main>
   <footer class="site-footer"><div class="container">
-    <div class="footer-top"><div><a href="/" class="brand">the code clouds<span class="brand-period">.</span></a><p>Learn something. Build something.<br>Share what worked.</p></div><div><span class="eyebrow">EXPLORE</span><a href="/blog/">All articles</a><a href="/topics/">Browse topics</a><a href="/learning/">Courses & offers</a></div><div><span class="eyebrow">CONNECT</span><a href="/about/">About Ravindra</a><a href="{{ site.linkedin }}" rel="noopener noreferrer">LinkedIn ↗</a><a href="/feed.xml">RSS feed ↗</a></div></div>
+    <div class="footer-top"><div><a href="/" class="brand">the code clouds<span class="brand-period">.</span></a><p>Learn something. Build something.<br>Share what worked.</p></div><div><span class="eyebrow">EXPLORE</span><a href="/blog/">All articles</a><a href="/topics/">Browse topics</a><a href="/learning/">Courses & offers</a></div><div><span class="eyebrow">CONNECT</span><a href="/about/">About Ravindra</a><a href="/contact/">Contact</a><a href="/advertise/">Advertise & sponsor</a><a href="{{ site.linkedin }}" rel="noopener noreferrer">LinkedIn ↗</a><a href="/feed.xml">RSS feed ↗</a></div></div>
     <div class="footer-bottom"><span>© {{ buildDate.getUTCFullYear() }} {{ site.author }}. Built to share knowledge.</span><div><a href="/disclosure/">Affiliate disclosure</a><a href="/privacy/">Privacy</a><span>Hosted on GitHub Pages</span></div></div>
   </div></footer>
 </body>

@@ -67,7 +67,7 @@ coverCode: "$ kubectl describe pod"
 ---
 ```
 
-Available categories are `Kubernetes`, `Cloud & DevOps`, `Terraform`, and `Career & Learning`. Add a topic in `lib/content.js` to extend this list. The metadata validator catches misspelled categories.
+Available categories are `Kubernetes`, `Cloud Security`, `Cloud Networking`, `Cloud & DevOps`, `Terraform`, and `Career & Learning`. To publish one article a day, give each queued post a future date at `04:00:00Z`; the daily 04:17 UTC build releases it. Animated diagrams go in `src/assets/diagrams/` and are embedded with a `<figure class="diagram">` block (see any Cloud Security post). Add a topic in `lib/content.js` to extend this list. The metadata validator catches misspelled categories.
 
 Drafts and future-dated posts are excluded from article pages, homepage, archives, search, feed, and sitemap—including the development preview. To preview a draft, temporarily set it to `draft: false` with a current/past date locally, then restore the flag before committing. **A draft in a public GitHub repository is still visible in the source.**
 
