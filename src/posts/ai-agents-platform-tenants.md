@@ -5,6 +5,9 @@ date: 2026-10-11T09:00:00Z
 category: Cloud & DevOps
 coverLabel: "Agents need a paved road."
 coverCode: "agent → gateway → tool"
+coverMotif: security
+coverImage: /assets/images/covers/ai-agents-platform-tenants.jpg
+coverImageAlt: "Cloud & DevOps cover reading 'Agents need a paved road.', with a simple line illustration."
 ---
 An AI agent that can call tools is a new kind of workload. It reads customer records, opens tickets and issues refunds, often through a shared API key, with nobody recording which tool it chose or why.
 

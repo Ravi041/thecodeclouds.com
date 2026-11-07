@@ -5,6 +5,8 @@ date: 2026-11-13T04:00:00Z
 category: Cloud Security
 coverLabel: "No key.\nJust a trade."
 coverCode: "permissions: id-token: write"
+coverImage: /assets/images/covers/workload-identity-federation-ci.jpg
+coverImageAlt: "Cloud Security cover reading 'No key. Just a trade.', beside a frame of the article's animated diagram."
 ---
 The most common cloud secret to leak is still a service account key sitting in CI. It was created once, pasted into the pipeline's secrets, and has never expired since. It's been copied to a laptop for debugging, maybe echoed into a build log once. Anyone who finds it *is* your deploy pipeline.
 

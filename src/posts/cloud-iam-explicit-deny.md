@@ -5,6 +5,8 @@ date: 2026-11-08T04:00:00Z
 category: Cloud Security
 coverLabel: "Deny wins.\nThen allow.\nElse no."
 coverCode: "$ aws iam simulate-principal-policy"
+coverImage: /assets/images/covers/cloud-iam-explicit-deny.jpg
+coverImageAlt: "Cloud Security cover reading 'Deny wins. Then allow. Else no.', beside a frame of the article's animated diagram."
 ---
 You've attached the role. The policy clearly says `s3:GetObject` on the bucket. The request still comes back `AccessDenied`, and now you're reading JSON line by line looking for a typo that isn't there.
 

@@ -5,6 +5,8 @@ date: 2026-11-10T04:00:00Z
 category: Cloud Networking
 coverLabel: "Seven checkpoints\nto one pod."
 coverCode: "IGW → NACL → SG → ALB → pod"
+coverImage: /assets/images/covers/aws-eks-request-path.jpg
+coverImageAlt: "Cloud Networking cover reading 'Seven checkpoints to one pod.', beside a frame of the article's animated diagram."
 ---
 "The pod is running but I can't reach it" is one of those problems where everything looks fine on its own. The pod is healthy, the Service exists, the load balancer is green. Somewhere between the internet and the container, one of half a dozen layers is quietly dropping the packet.
 
