@@ -17,7 +17,7 @@
 .site-header { background: var(--white); border-top: 3px solid transparent; border-image: linear-gradient(90deg, #19b5a0, #478ff4, #9a6cf0, #f39e58) 1; }
 .masthead { gap: 24px; }
 .masthead nav { margin-left: auto; }
-.brand-icon { color: #fff; background: linear-gradient(135deg, #147e79, #3157a4); }
+.brand-icon { background: none; padding: 0; object-fit: contain; }
 .brand-period, .intro h1 em { color: var(--orange); }
 .intro { background: radial-gradient(ellipse at 25% 75%, var(--wash-peach), transparent 65%); }
 .featured-copy { background: linear-gradient(135deg, var(--white) 45%, var(--wash-blue)); }
