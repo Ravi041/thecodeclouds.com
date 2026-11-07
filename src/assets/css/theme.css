@@ -45,6 +45,8 @@
 .visual-career-learning { background: #ffd4c5; color: #703d2c; border-color: #f1b49e; }
 .visual-cloud-security { background: linear-gradient(135deg, #1f3b57, #12263a); color: #e6f3ff; border-color: #2c4d6d; }
 .visual-cloud-networking { background: #c9f0e6; color: #12463b; border-color: #a5dccd; }
+.visual-ai-engineering { background: linear-gradient(135deg, #f3e8ff, #ffd9ec); color: #4a1d5e; border-color: #e6c9f5; }
+.visual-ai-engineering:hover { color: #4a1d5e; }
 .visual-cloud-security:hover { color: #e6f3ff; }
 .visual-cloud-networking:hover { color: #12463b; }
 .visual-kubernetes:hover { color: #153c63; }

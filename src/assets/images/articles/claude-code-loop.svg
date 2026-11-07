@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330" font-family="system-ui,-apple-system,Segoe UI,sans-serif" role="img" aria-labelledby="t d"><title id="t">The Claude Code loop</title><desc id="d">Five steps: explore, plan, build, verify, commit, with a loop back from verify to build when a check fails.</desc>
+<rect width="900" height="330" rx="14" fill="#fbf8fe"/>
+<text x="30" y="44" font-size="22" font-weight="700" fill="#2a1840">One task, one loop</text>
+<text x="30" y="70" font-size="14" fill="#6b5a7a">Each step gives Claude something it can check before moving on.</text>
+<rect x="30" y="110" width="150" height="120" rx="12" fill="#fff" stroke="#7b4bb7" stroke-width="2"/>
+<circle cx="54" cy="136" r="13" fill="#7b4bb7"/><text x="54" y="141" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="74" y="142" font-size="18" font-weight="700" fill="#2a1840">Explore</text>
+<text x="46" y="180" font-size="13" fill="#4a3a5a">Read files, ask questions.</text><text x="46" y="200" font-size="13" fill="#4a3a5a">Shift+Tab to plan mode</text>
+<path d="M183 170 h13" stroke="#9b8aa8" stroke-width="2.5"/><path d="M195 164 l6 6 l-6 6" fill="none" stroke="#9b8aa8" stroke-width="2.5"/>
+<rect x="201" y="110" width="150" height="120" rx="12" fill="#fff" stroke="#9a4fb0" stroke-width="2"/>
+<circle cx="225" cy="136" r="13" fill="#9a4fb0"/><text x="225" y="141" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="245" y="142" font-size="18" font-weight="700" fill="#2a1840">Plan</text>
+<text x="217" y="180" font-size="13" fill="#4a3a5a">Agree on the approach</text><text x="217" y="200" font-size="13" fill="#4a3a5a">before any edit</text>
+<path d="M354 170 h13" stroke="#9b8aa8" stroke-width="2.5"/><path d="M366 164 l6 6 l-6 6" fill="none" stroke="#9b8aa8" stroke-width="2.5"/>
+<rect x="372" y="110" width="150" height="120" rx="12" fill="#fff" stroke="#b4519e" stroke-width="2"/>
+<circle cx="396" cy="136" r="13" fill="#b4519e"/><text x="396" y="141" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="416" y="142" font-size="18" font-weight="700" fill="#2a1840">Build</text>
+<text x="388" y="180" font-size="13" fill="#4a3a5a">Small, reviewable</text><text x="388" y="200" font-size="13" fill="#4a3a5a">changes</text>
+<path d="M525 170 h13" stroke="#9b8aa8" stroke-width="2.5"/><path d="M537 164 l6 6 l-6 6" fill="none" stroke="#9b8aa8" stroke-width="2.5"/>
+<rect x="543" y="110" width="150" height="120" rx="12" fill="#fff" stroke="#c8577f" stroke-width="2"/>
+<circle cx="567" cy="136" r="13" fill="#c8577f"/><text x="567" y="141" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="587" y="142" font-size="18" font-weight="700" fill="#2a1840">Verify</text>
+<text x="559" y="180" font-size="13" fill="#4a3a5a">Tests, typecheck,</text><text x="559" y="200" font-size="13" fill="#4a3a5a">screenshots</text>
+<path d="M696 170 h13" stroke="#9b8aa8" stroke-width="2.5"/><path d="M708 164 l6 6 l-6 6" fill="none" stroke="#9b8aa8" stroke-width="2.5"/>
+<rect x="714" y="110" width="150" height="120" rx="12" fill="#fff" stroke="#cf6a5c" stroke-width="2"/>
+<circle cx="738" cy="136" r="13" fill="#cf6a5c"/><text x="738" y="141" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<text x="758" y="142" font-size="18" font-weight="700" fill="#2a1840">Commit</text>
+<text x="730" y="180" font-size="13" fill="#4a3a5a">Clear message,</text><text x="730" y="200" font-size="13" fill="#4a3a5a">then /clear</text>
+<path d="M618.0 232 V280 H447.0 V238" fill="none" stroke="#c8577f" stroke-width="2.5" stroke-dasharray="6 5"/><path d="M441.0 244 l6 -6 l6 6" fill="none" stroke="#c8577f" stroke-width="2.5"/>
+<text x="532.5" y="302" font-size="13" fill="#c8577f" text-anchor="middle">a check fails: fix it, run it again</text></svg>
