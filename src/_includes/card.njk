@@ -9,5 +9,5 @@
   <div class="card-meta"><a href="/topics/{{ post.data.category | topicSlug }}/">{{ post.data.category }}</a><span>{{ post.templateContent | readingTime }} min read</span></div>
   <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
   <p>{{ post.data.description }}</p>
-  <div class="card-byline"><span class="avatar-small" aria-hidden="true">RK</span><span>{{ site.author }}</span><span class="byline-date">{{ post.date | dateLabel }}</span></div>
+  <div class="card-byline">{% if site.photo %}<img class="avatar-small avatar-photo" src="{{ site.photo }}" alt="" width="46" height="46" loading="lazy">{% else %}<span class="avatar-small" aria-hidden="true">RK</span>{% endif %}<span>{{ site.author }}</span><span class="byline-date">{{ post.date | dateLabel }}</span></div>
 </article>

@@ -1,14 +1,14 @@
 // Run before styles paint, so a saved preference also applies on navigation.
+// Light is the default for everyone; dark applies only after a reader chooses it.
 (() => {
   const key = 'the-code-clouds-theme';
   const root = document.documentElement;
-  const system = window.matchMedia('(prefers-color-scheme: dark)');
   const valid = value => value === 'dark' || value === 'light';
   let preference;
   try { preference = localStorage.getItem(key); } catch { /* Storage may be disabled. */ }
   let button;
   function apply() {
-    const theme = valid(preference) ? preference : system.matches ? 'dark' : 'light';
+    const theme = valid(preference) ? preference : 'light';
     root.dataset.theme = theme;
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#111b22' : '#f8f9f5');
     if (button) {
@@ -17,7 +17,6 @@
     }
   }
   apply();
-  system.addEventListener('change', () => { if (!valid(preference)) apply(); });
   window.addEventListener('storage', event => {
     if (event.key === key || event.key === null) { preference = event.newValue; apply(); }
   });

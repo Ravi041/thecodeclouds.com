@@ -5,7 +5,7 @@ A Markdown-first technology publication for **thecodeclouds.com**, built with El
 ## What is included
 
 - Responsive editorial homepage and article layouts.
-- Light/dark header toggle, device-preference default, and device-local persistence. It works with keyboard and touch; without JavaScript the system theme still applies. The original archived portfolio retains its earlier design.
+- Light theme by default, with a dark-mode header toggle remembered on the reader's device. It works with keyboard and touch; without JavaScript the light theme applies. The original archived portfolio retains its earlier design.
 - Colourful topic covers and two optimized original editorial images, with image-specific social previews and descriptive alt text.
 - Article archive with pagination, topic archives, and browser-side full-text search.
 - Four original starter articles for editorial review before launch.

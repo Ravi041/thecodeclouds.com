@@ -37,7 +37,15 @@ try {
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(base, { waitUntil: 'networkidle' });
     const theme = page.getByRole('button', { name: 'Dark mode', exact: true });
-    assert.equal(await theme.getAttribute('aria-pressed'), String(colorScheme === 'dark'));
+    assert.equal(await theme.getAttribute('aria-pressed'), 'false', 'light is the default whatever the device prefers');
+    await theme.focus();
+    await page.keyboard.press('Space');
+    assert.equal(await theme.getAttribute('aria-pressed'), 'true');
+    await page.keyboard.press('Space');
+    assert.equal(await theme.getAttribute('aria-pressed'), 'false');
+    if (colorScheme === 'dark') await page.keyboard.press('Space');
+    await page.reload({ waitUntil: 'networkidle' });
+    assert.equal(await theme.getAttribute('aria-pressed'), String(colorScheme === 'dark'), 'preference persists on reload');
     await theme.focus();
     await page.keyboard.press('Space');
     assert.equal(await theme.getAttribute('aria-pressed'), String(colorScheme !== 'dark'));
@@ -101,7 +109,7 @@ try {
   const page = await context.newPage();
   await page.goto(base);
   assert.equal(await page.locator('.theme-toggle').isVisible(), false);
-  assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), colorScheme);
+  assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'light');
   assert.equal(await page.getByRole('navigation', { name: 'Main navigation' }).isVisible(), true);
   await page.goto(base + '/blog/kubernetes-pod-troubleshooting/');
   assert.match(await page.locator('.prose').innerText(), /kubectl/);
@@ -109,18 +117,17 @@ try {
   assert.equal(await page.locator('#search-fallback').isVisible(), true);
   assert.equal(await page.locator('#search-form').isVisible(), false);
   await context.close();
-  console.log(`No-JavaScript ${colorScheme}: system theme, reading, navigation and search fallback passed`);
+  console.log(`No-JavaScript ${colorScheme} device: light theme, reading, navigation and search fallback passed`);
   }
   const context = await browser.newContext({ colorScheme: 'light', viewport: { width: 320, height: 740 } });
   const page = await context.newPage();
   await page.goto(base);
   await page.emulateMedia({ colorScheme: 'dark' });
-  await page.waitForFunction(() => document.documentElement.dataset.theme === 'dark');
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light', 'device preference changes do not switch the theme');
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, '320px overflow');
   await page.getByRole('button', { name: 'Dark mode', exact: true }).click();
   await page.emulateMedia({ colorScheme: 'light' });
-  await page.emulateMedia({ colorScheme: 'dark' });
-  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light', 'explicit preference wins over system changes');
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark', 'explicit preference wins over system changes');
   await context.close();
   const blocked = await browser.newContext({ colorScheme: 'dark' });
   await blocked.addInitScript(() => Object.defineProperty(window, 'localStorage', { get() { throw new DOMException('Disabled', 'SecurityError'); } }));
@@ -128,11 +135,12 @@ try {
   const blockedErrors = [];
   blockedPage.on('pageerror', error => blockedErrors.push(error.message));
   await blockedPage.goto(base);
-  await blockedPage.getByRole('button', { name: 'Dark mode', exact: true }).click();
   assert.equal(await blockedPage.locator('html').getAttribute('data-theme'), 'light');
+  await blockedPage.getByRole('button', { name: 'Dark mode', exact: true }).click();
+  assert.equal(await blockedPage.locator('html').getAttribute('data-theme'), 'dark');
   assert.deepEqual(blockedErrors, []);
   await blocked.close();
-  console.log('System preference, explicit override, narrow viewport and blocked-storage fallback passed');
+  console.log('Light default, explicit override, narrow viewport and blocked-storage fallback passed');
 } finally {
   await browser?.close();
   await new Promise(resolve => server.close(resolve));

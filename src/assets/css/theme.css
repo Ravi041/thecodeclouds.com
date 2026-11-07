@@ -5,15 +5,6 @@
   --wash-blue: #e9f2ff; --wash-peach: #fff0e2; --wash-violet: #eee8ff;
   --green: #166b63; --orange: #b54630;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --paper: #111b22; --white: #19262f; --ink: #edf4f6; --muted: #b4c4cb;
-    --green: #83dfcc; --orange: #ffac91; --line: #344650; --soft: #21313a;
-    --prose: #cfdbdf; --button-bg: #83dfcc; --button-text: #102b29;
-    --wash-blue: #192d42; --wash-peach: #352a2a; --wash-violet: #29273d;
-  }
-}
 :root[data-theme="dark"] {
   color-scheme: dark;
   --paper: #111b22; --white: #19262f; --ink: #edf4f6; --muted: #b4c4cb;
@@ -116,5 +107,7 @@
 .sponsor-card { border: 1px solid var(--line); border-radius: 8px; padding: 20px; background: var(--white); }
 .sponsor-card h3 { margin: 0 0 .4em; font-size: 18px; }
 .sponsor-card p { margin: 0; font-size: 15px; line-height: 1.65; }
+img.avatar-photo { object-fit: cover; padding: 0; background: var(--soft); }
+.profile-card img.avatar-large { width: 120px; height: 120px; }
 @media (max-width: 640px) { .sponsor-grid { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .theme-knob, .article-visual img { transition: none; } }
