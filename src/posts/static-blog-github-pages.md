@@ -5,6 +5,8 @@ date: 2026-09-05T07:00:00Z
 category: Cloud & DevOps
 coverLabel: "Write. Build. Publish."
 coverCode: "Markdown → HTML → Pages"
+coverImage: /assets/images/covers/static-blog-github-pages.jpg
+coverImageAlt: "Cloud & DevOps cover reading 'Write. Build. Publish.', with a simple line illustration."
 ---
 The hard part of starting a technical blog is usually not choosing a database. It is turning something you learned into something another person can use.
 
