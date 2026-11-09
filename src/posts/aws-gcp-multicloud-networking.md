@@ -1,7 +1,7 @@
 ---
 title: "Connecting AWS and Google Cloud for a large enterprise: the network design that holds up"
 description: "A reference architecture for joining AWS and Google Cloud privately: IP planning, the three interconnect options, hub-and-spoke on both sides, hybrid DNS and security, with editable draw.io diagrams."
-date: 2026-11-15T04:00:00Z
+date: 2026-11-09T04:30:00Z
 category: Cloud Networking
 coverLabel: "Two clouds.\nOne network."
 coverCode: "TGW ⇄ Interconnect ⇄ NCC"
@@ -12,7 +12,7 @@ Most big companies don't decide to be multi-cloud. It happens to them. An acquis
 
 That question is a networking question, and it's worth answering properly once, because every shortcut taken here (a quick VPN, a peering here and there, "we'll fix the IPs later") turns into an outage or a migration project two years on.
 
-This is the design I'd put in front of an architecture board for joining AWS and Google Cloud at enterprise scale. Every diagram is a real `.drawio` file built with draw.io's official AWS and Google Cloud icon shapes, and you can [download them](#download-the-diagrams) and change them for your own estate.
+This is the design I'd put in front of an architecture board for joining AWS and Google Cloud at enterprise scale. Every diagram is a real `.drawio` file built with draw.io's official AWS and Google Cloud icon shapes, and you can download them from the end of this article and change them for your own estate.
 
 <figure class="diagram wide"><a href="/assets/diagrams/aws-gcp-multicloud/multicloud-reference.svg" title="Open the full-size diagram"><img src="/assets/diagrams/aws-gcp-multicloud/multicloud-reference.svg" alt="Reference architecture. On the left, AWS in eu-west-2 with four spoke VPCs (prod with EKS, non-prod with EC2, shared services with Route 53 Resolver endpoints, inspection with Network Firewall) attached to a Transit Gateway, which connects to a Direct Connect gateway and a Site-to-Site VPN. On the right, Google Cloud in europe-west2 with a routing VPC holding HA VPN, Cloud Router and Interconnect VLAN attachments, connected to an NCC hub with three Shared VPC spokes (prod with GKE, non-prod with Compute Engine, shared services with Cloud DNS) and hierarchical firewall policies. A thick green line joins the Direct Connect gateway to Cloud Router through AWS Interconnect multicloud; a dashed orange HA VPN line is the backup. A corporate data centre at the bottom connects to AWS by Direct Connect and to Google Cloud by Dedicated Interconnect." width="1500" height="900" loading="lazy"></a><figcaption>The whole picture: a hub on each side, one managed private link between them, an encrypted backup, and on-premises connected to both.</figcaption></figure>
 
@@ -132,7 +132,7 @@ A private link is not a trust boundary. Treat everything arriving from the other
 
 - **Inspect on the AWS side, filter on the Google side.** Cross-cloud routes in the Transit Gateway point at the inspection VPC, where AWS Network Firewall applies stateful rules and domain lists. On Google Cloud, Cloud NGFW firewall policies, with secure tags instead of IP lists where you can, decide which services accept traffic from the AWS range. Hierarchical policies at the organization level hold the rules no project owner can override.
 - **Encrypt even on private links.** AWS Interconnect - multicloud encrypts the provider link with MACsec. On colocation links, enable MACsec on Direct Connect and Dedicated Interconnect, or run HA VPN over the Interconnect. Either way, services should still speak TLS to each other.
-- **Identity beats IP.** Firewalls know addresses. Use mTLS between services, and use [workload identity federation](/blog/workload-identity-federation-ci/) when a workload in one cloud needs to call the other cloud's APIs, instead of copying long-lived keys around.
+- **Identity beats IP.** Firewalls know addresses. Use mTLS between services, and use workload identity federation when a workload in one cloud needs to call the other cloud's APIs, instead of copying long-lived keys around.
 - **Stop shadow connectivity.** If any team can create its own VPN or peering, the hub stops being the only door. Use an AWS service control policy to deny `ec2:CreateVpnConnection` and `ec2:CreateVpcPeeringConnection` outside the network account, and Google Cloud organization policies such as `compute.restrictVpnPeerIPs` and `compute.restrictVpcPeering`. Explicit deny is your friend here. I've written about [how it works across clouds](/blog/cloud-iam-explicit-deny/).
 - **One timeline for both clouds.** VPC Flow Logs, Network Firewall logs and Cloud NGFW logs belong in the same SIEM, with the same field names. When something crosses the boundary at 3 a.m., you don't want to correlate two consoles by hand.
 
