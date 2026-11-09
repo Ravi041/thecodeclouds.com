@@ -104,6 +104,8 @@
 }
 .prose figure.diagram { margin: 2em auto; max-width: 560px; }
 .prose figure.diagram img { display: block; width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); }
+.prose figure.diagram.wide { max-width: none; }
+.prose figure.diagram.wide a { display: block; }
 .prose figure.diagram figcaption { font-size: 13px; line-height: 1.6; color: var(--muted); margin-top: 10px; text-align: center; }
 .sponsor-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 1.5em 0; }
 .sponsor-card { border: 1px solid var(--line); border-radius: 8px; padding: 20px; background: var(--white); }
