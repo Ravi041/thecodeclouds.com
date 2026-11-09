@@ -7,7 +7,7 @@ coverLabel: "Filter. Score. Bind."
 coverCode: "0/4 nodes are available"
 coverLogos: "kubernetes"
 coverImage: /assets/images/covers/kubernetes-scheduler-filter-score-bind.jpg
-coverImageAlt: "Kubernetes cover reading 'Filter. Score. Bind.', beside a frame of the article's animated diagram."
+coverImageAlt: "Kubernetes cover reading 'Filter. Score. Bind.', with the Kubernetes logo."
 ---
 A pod that's `Pending` is a pod without a node. Nothing is broken yet. The scheduler simply hasn't found anywhere it's allowed to put it.
 

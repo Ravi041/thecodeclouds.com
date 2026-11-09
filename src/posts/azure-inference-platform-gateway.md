@@ -8,7 +8,7 @@ coverCode: "$ az cognitiveservices usage list"
 coverMotif: network
 coverLogos: "microsoft-azure, nvidia"
 coverImage: /assets/images/covers/azure-inference-platform-gateway.jpg
-coverImageAlt: "Cloud & DevOps cover reading 'Tokens are the new quota.', with a simple line illustration."
+coverImageAlt: "Cloud & DevOps cover reading 'Tokens are the new quota.', with the Microsoft Azure and NVIDIA logos."
 ---
 A team’s first model call on Azure is usually direct: one app, one endpoint and an API key in a configuration file. That works for a single app. By the fifth, nobody knows which team spent the month’s budget, one busy service can consume the whole deployment’s quota, and rotating the key means coordinating five releases.
 

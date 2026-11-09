@@ -7,7 +7,7 @@ coverLabel: "Plan. Build.\nLet it check."
 coverCode: "$ claude"
 coverLogos: "claude-icon"
 coverImage: /assets/images/covers/claude-code-efficient-workflow.jpg
-coverImageAlt: "AI Engineering cover reading 'Plan. Build. Let it check.', with a terminal window illustration."
+coverImageAlt: "AI Engineering cover reading 'Plan. Build. Let it check.', with the Claude logo."
 ---
 The first week with Claude Code usually goes the same way. You ask for a feature, it edits eight files, and you spend twenty minutes working out which of those changes you actually wanted. Then the session gets long, answers get vaguer, and you start wondering whether the tool got worse.
 

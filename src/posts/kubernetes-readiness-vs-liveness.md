@@ -7,7 +7,7 @@ coverLabel: "Ready is not alive."
 coverCode: "readinessProbe ≠ livenessProbe"
 coverLogos: "kubernetes"
 coverImage: /assets/images/covers/kubernetes-readiness-vs-liveness.jpg
-coverImageAlt: "Kubernetes cover reading 'Ready is not alive.', beside a frame of the article's animated diagram."
+coverImageAlt: "Kubernetes cover reading 'Ready is not alive.', with the Kubernetes logo."
 ---
 In YAML, a readiness probe and a liveness probe are almost the same block. Same `httpGet`, same `periodSeconds`, same `failureThreshold`. Copy one, rename it, done.
 

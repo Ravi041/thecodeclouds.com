@@ -7,7 +7,7 @@ coverLabel: "Seven checkpoints\nto one pod."
 coverCode: "IGW → NACL → SG → ALB → pod"
 coverLogos: "aws, kubernetes"
 coverImage: /assets/images/covers/aws-eks-request-path.jpg
-coverImageAlt: "Cloud Networking cover reading 'Seven checkpoints to one pod.', beside a frame of the article's animated diagram."
+coverImageAlt: "Cloud Networking cover reading 'Seven checkpoints to one pod.', with the AWS and Kubernetes logos."
 ---
 "The pod is running but I can't reach it" is one of those problems where everything looks fine on its own. The pod is healthy, the Service exists, the load balancer is green. Somewhere between the internet and the container, one of half a dozen layers is quietly dropping the packet.
 
