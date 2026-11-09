@@ -1,7 +1,7 @@
 ---
 title: "Connecting AWS and Google Cloud for a large enterprise: the network design that holds up"
 description: "A reference architecture for joining AWS and Google Cloud privately: IP planning, the three interconnect options, hub-and-spoke on both sides, hybrid DNS and security, with editable draw.io diagrams."
-date: 2026-11-15T04:00:00Z
+date: 2026-11-09T04:30:00Z
 category: Cloud Networking
 coverLabel: "Two clouds.\nOne network."
 coverCode: "TGW ⇄ Interconnect ⇄ NCC"
