@@ -5,6 +5,7 @@ date: 2026-11-14T04:00:00Z
 category: Kubernetes
 coverLabel: "Flat by default.\nDeny by design."
 coverCode: "policyTypes: [Ingress]"
+coverLogos: "kubernetes"
 coverImage: /assets/images/covers/kubernetes-network-policies-default-deny.jpg
 coverImageAlt: "Kubernetes cover reading 'Flat by default. Deny by design.', beside a frame of the article's animated diagram."
 ---

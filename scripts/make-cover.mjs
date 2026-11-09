@@ -1,15 +1,20 @@
-// Render a 1200x675 cover image for an article from its front matter.
-// Usage: node scripts/make-cover.mjs <slug> [<slug> ...]
-// Writes src/assets/images/covers/<slug>.jpg. Posts that embed an animated
-// diagram show a frame of it; other posts get a topic illustration, or the
-// one named by an optional `coverMotif` front matter key (e.g. gpu, queue).
+// Render the cover images for an article from its front matter.
+// Usage: node scripts/make-cover.mjs <slug> [<slug> ...]   (or --all)
+// Writes src/assets/images/covers/<slug>.jpg (1200x675: article header, cards,
+// social previews) and <slug>-feature.jpg (960x720: the homepage feature panel,
+// which already shows the title, so it carries the artwork only).
+// Artwork, in order of preference:
+//   coverLogos: "aws, google-cloud"  product logos from scripts/cover-logos.json
+//   an animated diagram embedded in the post (a frame of it)
+//   coverMotif: gpu | queue | ...    or the topic's default illustration
 import { chromium } from 'playwright';
-import { readFile, mkdir } from 'node:fs/promises';
+import { readFile, readdir, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const outDir = path.join(root, 'src/assets/images/covers');
+const logoLib = JSON.parse(await readFile(path.join(root, 'scripts/cover-logos.json'), 'utf8'));
 
 const themes = {
   'Kubernetes': { bg: 'linear-gradient(135deg,#0f2a4a 0%,#1d4f8c 100%)', accent: '#7cc4ff', chip: '#c4e4ff', motif: 'kubernetes' },
@@ -78,49 +83,97 @@ function frontMatter(text) {
   return data;
 }
 
-async function page(slug) {
+function logo(key, size) {
+  const l = logoLib[key];
+  if (!l) throw new Error(`Unknown cover logo "${key}". Add it to scripts/cover-logos.json`);
+  return `<svg viewBox="0 0 ${l.width} ${l.height}" width="${size}" height="${size}" preserveAspectRatio="xMidYMid meet">${l.body}</svg>`;
+}
+
+// Logo tiles joined by glowing links: one, two or three logos.
+function logoStage(keys, accent, W, H) {
+  const tile = { 1: 250, 2: 178, 3: 150 }[keys.length];
+  if (!tile) throw new Error('coverLogos takes one to three logos');
+  const pos = { 1: [[W / 2, H / 2]], 2: [[W * 0.2, H * 0.5], [W * 0.8, H * 0.5]],
+    3: [[W / 2, H * 0.24], [W * 0.18, H * 0.76], [W * 0.82, H * 0.76]] }[keys.length];
+  const pairs = keys.length === 2 ? [[0, 1]] : keys.length === 3 ? [[0, 1], [1, 2], [2, 0]] : [];
+  const links = pairs.map(([a, b]) => {
+    const [x1, y1] = pos[a], [x2, y2] = pos[b];
+    const dots = [0.36, 0.5, 0.64].map((t, n) => `<circle cx="${x1 + (x2 - x1) * t}" cy="${y1 + (y2 - y1) * t}" r="${n === 1 ? 9 : 6}" fill="${accent}"/>`).join('');
+    return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${accent}" stroke-width="14" opacity=".18" stroke-linecap="round"/>
+      <line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${accent}" stroke-width="3" stroke-dasharray="10 9" stroke-linecap="round"/>${dots}`;
+  }).join('');
+  const rings = keys.length === 1 ? [1.25, 1.55, 1.85].map((k, n) => `<circle cx="${W / 2}" cy="${H / 2}" r="${tile / 2 * k}" fill="none" stroke="${accent}" stroke-width="2" opacity="${0.5 - n * 0.14}"/>`).join('') : '';
+  const tiles = keys.map((k, n) => `<div class="tile" style="left:${pos[n][0] - tile / 2}px;top:${pos[n][1] - tile / 2}px;width:${tile}px;height:${tile}px">${logo(k, Math.round(tile * 0.62))}</div>`).join('');
+  return `<div class="stage" style="width:${W}px;height:${H}px"><svg class="links" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">${rings}${links}</svg>${tiles}</div>`;
+}
+
+async function page(slug, variant) {
   const text = await readFile(path.join(root, 'src/posts', slug + '.md'), 'utf8');
   const data = frontMatter(text);
   const theme = themes[data.category];
   if (!theme) throw new Error(`No cover theme for category ${data.category}`);
-  const diagram = text.match(/src="\/assets\/diagrams\/([\w-]+\.gif)"/)?.[1];
+  const logos = (data.coverLogos || '').split(',').map(s => s.trim()).filter(Boolean);
+  const diagram = logos.length ? null : text.match(/src="\/assets\/diagrams\/([\w-]+\.gif)"/)?.[1];
   const label = esc(data.coverLabel || data.title).replace(/\n/g, '<br>');
-  const art = diagram
-    ? `<div class="frame"><img src="data:image/gif;base64,${(await readFile(path.join(root, 'src/assets/diagrams', diagram))).toString('base64')}"></div>`
-    : `<div class="motif">${(motifs[data.coverMotif] || motifs[theme.motif])(theme.accent)}</div>`;
-  return { data, diagram, html: `<!doctype html><html><head><meta charset="utf-8"><style>
+  const feature = variant === 'feature';
+  const [W, H] = feature ? [960, 720] : [1200, 675];
+  let art;
+  if (logos.length) art = feature ? `<div class="art-center">${logoStage(logos, theme.accent, 640, 430)}</div>` : `<div class="art-right">${logoStage(logos, theme.accent, 480, 470)}</div>`;
+  else if (diagram) art = `<div class="frame${feature ? ' center' : ''}"><img src="data:image/gif;base64,${(await readFile(path.join(root, 'src/assets/diagrams', diagram))).toString('base64')}"></div>`;
+  else art = `<div class="motif${feature ? ' center' : ''}">${(motifs[data.coverMotif] || motifs[theme.motif])(theme.accent)}</div>`;
+  const kicker = `<span class="kicker">${esc(data.category)}</span>`;
+  const code = data.coverCode ? `<div class="code">${esc(data.coverCode)}</div>` : '';
+  const brand = `<p class="brand">{c} the code clouds<b>.</b></p>`;
+  const copy = feature
+    ? `<div class="top">${kicker}</div><div class="bottom">${code}${brand}</div>`
+    : `<div class="copy">${kicker}<h1>${label}</h1><div>${code}<div style="margin-top:26px">${brand}</div></div></div>`;
+  return { data, diagram, W, H, html: `<!doctype html><html><head><meta charset="utf-8"><style>
     *{box-sizing:border-box;margin:0}
-    body{width:1200px;height:675px;overflow:hidden;background:${theme.bg};color:#f4f8fa;font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;position:relative}
+    body{width:${W}px;height:${H}px;overflow:hidden;background:${theme.bg};color:#f4f8fa;font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;position:relative}
     body:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,#ffffff1f,transparent 45%),repeating-linear-gradient(0deg,#ffffff08 0 1px,transparent 1px 40px),repeating-linear-gradient(90deg,#ffffff08 0 1px,transparent 1px 40px)}
-    .copy{position:absolute;left:72px;top:64px;bottom:64px;width:${diagram ? 600 : 640}px;display:flex;flex-direction:column;justify-content:space-between}
+    .copy{position:absolute;left:72px;top:64px;bottom:64px;width:${diagram || logos.length ? 600 : 640}px;display:flex;flex-direction:column;justify-content:space-between;z-index:2}
     .kicker{display:inline-flex;align-self:flex-start;gap:10px;align-items:center;font:600 18px/1 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:#0b1a24;background:${theme.chip};padding:10px 16px;border-radius:30px}
     h1{font:500 66px/1.08 Georgia,"Times New Roman",serif;letter-spacing:-1.5px;color:#fff}
-    .code{font:500 22px/1.4 ui-monospace,Menlo,monospace;color:${theme.accent};background:#0000004d;border:1px solid #ffffff26;padding:14px 18px;border-radius:10px;align-self:flex-start;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .code{font:500 22px/1.4 ui-monospace,Menlo,monospace;color:${theme.accent};background:#0000004d;border:1px solid #ffffff26;padding:14px 18px;border-radius:10px;align-self:flex-start;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .brand{font:600 20px/1 ui-monospace,Menlo,monospace;color:#ffffffcc}.brand b{color:${theme.accent}}
+    .top{position:absolute;left:56px;top:48px;z-index:2}
+    .bottom{position:absolute;left:56px;right:56px;bottom:44px;display:flex;justify-content:space-between;align-items:center;gap:24px;z-index:2}
     .motif{position:absolute;right:70px;top:137px;opacity:.95}
+    .motif.center{right:auto;left:${(W - 400) / 2}px;top:${(H - 400) / 2 - 10}px}
     .frame{position:absolute;right:64px;top:48px;width:420px;height:579px;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 30px 60px #0007,0 0 0 1px #ffffff40;transform:rotate(2deg)}
+    .frame.center{right:auto;left:${(W - 380) / 2}px;top:120px;width:380px;height:470px;transform:rotate(-2deg)}
     .frame img{width:100%;display:block}
-  </style></head><body>
-    <div class="copy"><span class="kicker">${esc(data.category)}</span><h1>${label}</h1><div>${data.coverCode ? `<div class="code">${esc(data.coverCode)}</div>` : ''}<p class="brand" style="margin-top:26px">{c} the code clouds<b>.</b></p></div></div>
-    ${art}
-  </body></html>` };
+    .art-right{position:absolute;right:56px;top:${(H - 470) / 2}px}
+    .art-center{position:absolute;left:${(W - 640) / 2}px;top:${(H - 430) / 2 - 6}px}
+    .stage{position:relative}.links{position:absolute;inset:0}
+    .tile{position:absolute;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:30px;box-shadow:0 24px 50px #00000059,0 0 0 8px #ffffff1f}
+  </style></head><body>${copy}${art}</body></html>` };
 }
 
-const slugs = process.argv.slice(2);
+let slugs = process.argv.slice(2);
+if (slugs[0] === '--all') {
+  slugs = [];
+  for (const f of (await readdir(path.join(root, 'src/posts'))).filter(f => f.endsWith('.md'))) {
+    const fm = frontMatter(await readFile(path.join(root, 'src/posts', f), 'utf8'));
+    if ((fm.coverImage || '').startsWith('/assets/images/covers/')) slugs.push(f.slice(0, -3));
+  }
+}
 if (!slugs.length) { console.error('Usage: node scripts/make-cover.mjs <slug> [...]'); process.exit(1); }
 await mkdir(outDir, { recursive: true });
 const browser = await chromium.launch();
 try {
   for (const slug of slugs) {
-    const { html, diagram } = await page(slug);
-    const tab = await browser.newPage({ viewport: { width: 1200, height: 675 } });
-    await tab.setContent(html, { waitUntil: 'load' });
-    // Let an animated diagram reach its busiest middle frames before capturing.
-    if (diagram) await tab.waitForTimeout(9000);
-    const file = path.join(outDir, slug + '.jpg');
-    await tab.screenshot({ path: file, type: 'jpeg', quality: 82 });
-    await tab.close();
-    console.log('wrote', path.relative(root, file));
+    for (const variant of ['cover', 'feature']) {
+      const { html, diagram, W, H } = await page(slug, variant);
+      const tab = await browser.newPage({ viewport: { width: W, height: H } });
+      await tab.setContent(html, { waitUntil: 'load' });
+      // Let an animated diagram reach its busiest middle frames before capturing.
+      if (diagram) await tab.waitForTimeout(9000);
+      const file = path.join(outDir, slug + (variant === 'feature' ? '-feature' : '') + '.jpg');
+      await tab.screenshot({ path: file, type: 'jpeg', quality: 82 });
+      await tab.close();
+      console.log('wrote', path.relative(root, file));
+    }
   }
 } finally {
   await browser.close();

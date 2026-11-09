@@ -6,6 +6,7 @@ category: AI Engineering
 coverLabel: "Pick the model\nfor the job."
 coverCode: "score / $ / task"
 coverMotif: bars
+coverLogos: "claude-icon, openai-icon, google-gemini"
 coverImage: /assets/images/covers/ai-models-november-2026.jpg
 coverImageAlt: "AI Engineering cover reading 'Pick the model for the job.', with a simple bar chart illustration."
 ---

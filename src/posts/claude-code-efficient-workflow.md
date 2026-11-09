@@ -5,6 +5,7 @@ date: 2026-11-07T10:00:00Z
 category: AI Engineering
 coverLabel: "Plan. Build.\nLet it check."
 coverCode: "$ claude"
+coverLogos: "claude-icon"
 coverImage: /assets/images/covers/claude-code-efficient-workflow.jpg
 coverImageAlt: "AI Engineering cover reading 'Plan. Build. Let it check.', with a terminal window illustration."
 ---

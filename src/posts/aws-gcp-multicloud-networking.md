@@ -3,10 +3,11 @@ title: "Connecting AWS and Google Cloud for a large enterprise: the network desi
 description: "A reference architecture for joining AWS and Google Cloud privately: IP planning, the three interconnect options, hub-and-spoke on both sides, hybrid DNS and security, with editable draw.io diagrams."
 date: 2026-11-09T04:30:00Z
 category: Cloud Networking
-coverLabel: "Two clouds.\nOne network."
-coverCode: "TGW ⇄ Interconnect ⇄ NCC"
+coverLabel: "Cross-cloud\nnetworking,\ndone right."
+coverCode: "AWS ⇄ Google Cloud · private"
+coverLogos: "aws, google-cloud"
 coverImage: /assets/images/covers/aws-gcp-multicloud-networking.jpg
-coverImageAlt: "Cloud Networking cover reading 'Two clouds. One network.', with a network illustration."
+coverImageAlt: "Cloud Networking cover reading 'Cross-cloud networking, done right.', with the AWS and Google Cloud logos joined by a private link."
 ---
 Most big companies don't decide to be multi-cloud. It happens to them. An acquisition arrives on Google Cloud, the data team falls in love with BigQuery, the platform team has five years of AWS behind it, and one day someone asks why the GKE service can't call the API running on EKS.
 

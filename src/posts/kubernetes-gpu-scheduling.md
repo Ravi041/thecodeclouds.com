@@ -6,6 +6,7 @@ category: Kubernetes
 coverLabel: "Whole GPUs, or a claim."
 coverCode: "$ kubectl get resourceslices"
 coverMotif: gpu
+coverLogos: "kubernetes, nvidia"
 coverImage: /assets/images/covers/kubernetes-gpu-scheduling.jpg
 coverImageAlt: "Kubernetes cover reading 'Whole GPUs, or a claim.', with a simple line illustration."
 ---

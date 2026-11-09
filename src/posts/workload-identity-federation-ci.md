@@ -5,6 +5,7 @@ date: 2026-11-13T04:00:00Z
 category: Cloud Security
 coverLabel: "No key.\nJust a trade."
 coverCode: "permissions: id-token: write"
+coverLogos: "github-icon, aws, google-cloud"
 coverImage: /assets/images/covers/workload-identity-federation-ci.jpg
 coverImageAlt: "Cloud Security cover reading 'No key. Just a trade.', beside a frame of the article's animated diagram."
 ---

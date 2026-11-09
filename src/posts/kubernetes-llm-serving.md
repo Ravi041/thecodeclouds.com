@@ -6,6 +6,7 @@ category: Kubernetes
 coverLabel: "Scale on the queue."
 coverCode: "vllm:num_requests_waiting"
 coverMotif: queue
+coverLogos: "kubernetes, nvidia"
 coverImage: /assets/images/covers/kubernetes-llm-serving.jpg
 coverImageAlt: "Kubernetes cover reading 'Scale on the queue.', with a simple line illustration."
 ---

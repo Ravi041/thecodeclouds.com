@@ -35,3 +35,7 @@ Lighting/mood: gentle late-afternoon window daylight, warm amber and coral highl
 Materials/textures: tactile notebook paper, softly worn wooden tabletop and brushed metal laptop.
 Constraints: illustrative scene, no people or hands, no logos, no watermarks, no legible text anywhere including laptop keyboard and screen, no invented readable code, no book titles, no added labels or typography.
 ```
+
+## Product logos on generated covers
+
+Covers made by `scripts/make-cover.mjs` can show product logos named in a post's `coverLogos` front matter. The logo artwork in `scripts/cover-logos.json` is copied unchanged from the [SVG Logos collection by Gil Barbara](https://github.com/gilbarbara/logos) (CC0-1.0, via the `@iconify-json/logos` package). The logos are trademarks of their owners and are used only to show which products an article covers. They don't imply endorsement or sponsorship.

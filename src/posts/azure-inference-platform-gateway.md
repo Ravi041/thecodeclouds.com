@@ -6,6 +6,7 @@ category: Cloud & DevOps
 coverLabel: "Tokens are the new quota."
 coverCode: "$ az cognitiveservices usage list"
 coverMotif: network
+coverLogos: "microsoft-azure, nvidia"
 coverImage: /assets/images/covers/azure-inference-platform-gateway.jpg
 coverImageAlt: "Cloud & DevOps cover reading 'Tokens are the new quota.', with a simple line illustration."
 ---

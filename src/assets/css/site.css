@@ -118,7 +118,7 @@
   .visual-bottom > span:last-child { font-size: 22px; font-family: var(--sans); }
   .article-visual.has-image { padding: 0; overflow: hidden; }
   .article-visual img { display: block; width: 100%; height: 180px; object-fit: cover; }
-  .post-cover { display: block; width: 100%; height: auto; max-height: 550px; object-fit: cover; border-radius: 8px; margin-bottom: 30px; }
+  .post-cover { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 8px; margin-bottom: 30px; }
   .card-meta { display: flex; justify-content: space-between; margin: 17px 0 9px; font-size: 10px; color: var(--muted); }
   .card-meta a { color: var(--green); font-weight: 600; }
   .article-card h3 { font: 500 23px/1.25 var(--serif); letter-spacing: -.025em; }

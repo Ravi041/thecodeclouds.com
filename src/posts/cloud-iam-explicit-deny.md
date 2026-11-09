@@ -5,6 +5,7 @@ date: 2026-11-08T04:00:00Z
 category: Cloud Security
 coverLabel: "Deny wins.\nThen allow.\nElse no."
 coverCode: "$ aws iam simulate-principal-policy"
+coverLogos: "aws, google-cloud, microsoft-azure"
 coverImage: /assets/images/covers/cloud-iam-explicit-deny.jpg
 coverImageAlt: "Cloud Security cover reading 'Deny wins. Then allow. Else no.', beside a frame of the article's animated diagram."
 ---

@@ -5,6 +5,7 @@ date: 2026-11-10T04:00:00Z
 category: Cloud Networking
 coverLabel: "Seven checkpoints\nto one pod."
 coverCode: "IGW → NACL → SG → ALB → pod"
+coverLogos: "aws, kubernetes"
 coverImage: /assets/images/covers/aws-eks-request-path.jpg
 coverImageAlt: "Cloud Networking cover reading 'Seven checkpoints to one pod.', beside a frame of the article's animated diagram."
 ---

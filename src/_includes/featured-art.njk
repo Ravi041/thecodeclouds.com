@@ -1,5 +1,6 @@
 {% if featured.data.coverImage %}
-<div class="featured-image"><img src="{{ featured.data.coverImage }}" alt="{{ featured.data.coverImageAlt }}" width="1200" height="675" fetchpriority="high"></div>
+{% if '/assets/images/covers/' in featured.data.coverImage %}<div class="featured-image"><img src="{{ featured.data.coverImage | replace('.jpg', '-feature.jpg') }}" alt="{{ featured.data.coverImageAlt }}" width="960" height="720" fetchpriority="high"></div>
+{% else %}<div class="featured-image"><img src="{{ featured.data.coverImage }}" alt="{{ featured.data.coverImageAlt }}" width="1200" height="675" fetchpriority="high"></div>{% endif %}
 {% else %}
 <div class="feature-terminal">
   <div class="terminal-top"><span class="terminal-dots" aria-hidden="true">● ● ●</span><span>field-notes / {{ featured.data.category | topicSlug }}</span><span aria-hidden="true">↗</span></div>
