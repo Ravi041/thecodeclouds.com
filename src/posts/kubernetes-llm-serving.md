@@ -6,8 +6,9 @@ category: Kubernetes
 coverLabel: "Scale on the queue."
 coverCode: "vllm:num_requests_waiting"
 coverMotif: queue
+coverLogos: "kubernetes, nvidia"
 coverImage: /assets/images/covers/kubernetes-llm-serving.jpg
-coverImageAlt: "Kubernetes cover reading 'Scale on the queue.', with a simple line illustration."
+coverImageAlt: "Kubernetes cover reading 'Scale on the queue.', with the Kubernetes and NVIDIA logos."
 ---
 Deploy a model server with the settings you use for a web service and three things go wrong in the first hour. The pod is killed while it is still loading the model. Every new replica downloads the same tens of gigabytes again. And the autoscaler, watching CPU, sees nothing worth reacting to while users queue for answers.
 

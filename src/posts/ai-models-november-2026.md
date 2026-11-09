@@ -6,8 +6,9 @@ category: AI Engineering
 coverLabel: "Pick the model\nfor the job."
 coverCode: "score / $ / task"
 coverMotif: bars
+coverLogos: "claude-icon, openai-icon, google-gemini"
 coverImage: /assets/images/covers/ai-models-november-2026.jpg
-coverImageAlt: "AI Engineering cover reading 'Pick the model for the job.', with a simple bar chart illustration."
+coverImageAlt: "AI Engineering cover reading 'Pick the model for the job.', with the Claude, OpenAI and Gemini logos."
 ---
 Every few weeks someone asks me which model they should use. The honest answer is "it depends", but that's not very useful, so here's the longer version: what's actually on offer right now, what it costs, how the models compare on independent tests, and a simple way to choose.
 

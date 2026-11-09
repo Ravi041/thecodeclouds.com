@@ -6,8 +6,9 @@ category: Kubernetes
 coverLabel: "Whole GPUs, or a claim."
 coverCode: "$ kubectl get resourceslices"
 coverMotif: gpu
+coverLogos: "kubernetes, nvidia"
 coverImage: /assets/images/covers/kubernetes-gpu-scheduling.jpg
-coverImageAlt: "Kubernetes cover reading 'Whole GPUs, or a claim.', with a simple line illustration."
+coverImageAlt: "Kubernetes cover reading 'Whole GPUs, or a claim.', with the Kubernetes and NVIDIA logos."
 ---
 The first AI workload on a cluster usually starts the same way. Somebody adds `nvidia.com/gpu: 1` to a training job, applies it, and watches the pod sit in `Pending`. Then somebody else’s web service lands on the expensive GPU node and uses none of its GPUs.
 

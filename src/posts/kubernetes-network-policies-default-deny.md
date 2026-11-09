@@ -5,8 +5,9 @@ date: 2026-11-14T04:00:00Z
 category: Kubernetes
 coverLabel: "Flat by default.\nDeny by design."
 coverCode: "policyTypes: [Ingress]"
+coverLogos: "kubernetes"
 coverImage: /assets/images/covers/kubernetes-network-policies-default-deny.jpg
-coverImageAlt: "Kubernetes cover reading 'Flat by default. Deny by design.', beside a frame of the article's animated diagram."
+coverImageAlt: "Kubernetes cover reading 'Flat by default. Deny by design.', with the Kubernetes logo."
 ---
 Out of the box, a Kubernetes pod network is flat. Every pod can open a connection to every other pod, in every namespace. That includes your database, and it includes whatever compromised pod an attacker just landed in.
 

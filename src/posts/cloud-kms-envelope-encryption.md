@@ -5,8 +5,9 @@ date: 2026-11-11T04:00:00Z
 category: Cloud Security
 coverLabel: "Two keys.\nOne never leaves."
 coverCode: "$ aws kms generate-data-key"
+coverLogos: "aws, google-cloud, microsoft-azure"
 coverImage: /assets/images/covers/cloud-kms-envelope-encryption.jpg
-coverImageAlt: "Cloud Security cover reading 'Two keys. One never leaves.', beside a frame of the article's animated diagram."
+coverImageAlt: "Cloud Security cover reading 'Two keys. One never leaves.', with the AWS, Google Cloud and Microsoft Azure logos."
 ---
 Every security questionnaire asks "is data encrypted at rest?" and every cloud lets you tick yes without doing anything. Storage services encrypt by default now.
 

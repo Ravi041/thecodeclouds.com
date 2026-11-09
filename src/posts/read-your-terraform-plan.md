@@ -5,8 +5,9 @@ date: 2026-09-05T07:30:00Z
 category: Terraform
 coverLabel: "Plan before apply."
 coverCode: "$ terraform plan"
+coverLogos: "terraform-icon"
 coverImage: /assets/images/covers/read-your-terraform-plan.jpg
-coverImageAlt: "Terraform cover reading 'Plan before apply.', with a simple line illustration."
+coverImageAlt: "Terraform cover reading 'Plan before apply.', with the Terraform logo."
 ---
 A successful pipeline tells you that a command finished. It does not tell you that the proposed infrastructure change is the one you intended.
 
