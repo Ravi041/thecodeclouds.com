@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 350" width="560" height="350" font-family="system-ui,-apple-system,Segoe UI,sans-serif" role="img" aria-labelledby="t d"><title id="t">Two readers, one SQL string</title><desc id="d">The text SELECT $é$'$é$; DELETE FROM orders -- ' shown twice. The v0.1.0 scanner treated everything after the first quote as a string and skipped it. PostgreSQL read $é$'$é$ as a string, then ran DELETE FROM orders.</desc>
+<rect width="560" height="350" rx="14" fill="#fbf8fe"/>
+<text x="30" y="40" font-size="20" font-weight="700" fill="#2a1840">One SQL string, two readers</text>
+<text x="30" y="62" font-size="13" fill="#6b5a7a">The guard and the database disagreed about where a string ended.</text>
+<text x="30" y="86" font-size="16" font-weight="700" fill="#2a1840">What the v0.1.0 scanner saw</text>
+<rect x="58" y="100" width="114" height="34" rx="6" fill="#f1ecf7" stroke="#cdbfe0" stroke-width="1.5"/>
+<rect x="168" y="100" width="323" height="34" rx="6" fill="#e6d9f7" stroke="#7b4bb7" stroke-width="1.5"/>
+<text x="60" y="123" font-size="18" font-family="ui-monospace,Menlo,Consolas,monospace" fill="#2a1840" textLength="429" lengthAdjust="spacing" xml:space="preserve">SELECT $é$'$é$; DELETE FROM orders -- '</text>
+<text x="60" y="160" font-size="13" fill="#6b5a7a">a read</text>
+<text x="170" y="160" font-size="13" fill="#7b4bb7">“a string”, so the pack skips it, including the DELETE</text>
+<text x="30" y="216" font-size="16" font-weight="700" fill="#2a1840">What PostgreSQL ran</text>
+<rect x="58" y="230" width="81" height="34" rx="6" fill="#f1ecf7" stroke="#cdbfe0" stroke-width="1.5"/>
+<rect x="135" y="230" width="81" height="34" rx="6" fill="#e1f6e8" stroke="#2e9e5b" stroke-width="1.5"/>
+<rect x="212" y="230" width="15" height="34" rx="6" fill="#f1ecf7" stroke="#cdbfe0" stroke-width="1.5"/>
+<rect x="234" y="230" width="202" height="34" rx="6" fill="#ffe1e1" stroke="#d64545" stroke-width="1.5"/>
+<rect x="432" y="230" width="59" height="34" rx="6" fill="#f1ecf7" stroke="#cdbfe0" stroke-width="1.5"/>
+<text x="60" y="253" font-size="18" font-family="ui-monospace,Menlo,Consolas,monospace" fill="#2a1840" textLength="429" lengthAdjust="spacing" xml:space="preserve">SELECT $é$'$é$; DELETE FROM orders -- '</text>
+<text x="60" y="290" font-size="13" fill="#6b5a7a">SELECT</text>
+<text x="137" y="290" font-size="13" fill="#2e9e5b">a string</text>
+<text x="236" y="290" font-size="13" fill="#d64545">DELETE runs</text>
+<text x="30" y="332" font-size="13" fill="#6b5a7a">The fix: refuse any text the scanner cannot read with confidence.</text>
+</svg>
