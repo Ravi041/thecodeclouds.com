@@ -1,7 +1,7 @@
 ---
 title: "Google Cloud interview questions: 12 production scenarios and how to answer them"
 description: "Scenario-based Google Cloud interview questions for DevOps, SRE and platform roles: Cloud NAT port exhaustion, a leaked service account key, a BigQuery bill spike, 502s on the load balancer and more. For each one, what the interviewer is testing and what a strong answer sounds like."
-date: 2026-11-16T04:00:00Z
+date: 2026-11-12T08:00:00Z
 category: DevOps Interview Questions
 coverLabel: "Production broke.\nWhat do you\ndo first?"
 coverCode: "Google Cloud · 12 real scenarios"
