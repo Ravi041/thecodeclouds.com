@@ -22,6 +22,7 @@ const themes = {
   'Cloud Networking': { bg: 'linear-gradient(135deg,#0b3530 0%,#127566 100%)', accent: '#83dfcc', chip: '#c9f0e6', motif: 'network' },
   'Cloud & DevOps': { bg: 'linear-gradient(135deg,#3a2306 0%,#9a5a12 100%)', accent: '#ffd28a', chip: '#ffe0a1', motif: 'pipeline' },
   'AI Engineering': { bg: 'linear-gradient(135deg,#1e0b33 0%,#6b2a8f 100%)', accent: '#f5b8ff', chip: '#f6dcff', motif: 'terminal' },
+  'DevOps Interview Questions': { bg: 'linear-gradient(135deg,#0c1f3f 0%,#2456a6 100%)', accent: '#9cc8ff', chip: '#d6e6ff', motif: 'terminal' },
   'Terraform': { bg: 'linear-gradient(135deg,#2a1552 0%,#5b33a8 100%)', accent: '#cdb6ff', chip: '#e9e0ff', motif: 'plan' },
   'Career & Learning': { bg: 'linear-gradient(135deg,#4a1e12 0%,#a24a30 100%)', accent: '#ffd4c5', chip: '#ffe6dc', motif: 'path' }
 };

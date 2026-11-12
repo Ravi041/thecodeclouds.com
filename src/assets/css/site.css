@@ -111,6 +111,7 @@
   .visual-kubernetes { background: #e2e9ee; border-color: #cbd8e1; color: #31495f; }
   .visual-terraform { background: #e9e5f1; border-color: #d8cfe8; color: #53416e; }
   .visual-cloud-devops { background: #e3ece4; border-color: #c9dacd; color: #355b47; }
+  .visual-devops-interview-questions { background: #e2e8f4; border-color: #c9d3e8; color: #2e4470; }
   .visual-career-learning { background: #f1e8da; border-color: #e3d5c2; color: #75502e; }
   .visual-kicker { font-size: 8px; letter-spacing: .08em; }
   .visual-title { font: 500 29px/1.2 var(--sans); letter-spacing: -.045em; max-width: 260px; margin: 17px 0; white-space: pre-line; }

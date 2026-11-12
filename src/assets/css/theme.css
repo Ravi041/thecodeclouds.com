@@ -46,6 +46,8 @@
 .visual-cloud-security { background: linear-gradient(135deg, #1f3b57, #12263a); color: #e6f3ff; border-color: #2c4d6d; }
 .visual-cloud-networking { background: #c9f0e6; color: #12463b; border-color: #a5dccd; }
 .visual-ai-engineering { background: linear-gradient(135deg, #f3e8ff, #ffd9ec); color: #4a1d5e; border-color: #e6c9f5; }
+.visual-devops-interview-questions { background: linear-gradient(135deg, #dff5ff, #d6e4ff); color: #14305e; border-color: #b9cdf2; }
+.visual-devops-interview-questions:hover { color: #14305e; }
 .visual-ai-engineering:hover { color: #4a1d5e; }
 .visual-cloud-security:hover { color: #e6f3ff; }
 .visual-cloud-networking:hover { color: #12463b; }
