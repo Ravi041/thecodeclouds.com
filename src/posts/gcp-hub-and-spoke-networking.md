@@ -1,7 +1,7 @@
 ---
 title: "Google Cloud hub-and-spoke networking: designing it right, and the problems you'll hit"
 description: "How to design a hub-and-spoke network on Google Cloud with Network Connectivity Center: topology, IP plan, 99.99% hybrid connectivity, DNS, security, and the twelve issues that catch teams out. Editable draw.io HLD and LLDs included."
-date: 2026-11-15T04:00:00Z
+date: 2026-11-12T04:30:00Z
 category: Cloud Networking
 coverLabel: "Hub and spoke\non Google Cloud,\nwithout the pain."
 coverCode: "NCC · star topology · 99.99%"
