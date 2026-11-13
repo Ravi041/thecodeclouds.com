@@ -1,7 +1,7 @@
 ---
 title: "The AI platform engineer on Google Cloud: what the job is, and the platform you build"
 description: "What an AI platform engineer actually owns on Google Cloud in 2026: the front door, managed and self-hosted serving, pipelines and evals, data, guardrails, agent governance and cost. With a reference architecture you can download as draw.io."
-date: 2026-11-15T04:00:00Z
+date: 2026-11-13T10:00:00Z
 category: AI Engineering
 coverLabel: "The AI platform\nengineer on\nGoogle Cloud."
 coverCode: "gateway · serving · evals · cost"
