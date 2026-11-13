@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1010" width="1500" height="1010" role="img"><title>AI platform on Google Cloud: reference architecture</title><defs><marker id="a1A73E8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1A73E8"/></marker><marker id="a1E8E3E" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1E8E3E"/></marker><marker id="a5F6368" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5F6368"/></marker><marker id="a8430CE" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8430CE"/></marker><marker id="aD93025" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#D93025"/></marker><marker id="aE37400" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E37400"/></marker></defs><rect width="100%" height="100%" fill="#FFFFFF"/><rect x="40" y="70" width="258.5" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="48" y="86" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="310.5" y="70" width="258.5" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="318.5" y="86" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="581" y="70" width="258.5" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="589" y="86" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="851.5" y="70" width="258.5" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="859.5" y="86" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="20" y="146" width="1460" height="846" rx="6" fill="#FFFFFF" stroke="#4285F4" stroke-width="1.5"/>
+<path d="M35.62 167.85 L32.29 162.01 L35.65 156.18 L42.38 156.18 L45.73 162.02 L42.37 167.85 Z" fill="#e2e2e2"/>
+<path d="M38.98 164.94 C37.4 164.94 36.1 163.78 36.1 161.94 C36.1 160.52 37.27 159.12 39.01 159.12 C40.85 159.12 41.88 160.42 41.88 162.02 C41.88 163.88 40.41 164.94 38.98 164.94 Z" fill="#ffffff"/>
+<path d="M40.16 171.7 L34.38 171.7 C33.62 171.7 33.17 171.34 32.93 170.84 L28.3 162.76 C28 162.29 28.06 161.7 28.29 161.25 L30.08 158.15 L35.62 167.85 L42.37 167.85 Z" fill="#ffcf48"/>
+<path d="M43.82 171.7 L40.16 171.7 L45.73 162.02 L42.38 156.18 L46.81 156.18 L49.7 161.25 C49.98 161.74 50 162.23 49.72 162.77 L45.14 170.75 C44.84 171.28 44.49 171.7 43.82 171.7 Z" fill="#dc473a"/>
+<path d="M43.78 152.32 C44.33 152.32 44.78 152.63 45.03 153.12 L46.81 156.18 L35.65 156.18 L32.29 162.01 L30.08 158.15 L32.9 153.22 C33.24 152.65 33.59 152.3 34.54 152.32 Z" fill="#528ff5"/>
+<text x="54" y="162" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start">Google Cloud</text>
+<rect x="40" y="186" width="1070" height="112" rx="8" fill="#FFFFFF" stroke="#D93025"/>
+<text x="48" y="202" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="222" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="64" y="238" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="319" y="222" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="327" y="238" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="582" y="222" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="590" y="238" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M599.59 265.17 C598.51 265.17 597.47 264.59 596.93 263.51 L590.58 252.39 C590 251.42 590.09 250.29 590.57 249.48 L596.99 238.36 C597.53 237.35 598.5 236.83 599.49 236.83 L612.36 236.83 C613.32 236.83 614.27 237.3 614.84 238.25 L621.23 249.36 C622 250.53 621.73 251.78 621.3 252.47 L614.94 263.52 C614.52 264.42 613.56 265.17 612.32 265.17 Z" fill="#5184F3"/>
+<path d="M609.61 265.17 L599.8 255.42 L602.21 250.75 L604.04 250.36 L602.04 248.5 L609.87 245.59 L619.64 255.36 L614.94 263.52 C614.52 264.42 613.56 265.17 612.32 265.17 Z" fill="#000000" fill-opacity="0.07"/>
+<path d="M599.95 255.48 C599.79 255.48 599.74 255.34 599.74 255.2 L599.74 253.26 C599.74 253.04 599.85 252.94 600.06 252.94 L600.96 252.94 L600.96 250.49 C600.96 250.32 601.05 250.23 601.22 250.23 L605.42 250.23 L605.42 248.56 L602.23 248.56 C602.07 248.56 601.97 248.46 601.97 248.34 L601.97 245.77 C601.97 245.61 602.05 245.54 602.21 245.54 L609.69 245.54 C609.84 245.54 609.93 245.58 609.93 245.78 L609.93 248.25 C609.93 248.41 609.86 248.56 609.61 248.56 L606.49 248.56 L606.49 250.23 L610.64 250.23 C610.81 250.23 610.94 250.35 610.94 250.53 L610.94 252.94 L611.85 252.94 C612.09 252.94 612.16 253.03 612.16 253.23 L612.16 255.17 C612.16 255.35 612.08 255.48 611.85 255.48 L609.25 255.48 C609.07 255.48 608.9 255.43 608.9 255.21 L608.9 253.11 C608.9 253 609.01 252.94 609.13 252.94 L609.87 252.94 L609.87 251.28 L606.49 251.28 L606.49 252.94 L607.37 252.94 C607.59 252.94 607.73 253.09 607.73 253.36 L607.73 255.06 C607.73 255.35 607.67 255.48 607.28 255.48 L604.49 255.48 C604.27 255.48 604.18 255.34 604.18 255.19 L604.18 253.26 C604.18 253.07 604.25 252.94 604.47 252.94 L605.42 252.94 L605.42 251.28 L602.02 251.28 L602.02 252.94 L602.77 252.94 C602.93 252.94 603.01 253.03 603.01 253.21 L603.01 255.14 C603.01 255.38 602.9 255.48 602.67 255.48 Z" fill="#ffffff"/>
+<rect x="845" y="222" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="853" y="238" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="316" width="1070" height="196" rx="8" fill="#FFFFFF" stroke="#1A73E8"/>
+<text x="48" y="332" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="350" width="520" height="148" rx="8" fill="#F1F6FE" stroke="#AECBFA"/>
+<text x="64" y="366" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A73E8" text-anchor="start">Gemini Enterprise Agent Platform (formerly Vertex AI)</text>
+<rect x="70" y="380" width="240" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="78" y="396" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="322" y="380" width="240" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="330" y="396" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="70" y="448" width="492" height="40" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="78" y="464" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="590" y="350" width="506" height="148" rx="8" fill="#F1F6FE" stroke="#AECBFA"/>
+<text x="598" y="366" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A73E8" text-anchor="start">GKE for self-hosted models</text>
+<rect x="604" y="380" width="233" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="612" y="396" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M621.59 423.17 C620.51 423.17 619.47 422.59 618.93 421.51 L612.58 410.39 C612 409.42 612.09 408.29 612.57 407.48 L618.99 396.36 C619.53 395.35 620.5 394.83 621.49 394.83 L634.36 394.83 C635.32 394.83 636.27 395.3 636.84 396.25 L643.23 407.36 C644 408.53 643.73 409.78 643.3 410.47 L636.94 421.52 C636.52 422.42 635.56 423.17 634.32 423.17 Z" fill="#5184F3"/>
+<path d="M631.85 423.17 L621.53 412.82 L622.27 405.57 L627.99 402.54 L634.35 405.13 L641.96 412.8 L636.94 421.52 C636.52 422.42 635.56 423.17 634.32 423.17 Z" fill="#000000" fill-opacity="0.07"/>
+<path d="M627.93 415.17 L632.89 412.28 L631.02 411.16 L628.21 412.77 L628.21 409.17 L631.35 407.31 L631.35 410.52 L633.29 411.63 L633.29 405.96 L628.34 403.06 L628.34 405.3 L631.11 406.85 L627.94 408.72 L624.79 406.86 L627.56 405.28 L627.56 403.06 L622.62 405.96 L622.62 411.62 L624.52 410.48 L624.52 407.28 L627.68 409.17 L627.68 412.79 L624.92 411.17 L622.99 412.3 Z M628.35 416.36 C628.03 416.54 627.71 416.48 627.36 416.28 L621.75 412.99 C621.42 412.78 621.37 412.64 621.37 412.3 L621.37 405.64 C621.37 405.34 621.47 405.13 621.76 404.96 L627.4 401.68 C627.81 401.47 628.15 401.47 628.52 401.72 L634.2 405.02 C634.48 405.17 634.52 405.39 634.52 405.68 L634.52 412.29 C634.52 412.59 634.39 412.88 634.15 413.02 Z" fill="#ffffff"/>
+<rect x="849" y="380" width="233" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="857" y="396" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="604" y="448" width="478" height="40" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="612" y="464" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="530" width="1070" height="112" rx="8" fill="#FFFFFF" stroke="#8430CE"/>
+<text x="48" y="546" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="566" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="64" y="582" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="266" y="566" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="274" y="582" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="476" y="566" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="484" y="582" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="686" y="566" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="694" y="582" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="896" y="566" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="904" y="582" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="660" width="1070" height="112" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="48" y="676" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="696" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="64" y="712" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="319" y="696" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="327" y="712" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="582" y="696" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="590" y="712" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="845" y="696" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="853" y="712" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="790" width="1070" height="112" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="48" y="806" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="826" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="64" y="842" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M73.59 869.17 C72.51 869.17 71.47 868.59 70.93 867.51 L64.58 856.39 C64 855.42 64.09 854.29 64.57 853.48 L70.99 842.36 C71.53 841.35 72.5 840.83 73.49 840.83 L86.36 840.83 C87.32 840.83 88.27 841.3 88.84 842.25 L95.23 853.36 C96 854.53 95.73 855.78 95.3 856.47 L88.94 867.52 C88.52 868.42 87.56 869.17 86.32 869.17 Z" fill="#5184F3"/>
+<path d="M82.39 869.17 L74.05 860.86 L76.68 855.64 L74.09 853.26 L78.13 849.11 L80.63 851.49 L85.85 849.11 L94.52 857.82 L88.94 867.52 C88.52 868.42 87.56 869.17 86.32 869.17 Z" fill="#000000" fill-opacity="0.07"/>
+<path d="M81.64 857.93 L81.64 857 C81.64 856.82 81.76 856.69 81.95 856.69 L82.88 856.69 L82.88 853.3 L82 853.3 C81.75 853.3 81.64 853.15 81.64 852.96 L81.64 852.07 L78.24 852.07 L78.24 852.91 C78.24 853.2 78.12 853.3 77.83 853.3 L77.01 853.3 L77.01 856.69 L77.92 856.69 C78.09 856.69 78.24 856.78 78.24 857.01 L78.24 857.93 Z M74.26 860.94 C74.05 860.94 74 860.81 74 860.66 L74 856.97 C74 856.8 74.07 856.69 74.27 856.69 L75.71 856.69 L75.71 853.3 L74.32 853.3 C74.15 853.3 74 853.21 74 853 L74 849.36 C74 849.15 74.13 849.04 74.37 849.04 L77.93 849.04 C78.14 849.04 78.24 849.18 78.24 849.41 L78.24 850.76 L81.64 850.76 L81.64 849.31 C81.64 849.13 81.72 849.04 81.93 849.04 L85.62 849.04 C85.8 849.04 85.91 849.09 85.91 849.3 L85.91 852.96 C85.91 853.19 85.77 853.3 85.52 853.3 L84.2 853.3 L84.2 856.69 L85.51 856.69 C85.77 856.69 85.91 856.71 85.91 857.11 L85.91 860.67 C85.91 860.81 85.81 860.94 85.61 860.94 L81.95 860.94 C81.71 860.94 81.64 860.8 81.64 860.6 L81.64 859.24 L78.24 859.24 L78.24 860.56 C78.24 860.77 78.13 860.94 77.87 860.94 Z" fill="#ffffff"/>
+<rect x="319" y="826" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="327" y="842" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="582" y="826" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="590" y="842" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="845" y="826" width="251" height="58" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="853" y="842" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1130" y="186" width="330" height="360" rx="8" fill="#FFFFFF" stroke="#D93025"/>
+<text x="1138" y="202" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1146" y="222" width="300" height="62" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1154" y="238" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M1163.59 267.17 C1162.51 267.17 1161.47 266.59 1160.93 265.51 L1154.58 254.39 C1154 253.42 1154.09 252.29 1154.57 251.48 L1160.99 240.36 C1161.53 239.35 1162.5 238.83 1163.49 238.83 L1176.36 238.83 C1177.32 238.83 1178.27 239.3 1178.84 240.25 L1185.23 251.36 C1186 252.53 1185.73 253.78 1185.3 254.47 L1178.94 265.52 C1178.52 266.42 1177.56 267.17 1176.32 267.17 Z" fill="#5184F3"/>
+<path d="M1174.89 267.17 L1166.58 258.86 L1165.23 255.08 L1167.02 248.28 L1176.17 248.18 L1184.24 256.31 L1178.94 265.52 C1178.52 266.42 1177.56 267.17 1176.32 267.17 Z" fill="#000000" fill-opacity="0.07"/>
+<path d="M1169.95 252.3 C1171.15 252.3 1171.89 251.27 1171.89 250.48 C1171.89 249.28 1170.95 248.45 1169.98 248.45 C1168.96 248.45 1167.97 249.33 1167.97 250.35 C1167.97 251.55 1169.08 252.3 1169.95 252.3 Z M1169.98 259.44 C1171.67 258.81 1173.2 257.62 1173.65 256.44 L1173.65 255.48 C1173.65 254.31 1171.56 253.27 1169.96 253.27 C1168.59 253.27 1166.28 254.24 1166.28 255.44 L1166.28 256.67 C1167.14 257.91 1168.44 258.93 1169.98 259.44 Z M1169.95 260.7 C1168.41 260.33 1166.91 259.4 1165.87 258.12 C1164.59 256.66 1163.74 254.78 1163.74 252.87 L1163.74 248.2 L1169.96 245.43 L1176.17 248.18 L1176.19 252.26 C1176.19 254.39 1175.53 256.28 1174.3 257.74 C1173.36 259.06 1172.03 260.21 1169.95 260.7 Z" fill="#ffffff"/>
+<rect x="1146" y="296" width="300" height="62" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1154" y="312" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M1163.59 341.17 C1162.51 341.17 1161.47 340.59 1160.93 339.51 L1154.58 328.39 C1154 327.42 1154.09 326.29 1154.57 325.48 L1160.99 314.36 C1161.53 313.35 1162.5 312.83 1163.49 312.83 L1176.36 312.83 C1177.32 312.83 1178.27 313.3 1178.84 314.25 L1185.23 325.36 C1186 326.53 1185.73 327.78 1185.3 328.47 L1178.94 339.52 C1178.52 340.42 1177.56 341.17 1176.32 341.17 Z" fill="#5184F3"/>
+<path d="M1173.33 341.17 L1166.21 334.09 L1165.06 328.37 L1162.51 325.92 L1168.83 318.46 L1171.83 321.61 L1177.18 321.26 L1184.9 329.16 L1178.94 339.52 C1178.52 340.42 1177.56 341.17 1176.32 341.17 Z" fill="#000000" fill-opacity="0.07"/>
+<path d="M1170.94 322.75 L1170.94 318.48 L1177.18 321.26 L1177.19 325.92 L1174.15 325.92 C1173.75 324.27 1172.44 323.11 1170.94 322.75 Z M1162.51 325.92 L1162.5 321.3 L1168.83 318.46 L1168.83 322.73 C1167.04 323.28 1165.89 324.61 1165.6 325.92 Z M1169.82 329.25 C1168.58 329.25 1167.58 328.33 1167.58 326.97 C1167.58 325.78 1168.48 324.77 1169.9 324.77 C1171.43 324.77 1172.14 325.89 1172.14 327.07 C1172.14 328.24 1171.27 329.25 1169.82 329.25 Z M1170.94 335.55 L1170.94 331.24 C1172.63 330.82 1173.71 329.4 1174.12 328.1 L1176.98 328.1 C1176.46 331.49 1173.76 334.72 1170.94 335.55 Z M1168.83 335.58 C1166.45 334.81 1163.47 332.14 1162.74 328.1 L1165.57 328.1 C1166.28 330.09 1167.47 330.84 1168.83 331.24 Z" fill="#ffffff"/>
+<rect x="1146" y="370" width="300" height="62" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1154" y="386" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M1163.59 415.17 C1162.51 415.17 1161.47 414.59 1160.93 413.51 L1154.58 402.39 C1154 401.42 1154.09 400.29 1154.57 399.48 L1160.99 388.36 C1161.53 387.35 1162.5 386.83 1163.49 386.83 L1176.36 386.83 C1177.32 386.83 1178.27 387.3 1178.84 388.25 L1185.23 399.36 C1186 400.53 1185.73 401.78 1185.3 402.47 L1178.94 413.52 C1178.52 414.42 1177.56 415.17 1176.32 415.17 Z" fill="#5184F3"/>
+<path d="M1171.99 415.17 L1164.01 407.23 L1164.11 399.11 L1162.52 397.55 L1166.25 393.83 L1168.75 396.21 L1177.38 394.57 L1185.3 402.47 L1178.94 413.52 C1178.52 414.42 1177.56 415.17 1176.32 415.17 Z" fill="#000000" fill-opacity="0.07"/>
+<path d="M1177.38 397.35 L1168.22 397.35 L1168.22 394.57 L1177.38 394.57 Z M1177.38 408.2 L1168.22 408.2 L1168.22 407.23 L1164.01 407.23 L1164.01 397.55 L1162.52 397.55 L1162.52 393.83 L1166.25 393.83 L1166.25 397.55 L1164.77 397.55 L1164.77 400.97 L1168.22 400.97 L1168.22 399.98 L1177.38 399.98 L1177.38 402.73 L1168.22 402.73 L1168.22 401.75 L1164.77 401.75 L1164.77 406.41 L1168.22 406.41 L1168.22 405.42 L1177.38 405.42 Z" fill="#ffffff"/>
+<rect x="1146" y="444" width="300" height="62" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1154" y="460" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1130" y="562" width="330" height="340" rx="8" fill="#FFFFFF" stroke="#E37400"/>
+<text x="1138" y="578" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1146" y="598" width="300" height="62" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1154" y="614" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1146" y="672" width="300" height="62" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1154" y="688" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1146" y="746" width="300" height="62" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1154" y="762" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1146" y="820" width="300" height="62" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1154" y="836" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M980.75 126 L980.75 184" fill="none" stroke="#D93025" stroke-width="2" marker-end="url(#aD93025)"/>
+<path d="M710.25 126 L710.25 184" fill="none" stroke="#D93025" stroke-width="2" marker-end="url(#aD93025)"/>
+<path d="M439.75 126 L439.75 184" fill="none" stroke="#D93025" stroke-width="2" marker-end="url(#aD93025)"/>
+<path d="M169.25 126 L169.25 184" fill="none" stroke="#D93025" stroke-width="2" marker-end="url(#aD93025)"/>
+<path d="M1130 566 L1130 898" fill="none" stroke="#E37400" stroke-width="5"/>
+<path d="M1130 190 L1130 542" fill="none" stroke="#D93025" stroke-width="5"/>
+<path d="M40 794 L40 898" fill="none" stroke="#5F6368" stroke-width="5"/>
+<path d="M40 664 L40 768" fill="none" stroke="#1E8E3E" stroke-width="5"/>
+<path d="M40 534 L40 638" fill="none" stroke="#8430CE" stroke-width="5"/>
+<path d="M40 320 L40 508" fill="none" stroke="#1A73E8" stroke-width="5"/>
+<path d="M40 190 L40 294" fill="none" stroke="#D93025" stroke-width="5"/>
+<text x="20" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#232F3E" text-anchor="start">An AI platform on Google Cloud: what the platform team owns</text>
+<text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">Tenants come in through one front door. Everything below the line is shared, paved and paid for by the platform.</text>
+<text x="50" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Product teams</text>
+<text x="50" y="106" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">apps calling models over an API</text>
+<text x="320.5" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Data scientists</text>
+<text x="320.5" y="106" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">notebooks, training, evals</text>
+<text x="591" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">AI agents</text>
+<text x="591" y="106" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">ADK, LangGraph, MCP clients</text>
+<text x="861.5" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Internal users</text>
+<text x="861.5" y="106" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">Gemini Enterprise, chat, search</text>
+<text x="54" y="207" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#D93025" text-anchor="start">1  Front door: one way in for every model call and tool call</text>
+<text x="66" y="242" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Agent Gateway</text>
+<text x="66" y="258" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">per-agent policy, one control point</text>
+<text x="329" y="242" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Model Armor</text>
+<text x="329" y="258" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">prompt injection, data leakage</text>
+<text x="630" y="242" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">API gateway / load balancer</text>
+<text x="630" y="258" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">keys, quotas per tenant</text>
+<text x="855" y="242" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Agent Registry</text>
+<text x="855" y="258" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">approved tools and MCP servers</text>
+<text x="54" y="337" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A73E8" text-anchor="start">2  Serving: managed first, self-hosted when you must</text>
+<text x="80" y="400" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Model Garden</text>
+<text x="80" y="416" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">Gemini, partner, open models</text>
+<text x="332" y="400" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Endpoints</text>
+<text x="332" y="416" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">online + batch inference</text>
+<text x="80" y="468" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Agent Runtime</text>
+<text x="80" y="484" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">ADK agents, Sessions, Memory Bank</text>
+<text x="652" y="400" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">GKE Inference Gateway</text>
+<text x="652" y="416" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">model-aware routing</text>
+<text x="859" y="400" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">GPU / TPU node pools</text>
+<text x="859" y="416" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">DWS flex-start, Spot</text>
+<text x="614" y="468" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Model servers (vLLM, SGLang)</text>
+<text x="614" y="484" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">weights streamed from Cloud Storage</text>
+<text x="54" y="551" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#8430CE" text-anchor="start">3  Build and release: notebooks to registry to endpoint, the same way every time</text>
+<text x="66" y="586" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Colab Enterprise / Workbench</text>
+<text x="66" y="602" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">no public IP, CMEK</text>
+<text x="276" y="586" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Pipelines</text>
+<text x="276" y="602" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">train, evaluate, register</text>
+<text x="486" y="586" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Evals</text>
+<text x="486" y="602" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">quality gate before promote</text>
+<text x="696" y="586" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Model Registry</text>
+<text x="696" y="602" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">versions, aliases, lineage</text>
+<text x="906" y="586" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Artifact Registry + Cloud Build</text>
+<text x="906" y="602" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">images, signed, scanned</text>
+<text x="54" y="681" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1E8E3E" text-anchor="start">4  Data: governed once, used by every tenant</text>
+<text x="66" y="716" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">BigQuery</text>
+<text x="66" y="732" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">training data, billing export</text>
+<text x="329" y="716" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Cloud Storage</text>
+<text x="329" y="732" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">datasets, model weights</text>
+<text x="592" y="716" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Feature Store</text>
+<text x="592" y="732" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">served from BigQuery</text>
+<text x="855" y="716" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Vector Search / RAG Engine</text>
+<text x="855" y="732" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">grounding for agents</text>
+<text x="54" y="811" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#5F6368" text-anchor="start">5  Landing zone: the guardrails nobody has to remember</text>
+<text x="104" y="846" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Shared VPC + PSC</text>
+<text x="104" y="862" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">private access to APIs</text>
+<text x="329" y="846" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">VPC Service Controls</text>
+<text x="329" y="862" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">perimeter around AI + data</text>
+<text x="592" y="846" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">CMEK with Cloud KMS</text>
+<text x="592" y="862" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">keys per environment</text>
+<text x="855" y="846" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Org policies</text>
+<text x="855" y="862" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">allowed regions, no public IPs</text>
+<text x="1144" y="207" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#D93025" text-anchor="start">Govern</text>
+<text x="1194" y="242" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">IAM + Agent Identity</text>
+<text x="1194" y="258" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">one identity per agent</text>
+<text x="1194" y="316" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Security Command Center</text>
+<text x="1194" y="332" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">AI assets, threats</text>
+<text x="1194" y="390" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Audit logs</text>
+<text x="1194" y="406" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">Data Access on for AI APIs</text>
+<text x="1156" y="464" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Model + data approvals</text>
+<text x="1156" y="480" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">which models, which regions</text>
+<text x="1144" y="583" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#E37400" text-anchor="start">Observe and pay</text>
+<text x="1156" y="618" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Cloud Monitoring</text>
+<text x="1156" y="634" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">latency, TTFT, errors, GPU use</text>
+<text x="1156" y="692" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Traces for agents</text>
+<text x="1156" y="708" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">every model + tool call</text>
+<text x="1156" y="766" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Billing export to BigQuery</text>
+<text x="1156" y="782" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">labels: team, app, env</text>
+<text x="1156" y="840" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Budgets + quotas</text>
+<text x="1156" y="856" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">per tenant, alert at 80%</text>
+<text x="40" y="936" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start">Tenants never get a raw API key to a model or a GPU node. They get a project, a quota, a gateway route and a dashboard.</text>
+<text x="40" y="961" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#5F6368" text-anchor="start">Layout: organization › folder ai-platform › one project per environment (dev, staging, prod) and per tenant. Product names as of November 2026.</text></svg>
