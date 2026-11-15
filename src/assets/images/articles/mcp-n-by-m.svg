@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Before MCP every AI app needs a custom integration for every tool; with MCP each side implements one protocol">
+<title>Before MCP every AI app needs a custom integration for every tool; with MCP each side implements one protocol</title>
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+<marker id="at" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4f46e5"/></marker>
+</defs>
+<rect width="1200" height="630" fill="#ffffff"/>
+<g style="font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif">
+<text x="600" y="52" font-size="30" fill="#0f172a" font-weight="700" text-anchor="middle">From N × M integrations to one protocol</text>
+<text x="600" y="84" font-size="18" fill="#475569" font-weight="400" text-anchor="middle">Every AI app speaks MCP once. Every tool or data source speaks MCP once.</text>
+<rect x="30" y="110" width="540" height="490" rx="16" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="2"/>
+<text x="300" y="145" font-size="22" fill="#e11d48" font-weight="700" text-anchor="middle">Without MCP</text>
+<rect x="60" y="172" width="170" height="56" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="145" y="206" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">Chat assistant</text>
+<rect x="60" y="302" width="170" height="56" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="145" y="336" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">IDE agent</text>
+<rect x="60" y="432" width="170" height="56" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="145" y="466" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">Support bot</text>
+<rect x="370" y="154" width="170" height="52" rx="12" fill="#fff" stroke="#0d9488" stroke-width="2"/>
+<text x="455" y="186" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">GitHub</text>
+<rect x="370" y="254" width="170" height="52" rx="12" fill="#fff" stroke="#0d9488" stroke-width="2"/>
+<text x="455" y="286" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">Postgres</text>
+<rect x="370" y="354" width="170" height="52" rx="12" fill="#fff" stroke="#0d9488" stroke-width="2"/>
+<text x="455" y="386" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">Slack</text>
+<rect x="370" y="454" width="170" height="52" rx="12" fill="#fff" stroke="#0d9488" stroke-width="2"/>
+<text x="455" y="486" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">Docs / files</text>
+<line x1="230" y1="200" x2="370" y2="180" stroke="#e11d48" stroke-width="1.6"/>
+<line x1="230" y1="200" x2="370" y2="280" stroke="#e11d48" stroke-width="1.6"/>
+<line x1="230" y1="200" x2="370" y2="380" stroke="#e11d48" stroke-width="1.6"/>
+<line x1="230" y1="200" x2="370" y2="480" stroke="#e11d48" stroke-width="1.6"/>
+<line x1="230" y1="330" x2="370" y2="180" stroke="#e11d48" stroke-width="1.6"/>
+<line x1="230" y1="330" x2="370" y2="280" stroke="#e11d48" stroke-width="1.6"/>
+<line x1="230" y1="330" x2="370" y2="380" stroke="#e11d48" stroke-width="1.6"/>
+<line x1="230" y1="330" x2="370" y2="480" stroke="#e11d48" stroke-width="1.6"/>
+<line x1="230" y1="460" x2="370" y2="180" stroke="#e11d48" stroke-width="1.6"/>
+<line x1="230" y1="460" x2="370" y2="280" stroke="#e11d48" stroke-width="1.6"/>
+<line x1="230" y1="460" x2="370" y2="380" stroke="#e11d48" stroke-width="1.6"/>
+<line x1="230" y1="460" x2="370" y2="480" stroke="#e11d48" stroke-width="1.6"/>
+<text x="300" y="575" font-size="17" fill="#e11d48" font-weight="600" text-anchor="middle">3 apps × 4 tools = 12 custom connectors</text>
+<rect x="630" y="110" width="540" height="490" rx="16" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="2"/>
+<text x="900" y="145" font-size="22" fill="#0d9488" font-weight="700" text-anchor="middle">With MCP</text>
+<rect x="650" y="172" width="160" height="56" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="730" y="206" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">Chat assistant</text>
+<rect x="650" y="302" width="160" height="56" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="730" y="336" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">IDE agent</text>
+<rect x="650" y="432" width="160" height="56" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="730" y="466" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">Support bot</text>
+<rect x="850" y="250" width="100" height="160" rx="14" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="900" y="322" font-size="22" fill="#0d9488" font-weight="800" text-anchor="middle">MCP</text>
+<text x="900" y="348" font-size="14" fill="#475569" font-weight="400" text-anchor="middle">JSON-RPC</text>
+<line x1="810" y1="200" x2="848" y2="300" stroke="#4f46e5" stroke-width="2" marker-end="url(#ai)"/>
+<line x1="810" y1="330" x2="848" y2="330" stroke="#4f46e5" stroke-width="2" marker-end="url(#ai)"/>
+<line x1="810" y1="460" x2="848" y2="370" stroke="#4f46e5" stroke-width="2" marker-end="url(#ai)"/>
+<rect x="995" y="154" width="155" height="52" rx="12" fill="#fff" stroke="#0d9488" stroke-width="2"/>
+<text x="1072" y="186" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">GitHub</text>
+<line x1="952" y1="330" x2="993" y2="180" stroke="#0d9488" stroke-width="2" marker-end="url(#at)"/>
+<rect x="995" y="254" width="155" height="52" rx="12" fill="#fff" stroke="#0d9488" stroke-width="2"/>
+<text x="1072" y="286" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">Postgres</text>
+<line x1="952" y1="330" x2="993" y2="280" stroke="#0d9488" stroke-width="2" marker-end="url(#at)"/>
+<rect x="995" y="354" width="155" height="52" rx="12" fill="#fff" stroke="#0d9488" stroke-width="2"/>
+<text x="1072" y="386" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">Slack</text>
+<line x1="952" y1="330" x2="993" y2="380" stroke="#0d9488" stroke-width="2" marker-end="url(#at)"/>
+<rect x="995" y="454" width="155" height="52" rx="12" fill="#fff" stroke="#0d9488" stroke-width="2"/>
+<text x="1072" y="486" font-size="17" fill="#0f172a" font-weight="400" text-anchor="middle">Docs / files</text>
+<line x1="952" y1="330" x2="993" y2="480" stroke="#0d9488" stroke-width="2" marker-end="url(#at)"/>
+<text x="900" y="575" font-size="17" fill="#0d9488" font-weight="600" text-anchor="middle">3 clients + 4 servers = 7 implementations</text>
+</g></svg>
