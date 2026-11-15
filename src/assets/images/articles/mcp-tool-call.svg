@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Sequence of an MCP tool call: discover, list tools, model chooses a tool, call it, return the result to the model">
+<title>Sequence of an MCP tool call: discover, list tools, model chooses a tool, call it, return the result to the model</title>
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+<marker id="at" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4f46e5"/></marker>
+</defs>
+<rect width="1200" height="700" fill="#ffffff"/>
+<g style="font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif">
+<text x="600" y="50" font-size="30" fill="#0f172a" font-weight="700" text-anchor="middle">Anatomy of a tool call</text>
+<text x="600" y="82" font-size="18" fill="#475569" font-weight="400" text-anchor="middle">What happens when you ask an agent: “Which open issues mention the login bug?”</text>
+<rect x="20" y="110" width="220" height="52" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="130" y="143" font-size="18" fill="#0f172a" font-weight="700" text-anchor="middle">User</text>
+<line x1="130" y1="164" x2="130" y2="605" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 6"/>
+<rect x="290" y="110" width="220" height="52" rx="12" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+<text x="400" y="143" font-size="18" fill="#0f172a" font-weight="700" text-anchor="middle">Host + LLM</text>
+<line x1="400" y1="164" x2="400" y2="605" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 6"/>
+<rect x="590" y="110" width="220" height="52" rx="12" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+<text x="700" y="143" font-size="18" fill="#0f172a" font-weight="700" text-anchor="middle">MCP client</text>
+<line x1="700" y1="164" x2="700" y2="605" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 6"/>
+<rect x="900" y="110" width="220" height="52" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="1010" y="143" font-size="18" fill="#0f172a" font-weight="700" text-anchor="middle">GitHub MCP server</text>
+<line x1="1010" y1="164" x2="1010" y2="605" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 6"/>
+<line x1="130" y1="205" x2="396" y2="205" stroke="#475569" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="265.0" y="195" font-size="15.5" fill="#0f172a" font-weight="500" text-anchor="middle">question in chat</text>
+<line x1="700" y1="263" x2="1006" y2="263" stroke="#0d9488" stroke-width="2.2" marker-end="url(#at)"/>
+<text x="855.0" y="253" font-size="15.5" fill="#0f172a" font-weight="600" text-anchor="middle">① server/discover  (capabilities)</text>
+<line x1="700" y1="321" x2="1006" y2="321" stroke="#0d9488" stroke-width="2.2" marker-end="url(#at)"/>
+<text x="855.0" y="311" font-size="15.5" fill="#0f172a" font-weight="600" text-anchor="middle">② tools/list → search_issues, …</text>
+<line x1="400" y1="379" x2="696" y2="379" stroke="#4f46e5" stroke-width="2.2" marker-end="url(#ai)"/>
+<text x="550.0" y="369" font-size="15.5" fill="#0f172a" font-weight="500" text-anchor="middle">③ model picks search_issues + arguments</text>
+<line x1="700" y1="437" x2="1006" y2="437" stroke="#0d9488" stroke-width="2.2" marker-end="url(#at)"/>
+<text x="855.0" y="427" font-size="15.5" fill="#0f172a" font-weight="600" text-anchor="middle">④ tools/call search_issues</text>
+<line x1="1010" y1="495" x2="704" y2="495" stroke="#475569" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="855.0" y="485" font-size="15.5" fill="#475569" font-weight="500" text-anchor="middle">⑤ result: content[]  (3 issues)</text>
+<line x1="700" y1="553" x2="404" y2="553" stroke="#475569" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="550.0" y="543" font-size="15.5" fill="#475569" font-weight="500" text-anchor="middle">⑥ result added to the model’s context</text>
+<line x1="400" y1="611" x2="134" y2="611" stroke="#475569" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="265.0" y="601" font-size="15.5" fill="#475569" font-weight="500" text-anchor="middle">answer with links</text>
+<rect x="600" y="612" width="400" height="44" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="800" y="640" font-size="15" fill="#d97706" font-weight="600" text-anchor="middle">Hosts should ask a human before risky calls</text>
+</g></svg>

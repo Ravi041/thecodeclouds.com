@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Kavrynt architecture: MCPServer resources in Kubernetes, an Operator that validates and discovers tools, and a Gateway that authenticates, authorizes, audits and routes MCP traffic">
+<title>Kavrynt architecture: MCPServer resources in Kubernetes, an Operator that validates and discovers tools, and a Gateway that authenticates, authorizes, audits and routes MCP traffic</title>
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+<marker id="at" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4f46e5"/></marker>
+</defs>
+<rect width="1200" height="760" fill="#ffffff"/>
+<g style="font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif">
+<text x="600" y="48" font-size="30" fill="#0f172a" font-weight="700" text-anchor="middle">Kavrynt: an MCP control plane on Kubernetes</text>
+<text x="600" y="80" font-size="17" fill="#475569" font-weight="400" text-anchor="middle">Control plane declares and checks servers. Data plane governs every call. Traffic stays in your cluster.</text>
+<rect x="20" y="105" width="1160" height="630" rx="20" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="45" y="135" font-size="17" fill="#475569" font-weight="700" text-anchor="start">Your Kubernetes cluster</text>
+<rect x="50" y="160" width="230" height="90" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="165" y="196" font-size="17" fill="#0f172a" font-weight="700" text-anchor="middle">kubectl / GitOps</text>
+<text x="165" y="222" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">or kavryctl register</text>
+<rect x="370" y="150" width="300" height="110" rx="12" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+<text x="520" y="185" font-size="19" fill="#0f172a" font-weight="700" text-anchor="middle">MCPServer resources</text>
+<text x="520" y="211" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">Kubernetes API (CRD)</text>
+<text x="520" y="235" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">status: Ready, tools</text>
+<line x1="282" y1="205" x2="366" y2="205" stroke="#4f46e5" stroke-width="2.2" marker-end="url(#ai)"/>
+<rect x="780" y="150" width="370" height="110" rx="12" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+<text x="965" y="183" font-size="20" fill="#0f172a" font-weight="700" text-anchor="middle">Operator</text>
+<text x="965" y="209" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">validates endpoints and scope,</text>
+<text x="965" y="231" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">discovers tools, sets Ready</text>
+<line x1="776" y1="195" x2="674" y2="195" stroke="#4f46e5" stroke-width="2.2" marker-end="url(#ai)"/>
+<line x1="674" y1="218" x2="776" y2="218" stroke="#4f46e5" stroke-width="2.2" marker-end="url(#ai)"/>
+<text x="725" y="185" font-size="13" fill="#475569" font-weight="400" text-anchor="middle">status</text>
+<text x="725" y="240" font-size="13" fill="#475569" font-weight="400" text-anchor="middle">watch</text>
+<text x="1100" y="135" font-size="14" fill="#4f46e5" font-weight="800" text-anchor="end">CONTROL PLANE</text>
+<line x1="520" y1="262" x2="520" y2="330" stroke="#4f46e5" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#ai)"/>
+<text x="530" y="300" font-size="14" fill="#475569" font-weight="400" text-anchor="start">watch Ready servers (read-only)</text>
+<text x="45" y="405" font-size="14" fill="#0d9488" font-weight="800" text-anchor="start">DATA PLANE</text>
+<rect x="250" y="340" width="640" height="250" rx="18" fill="#fff" stroke="#0d9488" stroke-width="3"/>
+<text x="570" y="375" font-size="21" fill="#0d9488" font-weight="800" text-anchor="middle">Gateway  /mcp/&lt;namespace&gt;.&lt;name&gt;</text>
+<rect x="270" y="400" width="112" height="96" rx="10" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+<text x="326" y="437" font-size="15" fill="#0f172a" font-weight="700" text-anchor="middle">MCP checks</text>
+<text x="326" y="462" font-size="12.5" fill="#475569" font-weight="400" text-anchor="middle">method, size,</text>
+<text x="326" y="480" font-size="12.5" fill="#475569" font-weight="400" text-anchor="middle">headers</text>
+<line x1="383" y1="448" x2="391" y2="448" stroke="#0d9488" stroke-width="2"/>
+<rect x="392" y="400" width="112" height="96" rx="10" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+<text x="448" y="437" font-size="15" fill="#0f172a" font-weight="700" text-anchor="middle">OAuth 2.1</text>
+<text x="448" y="462" font-size="12.5" fill="#475569" font-weight="400" text-anchor="middle">token issued</text>
+<text x="448" y="480" font-size="12.5" fill="#475569" font-weight="400" text-anchor="middle">for this route</text>
+<line x1="505" y1="448" x2="513" y2="448" stroke="#0d9488" stroke-width="2"/>
+<rect x="514" y="400" width="112" height="96" rx="10" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+<text x="570" y="437" font-size="15" fill="#0f172a" font-weight="700" text-anchor="middle">Rego policy</text>
+<text x="570" y="462" font-size="12.5" fill="#475569" font-weight="400" text-anchor="middle">may this caller</text>
+<text x="570" y="480" font-size="12.5" fill="#475569" font-weight="400" text-anchor="middle">call this tool?</text>
+<line x1="627" y1="448" x2="635" y2="448" stroke="#0d9488" stroke-width="2"/>
+<rect x="636" y="400" width="112" height="96" rx="10" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+<text x="692" y="437" font-size="15" fill="#0f172a" font-weight="700" text-anchor="middle">Audit</text>
+<text x="692" y="462" font-size="12.5" fill="#475569" font-weight="400" text-anchor="middle">one hash-chained</text>
+<text x="692" y="480" font-size="12.5" fill="#475569" font-weight="400" text-anchor="middle">event per call</text>
+<line x1="749" y1="448" x2="757" y2="448" stroke="#0d9488" stroke-width="2"/>
+<rect x="758" y="400" width="112" height="96" rx="10" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+<text x="814" y="437" font-size="15" fill="#0f172a" font-weight="700" text-anchor="middle">Route</text>
+<text x="814" y="462" font-size="12.5" fill="#475569" font-weight="400" text-anchor="middle">to the Ready</text>
+<text x="814" y="480" font-size="12.5" fill="#475569" font-weight="400" text-anchor="middle">server</text>
+<text x="570" y="530" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">Caller tokens stop here. Upstream gets its own pinned credential</text>
+<text x="570" y="552" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">or the caller’s token exchanged for its audience (RFC 8693).</text>
+<rect x="40" y="420" width="170" height="80" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="125" y="455" font-size="17" fill="#0f172a" font-weight="700" text-anchor="middle">AI agent /</text>
+<text x="125" y="478" font-size="17" fill="#0f172a" font-weight="700" text-anchor="middle">MCP client</text>
+<line x1="212" y1="460" x2="246" y2="460" stroke="#4f46e5" stroke-width="2.4" marker-end="url(#ai)"/>
+<rect x="960" y="370" width="190" height="80" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="1055" y="404" font-size="17" fill="#0f172a" font-weight="700" text-anchor="middle">MCP server</text>
+<text x="1055" y="428" font-size="14" fill="#475569" font-weight="400" text-anchor="middle">team-a / search</text>
+<line x1="892" y1="465" x2="956" y2="410" stroke="#0d9488" stroke-width="2.2" marker-end="url(#at)"/>
+<rect x="960" y="490" width="190" height="80" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="1055" y="524" font-size="17" fill="#0f172a" font-weight="700" text-anchor="middle">MCP server</text>
+<text x="1055" y="548" font-size="14" fill="#475569" font-weight="400" text-anchor="middle">team-b / tickets</text>
+<line x1="892" y1="465" x2="956" y2="530" stroke="#0d9488" stroke-width="2.2" marker-end="url(#at)"/>
+<line x1="1055" y1="370" x2="1055" y2="262" stroke="#4f46e5" stroke-width="1.6" stroke-dasharray="4 4"/>
+<text x="1062" y="320" font-size="13" fill="#475569" font-weight="400" text-anchor="start">tool discovery</text>
+<rect x="250" y="620" width="640" height="90" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="570" y="652" font-size="15" fill="#0f172a" font-weight="400" text-anchor="middle">Operate: web console, Prometheus alerts with runbooks, Grafana dashboards,</text>
+<text x="570" y="676" font-size="15" fill="#0f172a" font-weight="400" text-anchor="middle">kavryctl doctor / export / import / upgrade / audit verify</text>
+<text x="570" y="698" font-size="13.5" fill="#475569" font-weight="400" text-anchor="middle" font-style="italic">Opt-in: inventory sync and audit delivery to Kavrynt Cloud</text>
+</g></svg>

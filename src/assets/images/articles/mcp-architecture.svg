@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-label="MCP architecture: a host application runs one MCP client per server; servers expose tools, resources and prompts over stdio or Streamable HTTP">
+<title>MCP architecture: a host application runs one MCP client per server; servers expose tools, resources and prompts over stdio or Streamable HTTP</title>
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+<marker id="at" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4f46e5"/></marker>
+</defs>
+<rect width="1200" height="680" fill="#ffffff"/>
+<g style="font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif">
+<text x="600" y="50" font-size="30" fill="#0f172a" font-weight="700" text-anchor="middle">How MCP fits together</text>
+<text x="600" y="82" font-size="17" fill="#475569" font-weight="400" text-anchor="middle">A host runs one MCP client per server connection. Servers expose capabilities; the model decides when to use them.</text>
+<rect x="30" y="120" width="400" height="520" rx="18" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+<text x="230" y="155" font-size="22" fill="#4f46e5" font-weight="700" text-anchor="middle">Host application</text>
+<text x="230" y="180" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">e.g. Claude, VS Code, Cursor, your agent</text>
+<rect x="60" y="205" width="340" height="80" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="230" y="240" font-size="20" fill="#0f172a" font-weight="700" text-anchor="middle">LLM</text>
+<text x="230" y="265" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">chooses tools, reads results</text>
+<rect x="90" y="305" width="280" height="70" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="230" y="336" font-size="18" fill="#0f172a" font-weight="600" text-anchor="middle">MCP client</text>
+<text x="230" y="360" font-size="14" fill="#475569" font-weight="400" text-anchor="middle">1 : 1 with a server</text>
+<line x1="230" y1="267" x2="230" y2="303" stroke="#94a3b8" stroke-width="1.5"/>
+<rect x="90" y="415" width="280" height="70" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="230" y="446" font-size="18" fill="#0f172a" font-weight="600" text-anchor="middle">MCP client</text>
+<text x="230" y="470" font-size="14" fill="#475569" font-weight="400" text-anchor="middle">1 : 1 with a server</text>
+<line x1="230" y1="377" x2="230" y2="413" stroke="#94a3b8" stroke-width="1.5"/>
+<rect x="90" y="525" width="280" height="70" rx="12" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<text x="230" y="556" font-size="18" fill="#0f172a" font-weight="600" text-anchor="middle">MCP client</text>
+<text x="230" y="580" font-size="14" fill="#475569" font-weight="400" text-anchor="middle">1 : 1 with a server</text>
+<line x1="230" y1="487" x2="230" y2="523" stroke="#94a3b8" stroke-width="1.5"/>
+<rect x="720" y="298" width="450" height="84" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="945" y="328" font-size="19" fill="#0f172a" font-weight="700" text-anchor="middle">Local: filesystem server</text>
+<text x="945" y="356" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">tools: read_file, list_directory</text>
+<line x1="372" y1="340" x2="716" y2="340" stroke="#0d9488" stroke-width="2.5" marker-end="url(#at)"/>
+<line x1="718" y1="348" x2="374" y2="348" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<text x="545" y="328" font-size="15" fill="#0d9488" font-weight="600" text-anchor="middle">stdio</text>
+<rect x="720" y="408" width="450" height="84" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="945" y="438" font-size="19" fill="#0f172a" font-weight="700" text-anchor="middle">Remote: GitHub server</text>
+<text x="945" y="466" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">tools: search_issues, create_pull_request</text>
+<line x1="372" y1="450" x2="716" y2="450" stroke="#0d9488" stroke-width="2.5" marker-end="url(#at)"/>
+<line x1="718" y1="458" x2="374" y2="458" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<text x="545" y="438" font-size="15" fill="#0d9488" font-weight="600" text-anchor="middle">Streamable HTTP</text>
+<rect x="720" y="518" width="450" height="84" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="945" y="548" font-size="19" fill="#0f172a" font-weight="700" text-anchor="middle">Remote: your internal API</text>
+<text x="945" y="576" font-size="15" fill="#475569" font-weight="400" text-anchor="middle">tools: get_order, refund_order</text>
+<line x1="372" y1="560" x2="716" y2="560" stroke="#0d9488" stroke-width="2.5" marker-end="url(#at)"/>
+<line x1="718" y1="568" x2="374" y2="568" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<text x="545" y="548" font-size="15" fill="#0d9488" font-weight="600" text-anchor="middle">Streamable HTTP + OAuth</text>
+<text x="545" y="594" font-size="14" fill="#475569" font-weight="400" text-anchor="middle" font-style="italic">JSON-RPC 2.0 messages</text>
+<rect x="720" y="120" width="450" height="165" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="945" y="150" font-size="19" fill="#0f172a" font-weight="700" text-anchor="middle">What a server can offer</text>
+<circle cx="748" cy="179" r="7" fill="#0d9488"/>
+<text x="765" y="185" font-size="17" fill="#0f172a" font-weight="700" text-anchor="start">Tools</text>
+<text x="870" y="185" font-size="16" fill="#475569" font-weight="400" text-anchor="start">functions the model can call</text>
+<circle cx="748" cy="211" r="7" fill="#4f46e5"/>
+<text x="765" y="217" font-size="17" fill="#0f172a" font-weight="700" text-anchor="start">Resources</text>
+<text x="870" y="217" font-size="16" fill="#475569" font-weight="400" text-anchor="start">data the app can read as context</text>
+<circle cx="748" cy="243" r="7" fill="#d97706"/>
+<text x="765" y="249" font-size="17" fill="#0f172a" font-weight="700" text-anchor="start">Prompts</text>
+<text x="870" y="249" font-size="16" fill="#475569" font-weight="400" text-anchor="start">reusable templates the user picks</text>
+</g></svg>
