@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 840" width="1400" height="840" role="img"><title>Terraform on Google Cloud: layered foundation</title><defs><marker id="m7B42BC" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7B42BC"/></marker><marker id="m1A73E8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1A73E8"/></marker><marker id="m1E8E3E" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1E8E3E"/></marker><marker id="mE37400" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#E37400"/></marker><marker id="mD93025" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#D93025"/></marker><marker id="m5F6368" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5F6368"/></marker></defs><rect width="100%" height="100%" fill="#FFFFFF"/><text x="40" y="40" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#202124" text-anchor="start">Terraform on Google Cloud: a layered foundation</text>
+<text x="40" y="62" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#5F6368" text-anchor="start">Each stack is its own root module, with its own state prefix and its own service account.</text>
+<text x="40" y="100" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5F6368" text-anchor="start">GIT REPO · stacks/ (parent modules)</text>
+<text x="660" y="100" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5F6368" text-anchor="start">GOOGLE CLOUD · resource hierarchy</text>
+<rect x="660" y="115" width="700" height="70" rx="8" fill="#F3EEFA" stroke="#7B42BC" stroke-width="1.2"/>
+<text x="676" y="138" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#202124" text-anchor="start">fldr-bootstrap / prj-b-seed</text>
+<text x="676" y="160" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">GCS state bucket (versioned, public access prevention) · sa-tf-* service accounts</text>
+<text x="676" y="177" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Workload Identity pool + provider for CI</text>
+<rect x="660" y="225" width="700" height="70" rx="8" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1.2"/>
+<text x="676" y="250" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#202124" text-anchor="start">example.com organization</text>
+<text x="676" y="272" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">org policies: no SA keys · no default network · allowed locations · domain-restricted sharing</text>
+<text x="676" y="288" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">folders: fldr-common · fldr-prod · fldr-nonprod · fldr-dev</text>
+<rect x="660.0" y="318" width="164.5" height="362" rx="8" fill="#F8F9FA" stroke="#9AA0A6" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="670.0" y="338" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">fldr-common</text>
+<rect x="668.0" y="368" width="148.5" height="64" rx="8" fill="#E6F4EA" stroke="#1E8E3E" stroke-width="1.2"/>
+<text x="676.0" y="392" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-c-net-hub</text>
+<text x="676.0" y="410" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">interconnect, DNS hub</text>
+<rect x="668.0" y="488" width="148.5" height="64" rx="8" fill="#FEF3E2" stroke="#E37400" stroke-width="1.2"/>
+<text x="676.0" y="512" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-c-logging</text>
+<text x="676.0" y="530" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-c-billing-export</text>
+<rect x="668.0" y="608" width="148.5" height="64" rx="8" fill="#FCE8E6" stroke="#D93025" stroke-width="1.2"/>
+<text x="676.0" y="632" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">log buckets,</text>
+<text x="676.0" y="650" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">BigQuery billing export</text>
+<rect x="838.5" y="318" width="164.5" height="362" rx="8" fill="#F8F9FA" stroke="#9AA0A6" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="848.5" y="338" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">fldr-prod</text>
+<rect x="846.5" y="368" width="148.5" height="64" rx="8" fill="#E6F4EA" stroke="#1E8E3E" stroke-width="1.2"/>
+<text x="854.5" y="392" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-p-net-host</text>
+<text x="854.5" y="410" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">Shared VPC (prod)</text>
+<rect x="846.5" y="488" width="148.5" height="64" rx="8" fill="#FEF3E2" stroke="#E37400" stroke-width="1.2"/>
+<text x="854.5" y="512" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-p-payments-api</text>
+<text x="854.5" y="530" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-p-payments-data</text>
+<rect x="846.5" y="608" width="148.5" height="64" rx="8" fill="#FCE8E6" stroke="#D93025" stroke-width="1.2"/>
+<text x="854.5" y="632" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">Cloud Run, Cloud SQL,</text>
+<text x="854.5" y="650" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">GKE, buckets</text>
+<rect x="1017.0" y="318" width="164.5" height="362" rx="8" fill="#F8F9FA" stroke="#9AA0A6" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="1027.0" y="338" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">fldr-nonprod</text>
+<rect x="1025.0" y="368" width="148.5" height="64" rx="8" fill="#E6F4EA" stroke="#1E8E3E" stroke-width="1.2"/>
+<text x="1033.0" y="392" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-n-net-host</text>
+<text x="1033.0" y="410" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">Shared VPC (nonprod)</text>
+<rect x="1025.0" y="488" width="148.5" height="64" rx="8" fill="#FEF3E2" stroke="#E37400" stroke-width="1.2"/>
+<text x="1033.0" y="512" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-n-payments-api</text>
+<text x="1033.0" y="530" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-n-payments-data</text>
+<rect x="1025.0" y="608" width="148.5" height="64" rx="8" fill="#FCE8E6" stroke="#D93025" stroke-width="1.2"/>
+<text x="1033.0" y="632" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">same code,</text>
+<text x="1033.0" y="650" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">nonprod.tfvars</text>
+<rect x="1195.5" y="318" width="164.5" height="362" rx="8" fill="#F8F9FA" stroke="#9AA0A6" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="1205.5" y="338" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">fldr-dev</text>
+<rect x="1203.5" y="368" width="148.5" height="64" rx="8" fill="#E6F4EA" stroke="#1E8E3E" stroke-width="1.2"/>
+<text x="1211.5" y="392" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-d-net-host</text>
+<text x="1211.5" y="410" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">Shared VPC (dev)</text>
+<rect x="1203.5" y="488" width="148.5" height="64" rx="8" fill="#FEF3E2" stroke="#E37400" stroke-width="1.2"/>
+<text x="1211.5" y="512" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-d-payments-api</text>
+<text x="1211.5" y="530" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#202124" text-anchor="start">prj-d-payments-data</text>
+<rect x="1203.5" y="608" width="148.5" height="64" rx="8" fill="#FCE8E6" stroke="#D93025" stroke-width="1.2"/>
+<text x="1211.5" y="632" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">same code,</text>
+<text x="1211.5" y="650" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#3C4043" text-anchor="start">dev.tfvars</text>
+<rect x="40" y="115" width="520" height="70" rx="8" fill="#FFFFFF" stroke="#7B42BC" stroke-width="2"/>
+<rect x="40" y="115" width="8" height="70" rx="2" fill="#7B42BC" stroke="#7B42BC" stroke-width="1.2"/>
+<text x="62" y="139" font-family="Menlo, Consolas, monospace" font-size="14" font-weight="bold" fill="#202124" text-anchor="start">stacks/0-bootstrap</text>
+<text x="62" y="159" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">run once by an org admin</text>
+<text x="62" y="176" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">local state first, then migrated to GCS</text>
+<line x1="560" y1="150" x2="652" y2="150" stroke="#7B42BC" stroke-width="2" marker-end="url(#m7B42BC)"/>
+<rect x="40" y="225" width="520" height="70" rx="8" fill="#FFFFFF" stroke="#1A73E8" stroke-width="2"/>
+<rect x="40" y="225" width="8" height="70" rx="2" fill="#1A73E8" stroke="#1A73E8" stroke-width="1.2"/>
+<text x="62" y="249" font-family="Menlo, Consolas, monospace" font-size="14" font-weight="bold" fill="#202124" text-anchor="start">stacks/1-org</text>
+<text x="62" y="269" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">sa-tf-org · state 1-org/</text>
+<text x="62" y="286" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">folders, org policies, log sinks, billing export</text>
+<line x1="560" y1="260" x2="652" y2="260" stroke="#1A73E8" stroke-width="2" marker-end="url(#m1A73E8)"/>
+<rect x="40" y="365" width="520" height="70" rx="8" fill="#FFFFFF" stroke="#1E8E3E" stroke-width="2"/>
+<rect x="40" y="365" width="8" height="70" rx="2" fill="#1E8E3E" stroke="#1E8E3E" stroke-width="1.2"/>
+<text x="62" y="389" font-family="Menlo, Consolas, monospace" font-size="14" font-weight="bold" fill="#202124" text-anchor="start">stacks/2-network</text>
+<text x="62" y="409" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">sa-tf-network-&lt;env&gt; · state 2-network/&lt;env&gt;</text>
+<text x="62" y="426" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">Shared VPC hosts, subnets, NAT, hub links</text>
+<line x1="560" y1="400" x2="652" y2="400" stroke="#1E8E3E" stroke-width="2" marker-end="url(#m1E8E3E)"/>
+<rect x="40" y="485" width="520" height="70" rx="8" fill="#FFFFFF" stroke="#E37400" stroke-width="2"/>
+<rect x="40" y="485" width="8" height="70" rx="2" fill="#E37400" stroke="#E37400" stroke-width="1.2"/>
+<text x="62" y="509" font-family="Menlo, Consolas, monospace" font-size="14" font-weight="bold" fill="#202124" text-anchor="start">stacks/3-projects</text>
+<text x="62" y="529" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">sa-tf-projects-&lt;env&gt; · state 3-projects/&lt;env&gt;</text>
+<text x="62" y="546" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">project factory: one tfvars entry per project</text>
+<line x1="560" y1="520" x2="652" y2="520" stroke="#E37400" stroke-width="2" marker-end="url(#mE37400)"/>
+<rect x="40" y="605" width="520" height="70" rx="8" fill="#FFFFFF" stroke="#D93025" stroke-width="2"/>
+<rect x="40" y="605" width="8" height="70" rx="2" fill="#D93025" stroke="#D93025" stroke-width="1.2"/>
+<text x="62" y="629" font-family="Menlo, Consolas, monospace" font-size="14" font-weight="bold" fill="#202124" text-anchor="start">stacks/4-workloads</text>
+<text x="62" y="649" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">sa-tf-&lt;app&gt;-&lt;env&gt; · state 4-workloads/&lt;app&gt;/&lt;env&gt;</text>
+<text x="62" y="666" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">Cloud Run, Cloud SQL, GKE, buckets</text>
+<line x1="560" y1="640" x2="652" y2="640" stroke="#D93025" stroke-width="2" marker-end="url(#mD93025)"/>
+<rect x="40" y="700" width="520" height="52" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="1.2"/>
+<text x="56" y="722" font-family="Menlo, Consolas, monospace" font-size="13" font-weight="bold" fill="#202124" text-anchor="start">modules/  project · shared-vpc · gke-cluster</text>
+<text x="56" y="741" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">child modules, no provider config, called by every stack</text>
+<rect x="40" y="766" width="520" height="52" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="1.2"/>
+<text x="56" y="788" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#202124" text-anchor="start">CI: GitHub Actions → OIDC → Workload Identity Federation</text>
+<text x="56" y="807" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">plan as a read-only SA on PRs · apply as sa-tf-&lt;stack&gt;-&lt;env&gt; from main</text>
+<rect x="660" y="700" width="700" height="118" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="1.2"/>
+<text x="676" y="724" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#202124" text-anchor="start">Each stack, each environment:</text>
+<text x="676" y="748" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">terraform init -backend-config=environments/&lt;env&gt;.backend.hcl</text>
+<text x="676" y="770" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">terraform plan -var-file=environments/&lt;env&gt;.tfvars -out=tfplan</text>
+<text x="676" y="798" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">Same code everywhere. Inputs, state prefix and service account change per environment.</text></svg>
