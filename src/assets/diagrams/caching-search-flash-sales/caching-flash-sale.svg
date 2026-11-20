@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 700" width="1500" height="700" role="img"><title>2. Flash sale request flow</title><defs><marker id="a1A73E8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1A73E8"/></marker><marker id="a1E8E3E" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1E8E3E"/></marker><marker id="a8430CE" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8430CE"/></marker><marker id="aD93025" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#D93025"/></marker><marker id="aE37400" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E37400"/></marker></defs><rect width="100%" height="100%" fill="#FFFFFF"/><rect x="20" y="110" width="205" height="84" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="28" y="126" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="271" y="110" width="205" height="84" rx="8" fill="#FFFFFF" stroke="#D93025"/>
+<text x="279" y="126" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="522" y="110" width="205" height="84" rx="8" fill="#FFFFFF" stroke="#D93025"/>
+<text x="530" y="126" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="773" y="110" width="205" height="84" rx="8" fill="#FFFFFF" stroke="#E37400"/>
+<text x="781" y="126" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1024" y="110" width="205" height="84" rx="8" fill="#FFFFFF" stroke="#1A73E8"/>
+<text x="1032" y="126" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1275" y="110" width="205" height="84" rx="8" fill="#FFFFFF" stroke="#8430CE"/>
+<text x="1283" y="126" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="271" y="340" width="205" height="84" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="279" y="356" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="522" y="340" width="205" height="84" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="530" y="356" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="773" y="340" width="205" height="84" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="781" y="356" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1024" y="340" width="205" height="84" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="1032" y="356" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1275" y="340" width="205" height="84" rx="8" fill="#FFFFFF" stroke="#8430CE"/>
+<text x="1283" y="356" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="20" y="470" width="700" height="200" rx="8" fill="#FFFFFF" stroke="#1A73E8"/>
+<text x="28" y="486" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="740" y="470" width="740" height="150" rx="8" fill="#FFFFFF" stroke="#E37400"/>
+<text x="748" y="486" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M740 474 L740 616" fill="none" stroke="#E37400" stroke-width="5"/>
+<path d="M20 474 L20 666" fill="none" stroke="#1A73E8" stroke-width="5"/>
+<path d="M1377.5 110 L1377.5 86 L373.5 86 L373.5 110" fill="none" stroke="#D93025" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aD93025)"/>
+<path d="M1377.5 340 L1377.5 194" fill="none" stroke="#8430CE" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#a8430CE)"/>
+<path d="M522 382 L476 382" fill="none" stroke="#1E8E3E" stroke-width="2" stroke-dasharray="7 5" marker-start="url(#a1E8E3E)" marker-end="url(#a1E8E3E)"/>
+<path d="M773 382 L727 382" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M1024 382 L978 382" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M1126.5 194 L1126.5 340" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M1229 152 L1275 152" fill="none" stroke="#1A73E8" stroke-width="2" marker-end="url(#a1A73E8)"/>
+<path d="M978 152 L1024 152" fill="none" stroke="#1A73E8" stroke-width="2" marker-end="url(#a1A73E8)"/>
+<path d="M727 152 L773 152" fill="none" stroke="#1A73E8" stroke-width="2" marker-end="url(#a1A73E8)"/>
+<path d="M476 152 L522 152" fill="none" stroke="#1A73E8" stroke-width="2" marker-end="url(#a1A73E8)"/>
+<path d="M225 152 L271 152" fill="none" stroke="#1A73E8" stroke-width="2" marker-end="url(#a1A73E8)"/>
+<text x="20" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#202124" text-anchor="start">A flash sale, step by step: 10x traffic in, a steady stream of orders out</text>
+<text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">Scenario: 8,000 consoles at 40% off, sale opens 12:00. Traffic goes from 4,000 to 45,000 requests per second in under a minute.</text>
+<text x="30" y="130" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Shoppers</text>
+<text x="30" y="146" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">1.2 million waiting at 11:59</text>
+<text x="281" y="130" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">CDN</text>
+<text x="281" y="146" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">sale page + assets cached;</text>
+<text x="281" y="160" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">origin sees almost nothing</text>
+<text x="532" y="130" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Waiting room</text>
+<text x="532" y="146" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">admits 3,000 shoppers/s,</text>
+<text x="532" y="160" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">issues a signed token</text>
+<text x="783" y="130" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">API gateway</text>
+<text x="783" y="146" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">checks token, 5 req/s per</text>
+<text x="783" y="160" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">user, sheds non-checkout</text>
+<text x="1034" y="130" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Inventory service</text>
+<text x="1034" y="146" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">stateless, 60 pods,</text>
+<text x="1034" y="160" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">pre-scaled at 11:00</text>
+<text x="1285" y="130" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Redis inventory</text>
+<text x="1285" y="146" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">Lua: check + decrement</text>
+<text x="1285" y="160" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">in one atomic step</text>
+<text x="281" y="360" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Payment provider</text>
+<text x="281" y="376" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">its own rate limit;</text>
+<text x="281" y="390" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">workers respect it</text>
+<text x="532" y="360" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Primary database</text>
+<text x="532" y="376" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">orders + inventory ledger,</text>
+<text x="532" y="390" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">steady 1,500 writes/s</text>
+<text x="783" y="360" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Order workers</text>
+<text x="783" y="376" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">200 concurrent,</text>
+<text x="783" y="390" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">idempotent on order id</text>
+<text x="1034" y="360" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Order queue</text>
+<text x="1034" y="376" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">absorbs the burst;</text>
+<text x="1034" y="390" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">DLQ after 5 tries</text>
+<text x="1285" y="360" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Expiry sweeper</text>
+<text x="1285" y="376" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">unpaid after 10 min:</text>
+<text x="1285" y="390" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">stock goes back</text>
+<rect x="521.36" y="69" width="517.28" height="18" fill="#FFFFFF" rx="3"/>
+<text x="780" y="81" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#D93025" text-anchor="middle">sold out: flag pushed to the edge, a cached "sold out" page replaces the buy button</text>
+<circle cx="250" cy="151" r="11" fill="#1A73E8"/><text x="250" y="155.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+<circle cx="501" cy="151" r="11" fill="#1A73E8"/><text x="501" y="155.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+<circle cx="752" cy="151" r="11" fill="#1A73E8"/><text x="752" y="155.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+<circle cx="1003" cy="151" r="11" fill="#1A73E8"/><text x="1003" y="155.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+<circle cx="1254" cy="151" r="11" fill="#1A73E8"/><text x="1254" y="155.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+<circle cx="1148" cy="281" r="11" fill="#1E8E3E"/><text x="1148" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">6</text>
+<circle cx="1003" cy="381" r="11" fill="#1E8E3E"/><text x="1003" y="385.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">7</text>
+<circle cx="752" cy="381" r="11" fill="#1E8E3E"/><text x="752" y="385.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">8</text>
+<circle cx="501" cy="381" r="11" fill="#1E8E3E"/><text x="501" y="385.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">9</text>
+<circle cx="1398" cy="281" r="11" fill="#8430CE"/><text x="1398" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">10</text>
+<text x="34" y="493" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A73E8" text-anchor="start">What happens to one shopper</text>
+<text x="34" y="515" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">1  Page and assets come from the CDN. The origin is not involved.</text>
+<text x="34" y="530" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">2  Pressing Buy puts them in the waiting room queue, first come first served.</text>
+<text x="34" y="545" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">3  Their turn: a signed token admits them through the gateway.</text>
+<text x="34" y="560" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">4  Gateway checks the token and the per-user limit, then forwards.</text>
+<text x="34" y="575" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">5  Redis reserves 1 unit atomically, or says sold out. No database touched.</text>
+<text x="34" y="590" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">6  Reservation written to the queue with an order id. Shopper sees "reserved".</text>
+<text x="34" y="605" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">7  Workers pull at a fixed rate the database can take.</text>
+<text x="34" y="620" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">8  One transaction: order row + ledger row. Retries are safe (same order id).</text>
+<text x="34" y="635" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">9  Payment is captured. Failure releases the unit.</text>
+<text x="34" y="650" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">10 Unpaid reservations expire and the unit goes back on sale.</text>
+<text x="754" y="493" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#E37400" text-anchor="start">Sizing from the scenario</text>
+<text x="754" y="515" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Normal day: 4,000 req/s, Redis 30k ops/s, 2 orders/s</text>
+<text x="754" y="530" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Sale peak: 45,000 req/s at the edge (11x)</text>
+<text x="754" y="545" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">After edge + bot filtering: 21,000 req/s reach the waiting room</text>
+<text x="754" y="560" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Admitted: 3,000 shoppers/s (about 9,000 req/s)</text>
+<text x="754" y="575" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Redis inventory: one key per SKU, ~12k reserve calls/s</text>
+<text x="754" y="590" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Database: 1,500 order writes/s, never more</text>
+<text x="754" y="605" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Sold out: 8,000 units in 7 min 40 s, 0 oversold</text>
+<text x="740" y="648" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start">The database sees a flat line. The spike lives in the CDN, the waiting room and the queue.</text>
+<text x="740" y="671" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#5F6368" text-anchor="start">Numbers are from a load-test plan for a mid-size retailer; use your own forecast.</text></svg>
