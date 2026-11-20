@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 860" width="1500" height="860" role="img"><title>3. Cache stampede</title><defs><marker id="a1E8E3E" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1E8E3E"/></marker><marker id="a5F6368" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5F6368"/></marker><marker id="aD93025" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#D93025"/></marker></defs><rect width="100%" height="100%" fill="#FFFFFF"/><rect x="20" y="70" width="700" height="560" rx="8" fill="#FFF8F7" stroke="#D93025"/>
+<text x="28" y="86" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#D93025" text-anchor="start">Before: plain cache-aside, fixed TTL</text>
+<rect x="780" y="70" width="700" height="560" rx="8" fill="#F6FBF7" stroke="#1E8E3E"/>
+<text x="788" y="86" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#1E8E3E" text-anchor="start">After: soft TTL, one rebuilder, everyone else served stale</text>
+<rect x="200" y="110" width="340" height="64" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="208" y="126" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="200" y="220" width="340" height="64" rx="8" fill="#FFFFFF" stroke="#1A73E8"/>
+<text x="208" y="236" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="200" y="330" width="340" height="64" rx="8" fill="#FFFFFF" stroke="#8430CE"/>
+<text x="208" y="346" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="200" y="440" width="340" height="64" rx="8" fill="#FFFFFF" stroke="#D93025"/>
+<text x="208" y="456" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="960" y="110" width="340" height="64" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="968" y="126" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="960" y="220" width="340" height="64" rx="8" fill="#FFFFFF" stroke="#1A73E8"/>
+<text x="968" y="236" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="960" y="330" width="340" height="64" rx="8" fill="#FFFFFF" stroke="#8430CE"/>
+<text x="968" y="346" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="960" y="440" width="340" height="64" rx="8" fill="#FFFFFF" stroke="#E37400"/>
+<text x="968" y="456" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1340" y="440" width="120" height="64" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="1348" y="456" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="20" y="660" width="284" height="84" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="28" y="676" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="314" y="660" width="284" height="84" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="322" y="676" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="608" y="660" width="284" height="84" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="616" y="676" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="902" y="660" width="284" height="84" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="910" y="676" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1196" y="660" width="284" height="84" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="1204" y="676" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M960 362 L900 362 L900 252 L960 252" fill="none" stroke="#5F6368" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#a5F6368)"/>
+<path d="M1400 440 L1400 362 L1300 362" fill="none" stroke="#1E8E3E" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#a1E8E3E)"/>
+<path d="M1300 472 L1340 472" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M1130 394 L1130 440" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M1130 284 L1130 330" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M1130 174 L1130 220" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M370 394 L370 440" fill="none" stroke="#D93025" stroke-width="4" marker-end="url(#aD93025)"/>
+<path d="M370 284 L370 330" fill="none" stroke="#D93025" stroke-width="4" marker-end="url(#aD93025)"/>
+<path d="M370 174 L370 220" fill="none" stroke="#D93025" stroke-width="4" marker-end="url(#aD93025)"/>
+<text x="20" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#202124" text-anchor="start">Cache stampede: one key expires at 12:00:00 and 8,000 requests hit the database at once</text>
+<text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">Same traffic, same Redis, same database. The difference is what happens on a miss.</text>
+<text x="210" y="130" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">8,000 req/s for the homepage deal</text>
+<text x="210" y="146" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">key: deal:homepage</text>
+<text x="210" y="240" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">App pods (40)</text>
+<text x="210" y="256" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">no local cache</text>
+<text x="210" y="350" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Redis: MISS on every request</text>
+<text x="210" y="366" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">TTL was exactly 300 s for all deal keys</text>
+<text x="210" y="460" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Database: 8,000 identical queries</text>
+<text x="210" y="476" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">CPU 100%, p99 from 40 ms to 4.2 s</text>
+<text x="40" y="552" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Every request misses at the same instant,</text>
+<text x="40" y="568" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">every request rebuilds the same value,</text>
+<text x="40" y="584" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">and the slow database makes the window longer.</text>
+<text x="40" y="608" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#D93025" text-anchor="start">Result: checkout times out, retries add more load.</text>
+<text x="970" y="130" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">8,000 req/s for the homepage deal</text>
+<text x="970" y="146" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">key: deal:homepage</text>
+<text x="970" y="240" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">App pods (40) with L1 cache</text>
+<text x="970" y="256" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">2 s in memory: Redis sees ~20 req/s</text>
+<text x="970" y="350" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Redis: soft TTL passed, hard TTL not</text>
+<text x="970" y="366" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">value returned + "stale" flag</text>
+<text x="970" y="460" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">SET lock:deal:homepage NX PX 3000</text>
+<text x="970" y="476" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">one caller wins</text>
+<text x="1350" y="460" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Database</text>
+<text x="1350" y="476" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">1 query</text>
+<text x="1306" y="382" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#1E8E3E" text-anchor="start">write back:</text>
+<text x="1306" y="396" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#1E8E3E" text-anchor="start">soft 300 s,</text>
+<text x="1306" y="410" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#1E8E3E" text-anchor="start">hard 900 s,</text>
+<text x="1306" y="424" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#1E8E3E" text-anchor="start">±10% jitter</text>
+<text x="800" y="300" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">losers return</text>
+<text x="800" y="314" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">the stale value</text>
+<text x="800" y="552" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Shoppers see a price that is at most a few seconds old.</text>
+<text x="800" y="568" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">The database sees one query per key per refresh.</text>
+<text x="800" y="608" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#1E8E3E" text-anchor="start">Result: p99 stays at 45 ms through the expiry.</text>
+<text x="30" y="680" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Jittered TTL</text>
+<text x="30" y="696" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">TTL ± 10% so keys loaded together</text>
+<text x="30" y="710" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">do not expire together</text>
+<text x="324" y="680" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Single-flight lock</text>
+<text x="324" y="696" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">SET NX PX: one rebuild per key,</text>
+<text x="324" y="710" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">lock expires if the pod dies</text>
+<text x="618" y="680" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Soft + hard TTL</text>
+<text x="618" y="696" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">serve stale while one caller</text>
+<text x="618" y="710" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">refreshes in the background</text>
+<text x="912" y="680" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">L1 for hot keys</text>
+<text x="912" y="696" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">1-5 s in-process copy cuts Redis</text>
+<text x="912" y="710" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">reads by 100x on the top 50 keys</text>
+<text x="1206" y="680" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Pre-warm</text>
+<text x="1206" y="696" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">load the sale keys at T-10 min,</text>
+<text x="1206" y="710" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">never let them expire mid-sale</text>
+<text x="20" y="780" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start">Use all five for the keys that matter. For the long tail, jitter alone is usually enough.</text>
+<text x="20" y="805" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#5F6368" text-anchor="start">Locks are best-effort here: if two callers rebuild once in a while that is fine. Never use this lock pattern for money or stock.</text></svg>

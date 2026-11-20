@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 800" width="1500" height="800" role="img"><title>5. Rate limiting and load shedding</title><defs><marker id="a5F6368" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5F6368"/></marker><marker id="aD93025" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#D93025"/></marker><marker id="aE37400" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E37400"/></marker></defs><rect width="100%" height="100%" fill="#FFFFFF"/><rect x="20" y="130" width="200" height="400" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="28" y="146" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="272" y="180" width="200" height="300" rx="8" fill="#FFFFFF" stroke="#D93025"/>
+<text x="280" y="196" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="524" y="235" width="200" height="190" rx="8" fill="#FFFFFF" stroke="#D93025"/>
+<text x="532" y="251" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="776" y="245" width="200" height="170" rx="8" fill="#FFFFFF" stroke="#E37400"/>
+<text x="784" y="261" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1028" y="255" width="200" height="150" rx="8" fill="#FFFFFF" stroke="#1A73E8"/>
+<text x="1036" y="271" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1280" y="275" width="200" height="110" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="1288" y="291" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="20" y="610" width="700" height="120" rx="8" fill="#FFFFFF" stroke="#E37400"/>
+<text x="28" y="626" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="760" y="610" width="720" height="120" rx="8" fill="#FFFFFF" stroke="#D93025"/>
+<text x="768" y="626" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M760 614 L760 726" fill="none" stroke="#D93025" stroke-width="5"/>
+<path d="M20 614 L20 726" fill="none" stroke="#E37400" stroke-width="5"/>
+<path d="M1380 385 L1380 560" fill="none" stroke="#D93025" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aD93025)"/>
+<path d="M1128 405 L1128 560" fill="none" stroke="#D93025" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aD93025)"/>
+<path d="M876 415 L876 560" fill="none" stroke="#D93025" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aD93025)"/>
+<path d="M624 425 L624 560" fill="none" stroke="#D93025" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aD93025)"/>
+<path d="M372 480 L372 560" fill="none" stroke="#D93025" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aD93025)"/>
+<path d="M1228 330 L1280 330" fill="none" stroke="#5F6368" stroke-width="3" marker-end="url(#a5F6368)"/>
+<path d="M976 330 L1028 330" fill="none" stroke="#5F6368" stroke-width="3" marker-end="url(#a5F6368)"/>
+<path d="M724 330 L776 330" fill="none" stroke="#5F6368" stroke-width="3" marker-end="url(#a5F6368)"/>
+<path d="M472 330 L524 330" fill="none" stroke="#5F6368" stroke-width="3" marker-end="url(#a5F6368)"/>
+<path d="M220 330 L272 330" fill="none" stroke="#5F6368" stroke-width="3" marker-end="url(#a5F6368)"/>
+<text x="20" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#202124" text-anchor="start">Rate limiting in layers: each one drops what the next one cannot afford</text>
+<text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">Peak minute of the sale. Height of each stage is the traffic that reaches it.</text>
+<text x="30" y="152" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5F6368" text-anchor="start">Arriving</text>
+<text x="30" y="174" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#202124" text-anchor="start">45,000 req/s</text>
+<text x="30" y="194" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">humans, bots, retries</text>
+<text x="282" y="202" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#D93025" text-anchor="start">Edge: WAF + bots</text>
+<text x="282" y="224" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#202124" text-anchor="start">21,000 req/s pass</text>
+<text x="282" y="244" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">per IP 50 req/10 s;</text>
+<text x="282" y="258" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">bad bot score blocked</text>
+<text x="534" y="257" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#D93025" text-anchor="start">Waiting room</text>
+<text x="534" y="279" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#202124" text-anchor="start">9,000 req/s admitted</text>
+<text x="534" y="299" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">3,000 new shoppers/s;</text>
+<text x="534" y="313" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">others see their place</text>
+<text x="786" y="267" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#E37400" text-anchor="start">Gateway token bucket</text>
+<text x="786" y="289" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#202124" text-anchor="start">8,400 req/s pass</text>
+<text x="786" y="309" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">5 req/s per user,</text>
+<text x="786" y="323" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">burst 10, per route</text>
+<text x="1038" y="277" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A73E8" text-anchor="start">Service shedding</text>
+<text x="1038" y="299" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#202124" text-anchor="start">7,900 req/s served</text>
+<text x="1038" y="319" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">drop recs, reviews first;</text>
+<text x="1038" y="333" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">concurrency limit per pod</text>
+<text x="1290" y="297" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5F6368" text-anchor="start">Database pool</text>
+<text x="1290" y="319" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#202124" text-anchor="start">1,500 writes/s</text>
+<text x="1290" y="339" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">400 connections,</text>
+<text x="1290" y="353" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">queue holds the rest</text>
+<text x="372" y="577" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#D93025" text-anchor="middle">403 or challenge</text>
+<text x="624" y="577" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#D93025" text-anchor="middle">queue page, cached</text>
+<text x="876" y="577" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#D93025" text-anchor="middle">429 + Retry-After</text>
+<text x="1128" y="577" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#D93025" text-anchor="middle">503 + fallback UI</text>
+<text x="1380" y="577" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#D93025" text-anchor="middle">waits in the queue</text>
+<text x="34" y="633" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#E37400" text-anchor="start">Token bucket in Redis, one key per user and route</text>
+<text x="34" y="655" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">key rl:{user42}:checkout  holds tokens + last refill time.</text>
+<text x="34" y="670" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">A Lua script refills at 5/s up to 10, takes 1 token or says no.</text>
+<text x="34" y="685" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Atomic, one round trip, ~0.2 ms. Keys expire after 60 s idle.</text>
+<text x="774" y="633" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#D93025" text-anchor="start">Clients must back off, or the limit makes things worse</text>
+<text x="774" y="655" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Honour Retry-After. Otherwise exponential backoff with full jitter:</text>
+<text x="774" y="670" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">sleep = random(0, min(cap, base x 2^attempt)). Cap retries at 3.</text>
+<text x="774" y="685" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Without jitter every rejected client comes back in the same second.</text>
+<text x="20" y="764" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start">Rejected early is cheap. A request dropped at the edge costs a fraction of a cent; one that reaches the database costs a checkout.</text></svg>
