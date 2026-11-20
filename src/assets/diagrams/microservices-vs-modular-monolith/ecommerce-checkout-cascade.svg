@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 900" width="1500" height="900" role="img"><title>5. Checkout outage cascade</title><defs><marker id="a188038" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#188038"/></marker><marker id="aD93025" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#D93025"/></marker><marker id="aE8710A" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E8710A"/></marker></defs><rect width="100%" height="100%" fill="#FFFFFF"/><rect x="20" y="80" width="1460" height="370" rx="8" fill="#FFFBFA" stroke="#D93025"/>
+<text x="28" y="96" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#D93025" text-anchor="start">Before: synchronous chain, default timeouts, retries at every hop, one shared pool</text>
+<rect x="20" y="480" width="1460" height="400" rx="8" fill="#FBFEFC" stroke="#188038"/>
+<text x="28" y="496" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#188038" text-anchor="start">After: deadlines, isolation and an async tail. A slow dependency degrades one feature, not the shop.</text>
+<path d="M690 690 L690 735" fill="none" stroke="#E8710A" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aE8710A)"/>
+<path d="M625 605 L595 650" fill="none" stroke="#E8710A" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aE8710A)"/>
+<path d="M1330 540 L1360 540 L1360 708 L1330 708" fill="none" stroke="#E8710A" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aE8710A)"/>
+<path d="M1215 565 L1215 600" fill="none" stroke="#188038" stroke-width="2" marker-end="url(#a188038)"/>
+<path d="M1040 551 L1100 540" fill="none" stroke="#188038" stroke-width="2" marker-end="url(#a188038)"/>
+<path d="M750 565 L820 565" fill="none" stroke="#188038" stroke-width="2.5" marker-end="url(#a188038)"/>
+<path d="M450 565 L500 565" fill="none" stroke="#188038" stroke-width="2.5" marker-end="url(#a188038)"/>
+<path d="M190 565 L230 565" fill="none" stroke="#188038" stroke-width="2.5" marker-end="url(#a188038)"/>
+<path d="M440 192 L440 250" fill="none" stroke="#D93025" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aD93025)"/>
+<path d="M1130 161 L1200 161" fill="none" stroke="#D93025" stroke-width="2.5" marker-end="url(#aD93025)"/>
+<path d="M840 161 L910 161" fill="none" stroke="#D93025" stroke-width="2.5" marker-end="url(#aD93025)"/>
+<path d="M550 161 L620 161" fill="none" stroke="#D93025" stroke-width="2.5" marker-end="url(#aD93025)"/>
+<path d="M260 161 L330 161" fill="none" stroke="#D93025" stroke-width="2.5" marker-end="url(#aD93025)"/>
+<rect x="40" y="130" width="220" height="62" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="1.5"/>
+<rect x="330" y="130" width="220" height="62" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="1.5"/>
+<rect x="620" y="130" width="220" height="62" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="1.5"/>
+<rect x="910" y="130" width="220" height="62" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="1.5"/>
+<rect x="1200" y="130" width="220" height="62" rx="8" fill="#FCE8E6" stroke="#D93025" stroke-width="1.5"/>
+<rect x="330" y="250" width="220" height="50" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="40" y="540" width="150" height="50" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="1.5"/>
+<rect x="230" y="530" width="220" height="70" rx="8" fill="#F3EDFD" stroke="#7B3FE4" stroke-width="1.5"/>
+<rect x="500" y="525" width="250" height="80" rx="8" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1.5"/>
+<rect x="820" y="530" width="220" height="70" rx="8" fill="#E6F4EA" stroke="#188038" stroke-width="1.5"/>
+<rect x="1100" y="515" width="230" height="50" rx="8" fill="#FEF0E3" stroke="#E8710A" stroke-width="1.5"/>
+<rect x="1100" y="600" width="230" height="50" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="1.5"/>
+<rect x="1100" y="680" width="230" height="56" rx="8" fill="#FEF0E3" stroke="#E8710A" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="500" y="650" width="380" height="40" rx="20" fill="#FEF0E3" stroke="#E8710A" stroke-width="1.5"/>
+<rect x="518" y="663" width="9" height="14" rx="2" fill="#E8710A" opacity="0.35"/>
+<rect x="810" y="663" width="9" height="14" rx="2" fill="#E8710A" opacity="0.35"/>
+<rect x="532" y="663" width="9" height="14" rx="2" fill="#E8710A" opacity="0.53"/>
+<rect x="824" y="663" width="9" height="14" rx="2" fill="#E8710A" opacity="0.53"/>
+<rect x="546" y="663" width="9" height="14" rx="2" fill="#E8710A" opacity="0.71"/>
+<rect x="838" y="663" width="9" height="14" rx="2" fill="#E8710A" opacity="0.71"/>
+<rect x="560" y="663" width="9" height="14" rx="2" fill="#E8710A" opacity="0.89"/>
+<rect x="852" y="663" width="9" height="14" rx="2" fill="#E8710A" opacity="0.89"/>
+<rect x="500" y="735" width="380" height="56" rx="8" fill="#FEF0E3" stroke="#E8710A" stroke-width="1.5"/>
+<text x="20" y="36" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#202124" text-anchor="start">Scenario: how one slow fraud check took the whole shop down, and the fixed design</text>
+<text x="20" y="59" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#5F6368" text-anchor="start">Sale night, 20:00. Nothing crashed. Everything waited.</text>
+<text x="150" y="159" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Shoppers</text>
+<text x="150" y="171" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">9,000 checkouts/min</text>
+<text x="440" y="159" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">API gateway</text>
+<text x="440" y="171" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">one shared upstream pool</text>
+<text x="730" y="159" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Checkout</text>
+<text x="730" y="171" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">200 worker threads</text>
+<text x="1020" y="159" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Payments</text>
+<text x="1020" y="171" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">timeout: 30 s (library default)</text>
+<text x="1310" y="159" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Fraud scoring</text>
+<text x="1310" y="171" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">vendor API, p99 0.4 s → 28 s</text>
+<text x="588" y="151" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#D93025" text-anchor="middle">retry x3</text>
+<text x="878" y="151" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#D93025" text-anchor="middle">retry x3</text>
+<text x="1168" y="151" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#D93025" text-anchor="middle">retry x3</text>
+<text x="440" y="273" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Product pages, search, cart</text>
+<text x="440" y="285" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">share the gateway pool</text>
+<text x="640" y="237" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#202124" text-anchor="start">20:02  Fraud vendor slows down. Payments threads sit waiting on 30 s calls.</text>
+<text x="640" y="259" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#202124" text-anchor="start">20:04  Checkout's 200 threads are all blocked on Payments. New checkouts queue, then time out.</text>
+<text x="640" y="281" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#202124" text-anchor="start">20:05  Gateway, Checkout and Payments each retry 3 times: 3 x 3 x 3 = 27 requests per click.</text>
+<text x="640" y="303" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#202124" text-anchor="start">20:07  Gateway upstream pool is full of checkout requests. Product pages and search start failing too.</text>
+<text x="640" y="325" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#D93025" text-anchor="start">20:31  Rollback does nothing (no code changed). Fraud check disabled by hand; 29 minutes of lost sales.</text>
+<text x="40" y="418" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#D93025" text-anchor="start">Root cause: not the vendor. Unbounded waiting, multiplied retries and no isolation between checkout and browsing.</text>
+<text x="115" y="569.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Shoppers</text>
+<text x="340" y="563" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">API gateway</text>
+<text x="340" y="575" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">per-route pools + load shedding</text>
+<text x="625" y="556.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Checkout</text>
+<text x="625" y="568.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">deadline 2 s end to end</text>
+<text x="625" y="580.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">bulkhead: pool per dependency</text>
+<text x="930" y="563" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Payments</text>
+<text x="930" y="575" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">authorise, timeout 800 ms</text>
+<text x="1215" y="538" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Circuit breaker</text>
+<text x="1215" y="550" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">opens at 20% errors / slow calls</text>
+<text x="1215" y="623" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Fraud scoring</text>
+<text x="1215" y="635" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">timeout 300 ms</text>
+<text x="1215" y="706" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Fallback: rules-based score,</text>
+<text x="1215" y="718" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">hold orders &gt; $300 for review</text>
+<text x="1365" y="621" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#E8710A" text-anchor="start">open</text>
+<text x="690" y="674.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">order-placed queue (outbox)</text>
+<text x="690" y="761" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Capture + emails + fulfilment workers</text>
+<text x="690" y="773" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">retry with backoff, idempotency keys</text>
+<text x="40" y="651" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">1  Retry in one place only (the client or gateway), with jitter and a retry budget of 10%.</text>
+<text x="40" y="675" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">2  Every call carries the remaining deadline; nothing waits longer than the user will.</text>
+<text x="40" y="699" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">3  Separate pools per downstream: Payments being slow cannot use Search's threads.</text>
+<text x="40" y="723" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">4  Accept the order, then capture, email and ship from a queue. User sees "Order received".</text>
+<text x="40" y="843" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#188038" text-anchor="start">Result in the next sale: fraud vendor slowed again for 11 minutes, breaker opened, 0 checkout errors, 214 orders held for review.</text></svg>
