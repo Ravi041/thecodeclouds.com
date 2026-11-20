@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 760" width="1500" height="760" role="img"><title>2. From 5 to 50 engineers</title><defs><marker id="a1A73E8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1A73E8"/></marker><marker id="a5F6368" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5F6368"/></marker><marker id="a7B3FE4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7B3FE4"/></marker></defs><rect width="100%" height="100%" fill="#FFFFFF"/><rect x="20" y="80" width="470" height="660" rx="8" fill="#FFFFFF" stroke="#1A73E8"/>
+<text x="28" y="96" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A73E8" text-anchor="start">Stage 1 · year 1 · 5 engineers</text>
+<rect x="50" y="600" width="410" height="94" rx="8" fill="#FCE8E6" stroke="#D93025"/>
+<text x="58" y="616" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#D93025" text-anchor="start"></text>
+<rect x="515" y="80" width="470" height="660" rx="8" fill="#FFFFFF" stroke="#7B3FE4"/>
+<text x="523" y="96" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#7B3FE4" text-anchor="start">Stage 2 · year 2 · 15 to 20 engineers</text>
+<rect x="555" y="398" width="390" height="82" rx="8" fill="#FFFFFF" stroke="#7B3FE4"/>
+<text x="563" y="414" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#7B3FE4" text-anchor="start">shop-app</text>
+<rect x="545" y="600" width="410" height="109" rx="8" fill="#FCE8E6" stroke="#D93025"/>
+<text x="553" y="616" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#D93025" text-anchor="start"></text>
+<rect x="1010" y="80" width="470" height="660" rx="8" fill="#FFFFFF" stroke="#188038"/>
+<text x="1018" y="96" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#188038" text-anchor="start">Stage 3 · year 3+ · 50 engineers</text>
+<rect x="1040" y="600" width="410" height="109" rx="8" fill="#E6F4EA" stroke="#188038"/>
+<text x="1048" y="616" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#188038" text-anchor="start"></text>
+<path d="M983 410 L1007 410" fill="none" stroke="#5F6368" stroke-width="3" marker-end="url(#a5F6368)"/>
+<path d="M488 410 L512 410" fill="none" stroke="#5F6368" stroke-width="3" marker-end="url(#a5F6368)"/>
+<path d="M875 480 L875 510" fill="none" stroke="#7B3FE4" stroke-width="2" marker-end="url(#a7B3FE4)"/>
+<path d="M750 480 L750 510" fill="none" stroke="#7B3FE4" stroke-width="2" marker-end="url(#a7B3FE4)"/>
+<path d="M625 480 L625 510" fill="none" stroke="#7B3FE4" stroke-width="2" marker-end="url(#a7B3FE4)"/>
+<path d="M255 460 L255 490" fill="none" stroke="#1A73E8" stroke-width="2" marker-end="url(#a1A73E8)"/>
+<rect x="50" y="150" width="410" height="62" rx="8" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1.5"/>
+<rect x="50" y="232" width="410" height="62" rx="8" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1.5"/>
+<rect x="50" y="314" width="410" height="62" rx="8" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1.5"/>
+<rect x="170" y="410" width="170" height="50" rx="8" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1.5"/>
+<path d="M195 498 A60 8 0 0 1 315 498 L315 538 A60 8 0 0 1 195 538 Z" fill="#FFFFFF" stroke="#1A73E8" stroke-width="1.5"/><path d="M195 498 A60 8 0 0 0 315 498" fill="none" stroke="#1A73E8" stroke-width="1.5"/>
+<rect x="545" y="150" width="410" height="62" rx="8" fill="#F3EDFD" stroke="#7B3FE4" stroke-width="1.5"/>
+<rect x="545" y="232" width="410" height="62" rx="8" fill="#F3EDFD" stroke="#7B3FE4" stroke-width="1.5"/>
+<rect x="545" y="314" width="410" height="62" rx="8" fill="#F3EDFD" stroke="#7B3FE4" stroke-width="1.5"/>
+<rect x="570" y="426" width="110" height="40" rx="8" fill="#F3EDFD" stroke="#7B3FE4" stroke-width="1.5"/>
+<rect x="695" y="426" width="110" height="40" rx="8" fill="#F3EDFD" stroke="#7B3FE4" stroke-width="1.5"/>
+<rect x="820" y="426" width="110" height="40" rx="8" fill="#F3EDFD" stroke="#7B3FE4" stroke-width="1.5"/>
+<path d="M580 518 A45 8 0 0 1 670 518 L670 548 A45 8 0 0 1 580 548 Z" fill="#FFFFFF" stroke="#7B3FE4" stroke-width="1.5"/><path d="M580 518 A45 8 0 0 0 670 518" fill="none" stroke="#7B3FE4" stroke-width="1.5"/>
+<path d="M705 518 A45 8 0 0 1 795 518 L795 548 A45 8 0 0 1 705 548 Z" fill="#FFFFFF" stroke="#7B3FE4" stroke-width="1.5"/><path d="M705 518 A45 8 0 0 0 795 518" fill="none" stroke="#7B3FE4" stroke-width="1.5"/>
+<path d="M830 518 A45 8 0 0 1 920 518 L920 548 A45 8 0 0 1 830 548 Z" fill="#FFFFFF" stroke="#7B3FE4" stroke-width="1.5"/><path d="M830 518 A45 8 0 0 0 920 518" fill="none" stroke="#7B3FE4" stroke-width="1.5"/>
+<rect x="1040" y="150" width="410" height="62" rx="8" fill="#E6F4EA" stroke="#188038" stroke-width="1.5"/>
+<rect x="1040" y="232" width="410" height="62" rx="8" fill="#E6F4EA" stroke="#188038" stroke-width="1.5"/>
+<rect x="1040" y="314" width="410" height="62" rx="8" fill="#E6F4EA" stroke="#188038" stroke-width="1.5"/>
+<rect x="1040" y="398" width="410" height="32" rx="8" fill="#F3EDFD" stroke="#7B3FE4" stroke-width="1.5"/>
+<rect x="1040" y="455" width="150" height="46" rx="8" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1.5"/>
+<rect x="1206" y="455" width="78" height="46" rx="8" fill="#E6F4EA" stroke="#188038" stroke-width="1.5"/>
+<rect x="1290" y="455" width="78" height="46" rx="8" fill="#E6F4EA" stroke="#188038" stroke-width="1.5"/>
+<rect x="1374" y="455" width="78" height="46" rx="8" fill="#E6F4EA" stroke="#188038" stroke-width="1.5"/>
+<rect x="1040" y="525" width="410" height="30" rx="15" fill="#FEF0E3" stroke="#E8710A" stroke-width="1.5"/>
+<rect x="1058" y="533" width="9" height="14" rx="2" fill="#E8710A" opacity="0.35"/>
+<rect x="1380" y="533" width="9" height="14" rx="2" fill="#E8710A" opacity="0.35"/>
+<rect x="1072" y="533" width="9" height="14" rx="2" fill="#E8710A" opacity="0.53"/>
+<rect x="1394" y="533" width="9" height="14" rx="2" fill="#E8710A" opacity="0.53"/>
+<rect x="1086" y="533" width="9" height="14" rx="2" fill="#E8710A" opacity="0.71"/>
+<rect x="1408" y="533" width="9" height="14" rx="2" fill="#E8710A" opacity="0.71"/>
+<rect x="1100" y="533" width="9" height="14" rx="2" fill="#E8710A" opacity="0.89"/>
+<rect x="1422" y="533" width="9" height="14" rx="2" fill="#E8710A" opacity="0.89"/>
+<text x="20" y="36" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#202124" text-anchor="start">Scenario: an online shop growing from 5 to 50 engineers</text>
+<text x="20" y="59" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#5F6368" text-anchor="start">Architecture follows the team. Each stage solves the problem the previous one created, not one you might have later.</text>
+<text x="36" y="125" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#202124" text-anchor="start">One team, one Rails/Django/Spring app</text>
+<text x="255" y="179" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">One deployable</text>
+<text x="255" y="191" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">deploys 10x a day, no waiting</text>
+<text x="255" y="261" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">One database</text>
+<text x="255" y="273" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">joins and transactions are free</text>
+<text x="255" y="343" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Folders, not modules</text>
+<text x="255" y="355" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">fine while everyone knows the code</text>
+<text x="255" y="439.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">shop-app</text>
+<text x="255" y="526" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">shop DB</text>
+<text x="60" y="635" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Pain that ends this stage:</text>
+<text x="60" y="650" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">merge conflicts in checkout code,</text>
+<text x="60" y="665" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">a 25 min test suite, one person</text>
+<text x="60" y="680" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">who "owns" payments in their head.</text>
+<text x="531" y="125" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#202124" text-anchor="start">Three teams, same deployable, real modules</text>
+<text x="750" y="179" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Modules with interfaces</text>
+<text x="750" y="191" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">Discover · Buy · Fulfil</text>
+<text x="750" y="261" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Schema per module</text>
+<text x="750" y="273" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">no cross-module joins</text>
+<text x="750" y="343" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">CODEOWNERS + CI rules</text>
+<text x="750" y="355" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">boundary checks fail the build</text>
+<text x="625" y="450.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Discover</text>
+<text x="750" y="450.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Buy</text>
+<text x="875" y="450.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Fulfil</text>
+<text x="625" y="541" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">catalog.*</text>
+<text x="750" y="541" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">orders.*</text>
+<text x="875" y="541" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">stock.*</text>
+<text x="555" y="635" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Pain that ends this stage:</text>
+<text x="555" y="650" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">search needs 40 nodes at 9 PM sale</text>
+<text x="555" y="665" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">time, the rest needs 6; PCI scope</text>
+<text x="555" y="680" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">covers the whole app; deploy</text>
+<text x="555" y="695" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">queue reaches 2 hours.</text>
+<text x="1026" y="125" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#202124" text-anchor="start">Seven teams, core + extracted services</text>
+<text x="1245" y="179" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Modular core</text>
+<text x="1245" y="191" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">catalog, cart, checkout, orders</text>
+<text x="1245" y="261" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Extracted services</text>
+<text x="1245" y="273" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">search, payments, inventory</text>
+<text x="1245" y="343" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">Event bus + gateway</text>
+<text x="1245" y="355" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="middle">strangler routing per path</text>
+<text x="1245" y="418.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">gateway</text>
+<text x="1115" y="482.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">core (modular)</text>
+<text x="1245" y="482.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">search</text>
+<text x="1329" y="482.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">payments</text>
+<text x="1413" y="482.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">inventory</text>
+<text x="1245" y="544.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="middle">events</text>
+<text x="1050" y="635" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">Extract only where there is a</text>
+<text x="1050" y="650" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">reason: different scale, different</text>
+<text x="1050" y="665" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">compliance, or a team blocked</text>
+<text x="1050" y="680" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">by the release train. Everything</text>
+<text x="1050" y="695" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3C4043" text-anchor="start">else stays in the core.</text></svg>
