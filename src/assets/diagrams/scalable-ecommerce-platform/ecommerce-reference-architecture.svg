@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" width="1500" height="1060" role="img"><title>Scalable e-commerce platform: reference architecture</title><defs><marker id="a007B83" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#007B83"/></marker><marker id="a1A73E8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1A73E8"/></marker><marker id="a1E8E3E" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1E8E3E"/></marker><marker id="a5F6368" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5F6368"/></marker><marker id="a8430CE" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8430CE"/></marker><marker id="aD93025" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#D93025"/></marker><marker id="aE37400" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E37400"/></marker></defs><rect width="100%" height="100%" fill="#FFFFFF"/><rect x="40" y="70" width="261" height="52" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="48" y="86" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="313" y="70" width="261" height="52" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="321" y="86" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="586" y="70" width="261" height="52" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="594" y="86" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="859" y="70" width="261" height="52" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="867" y="86" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="146" width="1080" height="108" rx="8" fill="#FFFFFF" stroke="#D93025"/>
+<text x="48" y="162" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="184" width="253" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="64" y="200" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="321" y="184" width="253" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="329" y="200" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="586" y="184" width="253" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="594" y="200" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="851" y="184" width="253" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="859" y="200" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="272" width="1080" height="108" rx="8" fill="#FFFFFF" stroke="#E37400"/>
+<text x="48" y="288" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="310" width="253" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="64" y="326" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="321" y="310" width="253" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="329" y="326" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="586" y="310" width="253" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="594" y="326" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="851" y="310" width="253" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="859" y="326" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="398" width="1080" height="250" rx="8" fill="#FFFFFF" stroke="#1A73E8"/>
+<text x="48" y="414" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="454" width="201.6" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="64" y="470" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="267.6" y="454" width="201.6" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="275.6" y="470" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="479.2" y="454" width="201.6" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="487.2" y="470" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="690.8" y="454" width="201.6" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="698.8" y="470" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="902.4" y="454" width="201.6" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="910.4" y="470" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="544" width="201.6" height="56" rx="8" fill="#F1F6FE" stroke="#AECBFA"/>
+<text x="64" y="560" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="267.6" y="544" width="201.6" height="56" rx="8" fill="#F1F6FE" stroke="#AECBFA"/>
+<text x="275.6" y="560" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="479.2" y="544" width="201.6" height="56" rx="8" fill="#F1F6FE" stroke="#AECBFA"/>
+<text x="487.2" y="560" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="690.8" y="544" width="201.6" height="56" rx="8" fill="#F1F6FE" stroke="#AECBFA"/>
+<text x="698.8" y="560" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="902.4" y="544" width="201.6" height="56" rx="8" fill="#F1F6FE" stroke="#AECBFA"/>
+<text x="910.4" y="560" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="666" width="1080" height="130" rx="8" fill="#FFFFFF" stroke="#8430CE"/>
+<text x="48" y="682" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="702" width="1048" height="44" rx="8" fill="#F8F0FF" stroke="#D7AEFB"/>
+<text x="64" y="718" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="754" width="201.6" height="34" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="64" y="770" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="267.6" y="754" width="201.6" height="34" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="275.6" y="770" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="479.2" y="754" width="201.6" height="34" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="487.2" y="770" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="690.8" y="754" width="201.6" height="34" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="698.8" y="770" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="902.4" y="754" width="201.6" height="34" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="910.4" y="770" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="814" width="1080" height="180" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="48" y="830" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="852" width="201.6" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="64" y="868" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="267.6" y="852" width="201.6" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="275.6" y="868" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="479.2" y="852" width="201.6" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="487.2" y="868" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="690.8" y="852" width="201.6" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="698.8" y="868" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="902.4" y="852" width="201.6" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="910.4" y="868" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="56" y="920" width="254.5" height="56" rx="8" fill="#F0F9F2" stroke="#A8DAB5"/>
+<text x="64" y="936" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="320.5" y="920" width="254.5" height="56" rx="8" fill="#F0F9F2" stroke="#A8DAB5"/>
+<text x="328.5" y="936" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="585" y="920" width="254.5" height="56" rx="8" fill="#F0F9F2" stroke="#A8DAB5"/>
+<text x="593" y="936" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="849.5" y="920" width="254.5" height="56" rx="8" fill="#F0F9F2" stroke="#A8DAB5"/>
+<text x="857.5" y="936" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1140" y="146" width="340" height="330" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="1148" y="162" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1156" y="184" width="308" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1164" y="200" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1156" y="250" width="308" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1164" y="266" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1156" y="316" width="308" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1164" y="332" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1156" y="382" width="308" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1164" y="398" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1140" y="494" width="340" height="500" rx="8" fill="#FFFFFF" stroke="#007B83"/>
+<text x="1148" y="510" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1156" y="532" width="308" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1164" y="548" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1156" y="598" width="308" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1164" y="614" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1156" y="664" width="308" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1164" y="680" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1156" y="730" width="308" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1164" y="746" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1156" y="796" width="308" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1164" y="812" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1156" y="862" width="308" height="56" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1164" y="878" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1156" y="928" width="308" height="52" rx="8" fill="#FFFFFF" stroke="#DADCE0"/>
+<text x="1164" y="944" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M580 796 L580 812" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M580 648 L580 664" fill="none" stroke="#8430CE" stroke-width="2" marker-end="url(#a8430CE)"/>
+<path d="M840 380 L840 396" fill="none" stroke="#E37400" stroke-width="2" marker-end="url(#aE37400)"/>
+<path d="M840 254 L840 270" fill="none" stroke="#E37400" stroke-width="2" marker-end="url(#aE37400)"/>
+<path d="M300 380 L300 396" fill="none" stroke="#E37400" stroke-width="2" marker-end="url(#aE37400)"/>
+<path d="M300 254 L300 270" fill="none" stroke="#E37400" stroke-width="2" marker-end="url(#aE37400)"/>
+<path d="M985 122 L985 144" fill="none" stroke="#D93025" stroke-width="2" marker-end="url(#aD93025)"/>
+<path d="M715 122 L715 144" fill="none" stroke="#D93025" stroke-width="2" marker-end="url(#aD93025)"/>
+<path d="M445 122 L445 144" fill="none" stroke="#D93025" stroke-width="2" marker-end="url(#aD93025)"/>
+<path d="M175 122 L175 144" fill="none" stroke="#D93025" stroke-width="2" marker-end="url(#aD93025)"/>
+<path d="M1140 498 L1140 990" fill="none" stroke="#007B83" stroke-width="5"/>
+<path d="M1140 150 L1140 472" fill="none" stroke="#5F6368" stroke-width="5"/>
+<path d="M40 818 L40 990" fill="none" stroke="#1E8E3E" stroke-width="5"/>
+<path d="M40 670 L40 792" fill="none" stroke="#8430CE" stroke-width="5"/>
+<path d="M40 402 L40 644" fill="none" stroke="#1A73E8" stroke-width="5"/>
+<path d="M40 276 L40 376" fill="none" stroke="#E37400" stroke-width="5"/>
+<path d="M40 150 L40 250" fill="none" stroke="#D93025" stroke-width="5"/>
+<text x="20" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#232F3E" text-anchor="start">A scalable e-commerce platform: reference architecture</text>
+<text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">Cloud-neutral. Browse traffic is served from caches at the top; only buying reaches the strongly consistent stores at the bottom.</text>
+<text x="50" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Web storefront</text>
+<text x="50" y="106" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">server-rendered pages + JS</text>
+<text x="323" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Mobile apps</text>
+<text x="323" y="106" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">iOS, Android</text>
+<text x="596" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Partners + marketplaces</text>
+<text x="596" y="106" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">feeds, order APIs</text>
+<text x="869" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Store ops + support</text>
+<text x="869" y="106" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">admin console</text>
+<text x="54" y="167" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#D93025" text-anchor="start">1  Edge: absorb the crowd before it reaches you</text>
+<text x="66" y="204" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">DNS + global load balancer</text>
+<text x="66" y="220" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">health-checked, per region</text>
+<text x="331" y="204" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">CDN</text>
+<text x="331" y="220" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">images, JS, cached product pages</text>
+<text x="596" y="204" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">WAF + bot management</text>
+<text x="596" y="220" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">scalpers, credential stuffing</text>
+<text x="861" y="204" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Waiting room</text>
+<text x="861" y="220" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">turned on for drops and sales</text>
+<text x="54" y="293" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#E37400" text-anchor="start">2  Entry: one front door per client type</text>
+<text x="66" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">API gateway</text>
+<text x="66" y="346" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">auth, rate limits, routing</text>
+<text x="331" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Web BFF</text>
+<text x="331" y="346" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">page composition, SSR</text>
+<text x="596" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Mobile BFF</text>
+<text x="596" y="346" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">smaller payloads, versioned</text>
+<text x="861" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Identity</text>
+<text x="861" y="346" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">sessions, OAuth, MFA</text>
+<text x="54" y="419" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A73E8" text-anchor="start">3  Domain services: each owns its data, none shares a database</text>
+<text x="56" y="445" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A73E8" text-anchor="start">Browse (read heavy, cache everything)</text>
+<text x="66" y="474" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Catalog</text>
+<text x="66" y="490" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">products, variants, media</text>
+<text x="277.6" y="474" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Search</text>
+<text x="277.6" y="490" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">query, facets, ranking</text>
+<text x="489.2" y="474" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Pricing + promos</text>
+<text x="489.2" y="490" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">price books, coupons</text>
+<text x="700.8" y="474" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Recommendations</text>
+<text x="700.8" y="490" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">optional, can switch off</text>
+<text x="912.4" y="474" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Reviews</text>
+<text x="912.4" y="490" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">write rarely, read often</text>
+<text x="56" y="535" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A73E8" text-anchor="start">Buy (write path, correctness over speed)</text>
+<text x="66" y="564" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Cart</text>
+<text x="66" y="580" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">per session, merge on login</text>
+<text x="277.6" y="564" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Checkout</text>
+<text x="277.6" y="580" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">orchestrates the order saga</text>
+<text x="489.2" y="564" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Inventory</text>
+<text x="489.2" y="580" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">available, reserved, sold</text>
+<text x="700.8" y="564" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Payments</text>
+<text x="700.8" y="580" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">PSP adapters, idempotent</text>
+<text x="912.4" y="564" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Orders</text>
+<text x="912.4" y="580" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">state machine, history</text>
+<text x="56" y="623" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#5F6368" text-anchor="start">Rule: services call each other only for data they need in the request. Everything else travels as events.</text>
+<text x="54" y="687" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#8430CE" text-anchor="start">4  Events: what happened, published once, consumed by many</text>
+<text x="66" y="722" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Event bus / log</text>
+<text x="66" y="738" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">topics: order.placed, payment.captured, stock.changed, price.changed, order.shipped</text>
+<text x="66" y="774" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Fulfilment / WMS</text>
+<text x="277.6" y="774" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Notifications</text>
+<text x="489.2" y="774" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Search indexer</text>
+<text x="700.8" y="774" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Fraud scoring</text>
+<text x="912.4" y="774" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Analytics + clickstream</text>
+<text x="54" y="835" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1E8E3E" text-anchor="start">5  Data: the right store per job</text>
+<text x="66" y="872" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Cache cluster</text>
+<text x="66" y="888" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">product, price, session</text>
+<text x="277.6" y="872" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Catalog store</text>
+<text x="277.6" y="888" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">document DB + read replicas</text>
+<text x="489.2" y="872" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Search index</text>
+<text x="489.2" y="888" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">rebuilt from events</text>
+<text x="700.8" y="872" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Cart store</text>
+<text x="700.8" y="888" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">key-value, TTL 30 days</text>
+<text x="912.4" y="872" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Object storage</text>
+<text x="912.4" y="888" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">images, exports</text>
+<text x="66" y="940" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Inventory DB</text>
+<text x="66" y="956" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">relational, strongly consistent</text>
+<text x="330.5" y="940" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Orders DB</text>
+<text x="330.5" y="956" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">relational, sharded by customer</text>
+<text x="595" y="940" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Payments ledger</text>
+<text x="595" y="956" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">append-only, never updated</text>
+<text x="859.5" y="940" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Warehouse / lake</text>
+<text x="859.5" y="956" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">reporting, ML, finance</text>
+<text x="40" y="1024" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start">Every buy-path store runs across three zones with synchronous replicas. Browse stores can lag seconds behind; nobody notices.</text>
+<text x="40" y="1047" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#5F6368" text-anchor="start">Names are generic on purpose. Parts 5 to 9 of this series map each box to AWS, Azure and Google Cloud services.</text>
+<text x="1154" y="167" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#5F6368" text-anchor="start">Outside partners</text>
+<text x="1166" y="204" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Payment providers (PSP A + B)</text>
+<text x="1166" y="220" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">authorize, capture, refund</text>
+<text x="1166" y="270" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Tax + fraud services</text>
+<text x="1166" y="286" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">called inside checkout</text>
+<text x="1166" y="336" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Carriers + warehouses</text>
+<text x="1166" y="352" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">rates, labels, tracking</text>
+<text x="1166" y="402" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Email, SMS, push</text>
+<text x="1166" y="418" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">delivery receipts back as events</text>
+<text x="1154" y="515" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#007B83" text-anchor="start">Platform (every service gets it free)</text>
+<text x="1166" y="552" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Observability</text>
+<text x="1166" y="568" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">metrics, traces, logs, SLOs</text>
+<text x="1166" y="618" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Business alerting</text>
+<text x="1166" y="634" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">orders/min, payment success rate</text>
+<text x="1166" y="684" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Feature flags + kill switches</text>
+<text x="1166" y="700" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">turn off recs, reviews, upsell</text>
+<text x="1166" y="750" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Secrets + keys</text>
+<text x="1166" y="766" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">no card data outside payments</text>
+<text x="1166" y="816" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">CI/CD + load testing</text>
+<text x="1166" y="832" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">every release, 2x peak monthly</text>
+<text x="1166" y="882" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Autoscaling + capacity plan</text>
+<text x="1166" y="898" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">pre-scaled before known peaks</text>
+<text x="1166" y="948" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#202124" text-anchor="start">Container platform</text>
+<text x="1166" y="964" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">three zones, per-service quotas</text></svg>
