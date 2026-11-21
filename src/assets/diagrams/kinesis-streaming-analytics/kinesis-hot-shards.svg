@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 745" width="1500" height="745" role="img"><title>2. Hot shards and partition keys</title><defs><marker id="aDD344C" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#DD344C"/></marker></defs><rect width="100%" height="100%" fill="#FFFFFF"/><rect x="20" y="60" width="720" height="520" rx="8" fill="#FFF7F8" stroke="#DD344C"/>
+<text x="28" y="76" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#DD344C" text-anchor="start">Before: partition key = zone_id (1,200 delivery zones)</text>
+<rect x="60" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="68" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="60" y="331.6" width="58" height="118.4" rx="8" fill="#8C4FFF55" stroke="#8C4FFF"/>
+<text x="68" y="347.6" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="140" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="148" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="140" y="336.4" width="58" height="113.6" rx="8" fill="#8C4FFF55" stroke="#8C4FFF"/>
+<text x="148" y="352.4" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="220" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="228" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="220" y="290" width="58" height="160" rx="8" fill="#F7C5CC" stroke="#DD344C"/>
+<text x="228" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="220" y="194" width="58" height="96" rx="8" fill="#FFFFFF" stroke="#DD344C" stroke-dasharray="6 4"/>
+<text x="228" y="210" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="300" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="308" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="300" y="328.4" width="58" height="121.6" rx="8" fill="#8C4FFF55" stroke="#8C4FFF"/>
+<text x="308" y="344.4" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="380" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="388" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="380" y="338" width="58" height="112" rx="8" fill="#8C4FFF55" stroke="#8C4FFF"/>
+<text x="388" y="354" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="460" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="468" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="460" y="333.2" width="58" height="116.8" rx="8" fill="#8C4FFF55" stroke="#8C4FFF"/>
+<text x="468" y="349.2" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="540" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="548" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="540" y="334.8" width="58" height="115.2" rx="8" fill="#8C4FFF55" stroke="#8C4FFF"/>
+<text x="548" y="350.8" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="620" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="628" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="620" y="330" width="58" height="120" rx="8" fill="#8C4FFF55" stroke="#8C4FFF"/>
+<text x="628" y="346" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="760" y="60" width="720" height="520" rx="8" fill="#F8FBF2" stroke="#7AA116"/>
+<text x="768" y="76" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3F6B0A" text-anchor="start">After: partition key = session_id (about 400,000 live sessions)</text>
+<rect x="800" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="808" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="800" y="328.4" width="58" height="121.6" rx="8" fill="#7AA11655" stroke="#7AA116"/>
+<text x="808" y="344.4" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="880" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="888" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="880" y="331.6" width="58" height="118.4" rx="8" fill="#7AA11655" stroke="#7AA116"/>
+<text x="888" y="347.6" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="960" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="968" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="960" y="326.8" width="58" height="123.2" rx="8" fill="#7AA11655" stroke="#7AA116"/>
+<text x="968" y="342.8" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1040" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="1048" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1040" y="330" width="58" height="120" rx="8" fill="#7AA11655" stroke="#7AA116"/>
+<text x="1048" y="346" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1120" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="1128" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1120" y="333.2" width="58" height="116.8" rx="8" fill="#7AA11655" stroke="#7AA116"/>
+<text x="1128" y="349.2" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1200" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="1208" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1200" y="328.4" width="58" height="121.6" rx="8" fill="#7AA11655" stroke="#7AA116"/>
+<text x="1208" y="344.4" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1280" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="1288" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1280" y="330" width="58" height="120" rx="8" fill="#7AA11655" stroke="#7AA116"/>
+<text x="1288" y="346" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1360" y="290" width="58" height="160" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="1368" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1360" y="331.6" width="58" height="118.4" rx="8" fill="#7AA11655" stroke="#7AA116"/>
+<text x="1368" y="347.6" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="20" y="610" width="350" height="92" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="28" y="626" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#232F3E" text-anchor="start">Need per-key order?</text>
+<text x="28" y="638" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">Keep the key but add a bounded suffix,</text>
+<text x="28" y="650" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">zone_id#(hash(session_id) % 8), and merge</text>
+<text x="28" y="662" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">the 8 sub-streams in Flink. Order holds</text>
+<text x="28" y="674" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">within each sub-key.</text>
+<rect x="388" y="610" width="350" height="92" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="396" y="626" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#232F3E" text-anchor="start">Find the hot shard</text>
+<text x="396" y="638" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">Enable shard-level metrics</text>
+<text x="396" y="650" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">(EnableEnhancedMonitoring) and sort</text>
+<text x="396" y="662" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">IncomingBytes and</text>
+<text x="396" y="674" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">WriteProvisionedThroughputExceeded by shard.</text>
+<rect x="756" y="610" width="350" height="92" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="764" y="626" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#232F3E" text-anchor="start">Producer side</text>
+<text x="764" y="638" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">KPL aggregation packs small events into</text>
+<text x="764" y="650" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">~25 KB records, which fixes the 1,000</text>
+<text x="764" y="662" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">records/s limit, not the 1 MB/s one.</text>
+<text x="764" y="674" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">Retry with jitter, never in a tight loop.</text>
+<rect x="1124" y="610" width="350" height="92" rx="8" fill="#FFFFFF" stroke="#9AA0A6"/>
+<text x="1132" y="626" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#232F3E" text-anchor="start">Read side</text>
+<text x="1132" y="638" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">Shared reads are 2 MB/s per shard across</text>
+<text x="1132" y="650" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">all consumers. Give the Flink job enhanced</text>
+<text x="1132" y="662" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">fan-out (its own 2 MB/s per shard) so</text>
+<text x="1132" y="674" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#545B64" text-anchor="start">Firehose and Lambda do not starve it.</text>
+<path d="M786 290 L1432 290" fill="none" stroke="#DD344C" stroke-width="1.5" stroke-dasharray="7 5"/>
+<path d="M46 290 L692 290" fill="none" stroke="#DD344C" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="20" y="34" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#232F3E" text-anchor="start">Why one busy key throttles a 72-shard stream, and how to fix it without adding shards</text>
+<text x="40" y="104" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#545B64" text-anchor="start">PutRecords → MD5(partition key) → 128-bit hash key range → exactly one shard</text>
+<text x="40" y="130" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#232F3E" text-anchor="start">Friday 19:00, a free-delivery promo in one district: zone dub-centre-04</text>
+<text x="40" y="146" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#232F3E" text-anchor="start">alone offers 1.6 MB/s. Every record for that key lands on shard 17.</text>
+<text x="89" y="324.6" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#8C4FFF" text-anchor="middle">74%</text>
+<text x="89" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 03</text>
+<text x="169" y="329.4" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#8C4FFF" text-anchor="middle">71%</text>
+<text x="169" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 09</text>
+<text x="249" y="187" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#DD344C" text-anchor="middle">160%</text>
+<text x="249" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 17</text>
+<text x="329" y="321.4" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#8C4FFF" text-anchor="middle">76%</text>
+<text x="329" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 24</text>
+<text x="409" y="331" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#8C4FFF" text-anchor="middle">70%</text>
+<text x="409" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 31</text>
+<text x="489" y="326.2" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#8C4FFF" text-anchor="middle">73%</text>
+<text x="489" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 46</text>
+<text x="569" y="327.8" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#8C4FFF" text-anchor="middle">72%</text>
+<text x="569" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 58</text>
+<text x="649" y="323" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#8C4FFF" text-anchor="middle">75%</text>
+<text x="649" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 70</text>
+<text x="690" y="281" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#DD344C" text-anchor="end">100% = 1 MB/s or 1,000 records/s write per shard</text>
+<text x="40" y="502" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#DD344C" text-anchor="start">Shard 17 accepts 1 MB/s and rejects the rest: WriteProvisionedThroughputExceeded, PutRecords</text>
+<text x="40" y="518" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#DD344C" text-anchor="start">FailedRecordCount &gt; 0, producer retries add load. The stream-level average still reads about 76%.</text>
+<text x="40" y="548" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#232F3E" text-anchor="start">Resharding does not help: a single partition key always maps to a single shard.</text>
+<text x="780" y="104" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#545B64" text-anchor="start">Same traffic, high-cardinality key: the hash spreads it evenly across all 72 shards</text>
+<text x="780" y="130" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#232F3E" text-anchor="start">Stream key spreads load. Flink keyBy(zone_id) regroups events after the read,</text>
+<text x="780" y="146" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#232F3E" text-anchor="start">so per-zone windows are unchanged.</text>
+<text x="829" y="321.4" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#7AA116" text-anchor="middle">76%</text>
+<text x="829" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 03</text>
+<text x="909" y="324.6" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#7AA116" text-anchor="middle">74%</text>
+<text x="909" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 09</text>
+<text x="989" y="319.8" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#7AA116" text-anchor="middle">77%</text>
+<text x="989" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 17</text>
+<text x="1069" y="323" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#7AA116" text-anchor="middle">75%</text>
+<text x="1069" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 24</text>
+<text x="1149" y="326.2" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#7AA116" text-anchor="middle">73%</text>
+<text x="1149" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 31</text>
+<text x="1229" y="321.4" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#7AA116" text-anchor="middle">76%</text>
+<text x="1229" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 46</text>
+<text x="1309" y="323" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#7AA116" text-anchor="middle">75%</text>
+<text x="1309" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 58</text>
+<text x="1389" y="324.6" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#7AA116" text-anchor="middle">74%</text>
+<text x="1389" y="467" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="middle">shard 70</text>
+<text x="1430" y="281" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#DD344C" text-anchor="end">100% = 1 MB/s or 1,000 records/s write per shard</text>
+<text x="780" y="502" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3F6B0A" text-anchor="start">No throttling at the same 54 MB/s peak: 0.75 MB/s per shard, 75% of capacity,</text>
+<text x="780" y="518" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3F6B0A" text-anchor="start">leaving a third of headroom over the 54 shards the peak strictly needs.</text>
+<text x="780" y="548" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#232F3E" text-anchor="start">Per-session ordering is kept, which is all the clickstream needs.</text>
+<text x="20" y="727" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#545B64" text-anchor="start">Quotas per AWS Kinesis Data Streams documentation; check service-sizes-and-limits for your region and capacity mode.</text></svg>
