@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 780" width="1500" height="780" role="img"><title>Three production failures and the design that survives them</title><defs><marker id="a1E8E3E" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1E8E3E"/></marker><marker id="a5F6368" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5F6368"/></marker><marker id="a8430CE" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8430CE"/></marker><marker id="aD93025" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#D93025"/></marker></defs><rect width="100%" height="100%" fill="#FFFFFF"/><rect x="40" y="76" width="460" height="50" rx="8" fill="#D93025" stroke="#D93025"/>
+<text x="48" y="92" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="140" width="460" height="170" rx="8" fill="#FDF3F2" stroke="#D93025"/>
+<text x="48" y="156" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="346" width="460" height="410" rx="8" fill="#F0F9F2" stroke="#1E8E3E"/>
+<text x="48" y="362" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="54" y="590" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="62" y="606" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="204" y="582" width="110" height="56" rx="8" fill="#FFFFFF" stroke="#E37400"/>
+<text x="212" y="598" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="366" y="540" width="120" height="40" rx="8" fill="#FDF3F2" stroke="#D93025"/>
+<text x="374" y="556" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="366" y="650" width="120" height="40" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="374" y="666" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="520" y="76" width="460" height="50" rx="8" fill="#E37400" stroke="#E37400"/>
+<text x="528" y="92" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="520" y="140" width="460" height="170" rx="8" fill="#FDF3F2" stroke="#D93025"/>
+<text x="528" y="156" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="520" y="346" width="460" height="410" rx="8" fill="#F0F9F2" stroke="#1E8E3E"/>
+<text x="528" y="362" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="534" y="546" width="74" height="48" rx="8" fill="#F1F3F4" stroke="#5F6368"/>
+<text x="542" y="562" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="618" y="546" width="74" height="48" rx="8" fill="#F1F3F4" stroke="#5F6368"/>
+<text x="626" y="562" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="702" y="546" width="74" height="48" rx="8" fill="#F1F3F4" stroke="#5F6368"/>
+<text x="710" y="562" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="786" y="546" width="74" height="48" rx="8" fill="#F1F3F4" stroke="#5F6368"/>
+<text x="794" y="562" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="870" y="546" width="74" height="48" rx="8" fill="#F1F3F4" stroke="#5F6368"/>
+<text x="878" y="562" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="534" y="604" width="74" height="48" rx="8" fill="#F1F3F4" stroke="#5F6368"/>
+<text x="542" y="620" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="618" y="604" width="74" height="48" rx="8" fill="#F1F3F4" stroke="#5F6368"/>
+<text x="626" y="620" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="702" y="604" width="74" height="48" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="710" y="620" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="786" y="604" width="74" height="48" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="794" y="620" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="870" y="604" width="74" height="48" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="878" y="620" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1000" y="76" width="460" height="50" rx="8" fill="#8430CE" stroke="#8430CE"/>
+<text x="1008" y="92" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1000" y="140" width="460" height="170" rx="8" fill="#FDF3F2" stroke="#D93025"/>
+<text x="1008" y="156" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1000" y="346" width="460" height="410" rx="8" fill="#F0F9F2" stroke="#1E8E3E"/>
+<text x="1008" y="362" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1014" y="580" width="90" height="50" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="1022" y="596" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1164" y="584" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="1172" y="600" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1304" y="580" width="140" height="50" rx="8" fill="#FFFFFF" stroke="#8430CE"/>
+<text x="1312" y="596" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M1264 604 L1302 604" fill="none" stroke="#8430CE" stroke-width="2" marker-end="url(#a8430CE)"/>
+<path d="M1162 616 L1104 616" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M1104 596 L1162 596" fill="none" stroke="#5F6368" stroke-width="2" marker-end="url(#a5F6368)"/>
+<path d="M1230 314 L1230 340" fill="none" stroke="#5F6368" stroke-width="3" marker-end="url(#a5F6368)"/>
+<path d="M750 314 L750 340" fill="none" stroke="#5F6368" stroke-width="3" marker-end="url(#a5F6368)"/>
+<path d="M314 618 L340 618 L340 670 L364 670" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M314 602 L340 602 L340 560 L364 560" fill="none" stroke="#D93025" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aD93025)"/>
+<path d="M154 610 L202 610" fill="none" stroke="#5F6368" stroke-width="2" marker-end="url(#a5F6368)"/>
+<path d="M270 314 L270 340" fill="none" stroke="#5F6368" stroke-width="3" marker-end="url(#a5F6368)"/>
+<text x="20" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#232F3E" text-anchor="start">Three production failures, and the design that survives each one</text>
+<text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">Top: what happened. Bottom: what the platform does instead. All three are covered in the article with numbers.</text>
+<text x="54" y="105" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="start">A  Payment provider slows down</text>
+<text x="54" y="165" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#D93025" text-anchor="start">What happened</text>
+<text x="54" y="194" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">PSP p99 goes from 400 ms to 12 s.</text>
+<text x="54" y="210" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Client timeout is the library default, 60 s.</text>
+<text x="54" y="226" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">55 orders/s x 12 s = 660 calls in flight.</text>
+<text x="54" y="242" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">60 pods x 10 pooled PSP connections = 600.</text>
+<text x="54" y="258" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Requests queue for the pool, health checks</text>
+<text x="54" y="274" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">time out, pods restart. Cart shares the</text>
+<text x="54" y="290" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">pool, so the whole buy path goes down.</text>
+<text x="54" y="371" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1E8E3E" text-anchor="start">Design that holds</text>
+<text x="54" y="400" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Timeout 3 s, one retry with the same key.</text>
+<text x="54" y="416" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Circuit breaker opens at 20 % failures</text>
+<text x="54" y="432" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">   over 30 s, routes new auths to PSP B.</text>
+<text x="54" y="448" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Separate pool (bulkhead) per dependency.</text>
+<text x="54" y="464" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Unknown result → PAYMENT_UNKNOWN,</text>
+<text x="54" y="480" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">   reconciler settles it in 60 s.</text>
+<text x="54" y="496" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Result: 2 % of orders delayed, 0 lost.</text>
+<text x="104" y="613" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">Checkout</text>
+<text x="259" y="613" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">Breaker</text>
+<text x="259" y="628" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">closed / open</text>
+<text x="426" y="563" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">PSP A  p99 12 s</text>
+<text x="426" y="673" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">PSP B  p99 380 ms</text>
+<text x="334" y="532" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#D93025" text-anchor="start">3 s timeout</text>
+<text x="344" y="710" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#1E8E3E" text-anchor="start">new auths after trip</text>
+<text x="534" y="105" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="start">B  500 TVs, 40,000 buyers</text>
+<text x="534" y="165" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#D93025" text-anchor="start">What happened</text>
+<text x="534" y="194" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Doorbuster: 500 units at 00:00.</text>
+<text x="534" y="210" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">40,000 checkouts in the first 10 s.</text>
+<text x="534" y="226" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Code reads stock, checks &gt; 0, then writes.</text>
+<text x="534" y="242" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Hundreds of requests read "available"</text>
+<text x="534" y="258" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">before any write lands.</text>
+<text x="534" y="274" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Result: 731 orders for 500 TVs,</text>
+<text x="534" y="290" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">231 apology emails and refunds.</text>
+<text x="534" y="371" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1E8E3E" text-anchor="start">Design that holds</text>
+<text x="534" y="400" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">One atomic statement, no read first:</text>
+<text x="534" y="416" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">   UPDATE stock SET reserved = reserved + 1</text>
+<text x="534" y="432" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">   WHERE sku = ? AND on_hand - reserved &gt;= 1</text>
+<text x="534" y="448" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Hot SKU split into 10 rows of 50 units</text>
+<text x="534" y="464" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">   to spread row-lock contention.</text>
+<text x="534" y="480" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Reservation expires after 10 minutes.</text>
+<text x="534" y="496" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Result: exactly 500 sold, p99 80 ms.</text>
+<text x="534" y="531" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#3C4043" text-anchor="start">SKU-TV55 stock split into 10 rows</text>
+<text x="571" y="572" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">bucket 0</text>
+<text x="571" y="586" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">0 left</text>
+<text x="655" y="572" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">bucket 1</text>
+<text x="655" y="586" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">0 left</text>
+<text x="739" y="572" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">bucket 2</text>
+<text x="739" y="586" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">0 left</text>
+<text x="823" y="572" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">bucket 3</text>
+<text x="823" y="586" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">0 left</text>
+<text x="907" y="572" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">bucket 4</text>
+<text x="907" y="586" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">0 left</text>
+<text x="571" y="630" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">bucket 5</text>
+<text x="571" y="644" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">0 left</text>
+<text x="655" y="630" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">bucket 6</text>
+<text x="655" y="644" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">0 left</text>
+<text x="739" y="630" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">bucket 7</text>
+<text x="739" y="644" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">50 left</text>
+<text x="823" y="630" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">bucket 8</text>
+<text x="823" y="644" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">50 left</text>
+<text x="907" y="630" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">bucket 9</text>
+<text x="907" y="644" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#202124" text-anchor="middle">50 left</text>
+<text x="534" y="680" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">Each request picks a random bucket with stock. Empty buckets are skipped.</text>
+<text x="1014" y="105" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="start">C  One tap, two orders</text>
+<text x="1014" y="165" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#D93025" text-anchor="start">What happened</text>
+<text x="1014" y="194" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Shopper taps "Place order" on a train.</text>
+<text x="1014" y="210" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Request reaches checkout, order is made,</text>
+<text x="1014" y="226" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">card is charged, response is lost.</text>
+<text x="1014" y="242" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">App shows "Something went wrong",</text>
+<text x="1014" y="258" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">shopper taps again.</text>
+<text x="1014" y="274" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Result: 0.3 % of mobile orders are</text>
+<text x="1014" y="290" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">duplicates, each one a support ticket.</text>
+<text x="1014" y="371" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1E8E3E" text-anchor="start">Design that holds</text>
+<text x="1014" y="400" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">App makes an Idempotency-Key per</text>
+<text x="1014" y="416" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">   checkout attempt, sends it on retries.</text>
+<text x="1014" y="432" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Checkout stores key + response for 24 h</text>
+<text x="1014" y="448" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">   (unique index, insert first).</text>
+<text x="1014" y="464" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Same key, same body → saved response.</text>
+<text x="1014" y="480" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Same key, different body → 422.</text>
+<text x="1014" y="496" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Result: duplicates drop to zero.</text>
+<text x="1059" y="608" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">App</text>
+<text x="1059" y="623" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">key 7f3a</text>
+<text x="1214" y="607" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">Checkout</text>
+<text x="1374" y="608" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">Key store</text>
+<text x="1374" y="623" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#202124" text-anchor="middle">7f3a → 201 o-88213</text>
+<text x="1014" y="552" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#5F6368" text-anchor="start">retry #2, same key</text>
+<text x="1074" y="654" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#1E8E3E" text-anchor="start">saved 201, no new charge</text></svg>

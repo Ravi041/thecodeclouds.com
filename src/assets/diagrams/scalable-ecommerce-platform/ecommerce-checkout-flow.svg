@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 930" width="1500" height="930" role="img"><title>Checkout: placing one order safely</title><defs><marker id="a1A73E8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1A73E8"/></marker><marker id="a1E8E3E" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1E8E3E"/></marker><marker id="a5F6368" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5F6368"/></marker><marker id="a8430CE" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8430CE"/></marker><marker id="aBDC1C6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#BDC1C6"/></marker><marker id="aE37400" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E37400"/></marker></defs><rect width="100%" height="100%" fill="#FFFFFF"/><rect x="40" y="76" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="48" y="92" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="220" y="76" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#E37400"/>
+<text x="228" y="92" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="400" y="76" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1A73E8"/>
+<text x="408" y="92" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="580" y="76" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="588" y="92" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="760" y="76" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1E8E3E"/>
+<text x="768" y="92" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="940" y="76" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1A73E8"/>
+<text x="948" y="92" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1120" y="76" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#5F6368"/>
+<text x="1128" y="92" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="1300" y="76" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#8430CE"/>
+<text x="1308" y="92" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="40" y="760" width="690" height="150" rx="8" fill="#FDF3F2" stroke="#D93025"/>
+<text x="48" y="776" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<rect x="750" y="760" width="710" height="150" rx="8" fill="#F0F9F2" stroke="#1E8E3E"/>
+<text x="758" y="776" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C4043" text-anchor="start"></text>
+<path d="M1375 706 L655 706" fill="none" stroke="#8430CE" stroke-width="2" marker-end="url(#a8430CE)"/>
+<path d="M475 660 L115 660" fill="none" stroke="#1A73E8" stroke-width="2" marker-end="url(#a1A73E8)"/>
+<path d="M835 614 L1375 614" fill="none" stroke="#8430CE" stroke-width="2" marker-end="url(#a8430CE)"/>
+<path d="M475 568 L835 568" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M1015 522 L475 522" fill="none" stroke="#1A73E8" stroke-width="2" marker-end="url(#a1A73E8)"/>
+<path d="M1195 476 L1015 476" fill="none" stroke="#5F6368" stroke-width="2" marker-end="url(#a5F6368)"/>
+<path d="M1015 430 L1195 430" fill="none" stroke="#5F6368" stroke-width="2" marker-end="url(#a5F6368)"/>
+<path d="M475 384 L1015 384" fill="none" stroke="#1A73E8" stroke-width="2" marker-end="url(#a1A73E8)"/>
+<path d="M475 338 L835 338" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M655 292 L475 292" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M475 246 L655 246" fill="none" stroke="#1E8E3E" stroke-width="2" marker-end="url(#a1E8E3E)"/>
+<path d="M475 186 L525 186 L525 204 L479 204" fill="none" stroke="#1A73E8" stroke-width="2" marker-end="url(#a1A73E8)"/>
+<path d="M295 140 L475 140" fill="none" stroke="#E37400" stroke-width="2" marker-end="url(#aE37400)"/>
+<path d="M115 140 L295 140" fill="none" stroke="#1A73E8" stroke-width="2" marker-end="url(#a1A73E8)"/>
+<path d="M1375 116 L1375 740" fill="none" stroke="#BDC1C6" stroke-width="1" stroke-dasharray="7 5"/>
+<path d="M1195 116 L1195 740" fill="none" stroke="#BDC1C6" stroke-width="1" stroke-dasharray="7 5"/>
+<path d="M1015 116 L1015 740" fill="none" stroke="#BDC1C6" stroke-width="1" stroke-dasharray="7 5"/>
+<path d="M835 116 L835 740" fill="none" stroke="#BDC1C6" stroke-width="1" stroke-dasharray="7 5"/>
+<path d="M655 116 L655 740" fill="none" stroke="#BDC1C6" stroke-width="1" stroke-dasharray="7 5"/>
+<path d="M475 116 L475 740" fill="none" stroke="#BDC1C6" stroke-width="1" stroke-dasharray="7 5"/>
+<path d="M295 116 L295 740" fill="none" stroke="#BDC1C6" stroke-width="1" stroke-dasharray="7 5"/>
+<path d="M115 116 L115 740" fill="none" stroke="#BDC1C6" stroke-width="1" stroke-dasharray="7 5"/>
+<text x="20" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#232F3E" text-anchor="start">Placing one order: the checkout saga, step by step</text>
+<text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#5F6368" text-anchor="start">Every step can be retried. The idempotency key and the order id are what make retries safe.</text>
+<text x="115" y="101" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#5F6368" text-anchor="middle">Shopper app</text>
+<text x="295" y="101" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#E37400" text-anchor="middle">API gateway</text>
+<text x="475" y="101" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A73E8" text-anchor="middle">Checkout</text>
+<text x="655" y="101" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1E8E3E" text-anchor="middle">Inventory</text>
+<text x="835" y="101" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1E8E3E" text-anchor="middle">Orders DB</text>
+<text x="1015" y="101" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A73E8" text-anchor="middle">Payments</text>
+<text x="1195" y="101" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#5F6368" text-anchor="middle">PSP</text>
+<text x="1375" y="101" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#8430CE" text-anchor="middle">Event bus</text>
+<circle cx="132" cy="125" r="11" fill="#1A73E8"/><text x="132" y="129.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+<rect x="146" y="117" width="252.4" height="18" fill="#FFFFFF" rx="3"/>
+<text x="149" y="129" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">POST /orders  Idempotency-Key: 7f3a-91c2</text>
+<circle cx="452" cy="193" r="11" fill="#1A73E8"/><text x="452" y="197.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+<rect x="530" y="187" width="264.72" height="18" fill="#FFFFFF" rx="3"/>
+<text x="533" y="199" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">key seen before? return the saved response</text>
+<circle cx="492" cy="231" r="11" fill="#1E8E3E"/><text x="492" y="235.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+<rect x="506" y="223" width="209.28" height="18" fill="#FFFFFF" rx="3"/>
+<text x="509" y="235" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">reserve 1 x SKU-4417, hold 10 min</text>
+<circle cx="492" cy="277" r="11" fill="#1E8E3E"/><text x="492" y="281.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+<rect x="506" y="269" width="252.4" height="18" fill="#FFFFFF" rx="3"/>
+<text x="509" y="281" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">reservation r-5521 (available 499 → 498)</text>
+<circle cx="492" cy="323" r="11" fill="#1E8E3E"/><text x="492" y="327.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+<rect x="506" y="315" width="277.04" height="18" fill="#FFFFFF" rx="3"/>
+<text x="509" y="327" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">insert order o-88213  status=PENDING_PAYMENT</text>
+<circle cx="492" cy="369" r="11" fill="#1A73E8"/><text x="492" y="373.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">6</text>
+<rect x="506" y="361" width="221.6" height="18" fill="#FFFFFF" rx="3"/>
+<text x="509" y="373" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">authorize 649.00 EUR, key = o-88213</text>
+<circle cx="1032" cy="415" r="11" fill="#5F6368"/><text x="1032" y="419.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">7</text>
+<rect x="1046" y="407" width="270.88" height="18" fill="#FFFFFF" rx="3"/>
+<text x="1049" y="419" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">auth request, timeout 3 s, 1 retry same key</text>
+<circle cx="1032" cy="461" r="11" fill="#5F6368"/><text x="1032" y="465.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">8</text>
+<rect x="1046" y="453" width="196.96" height="18" fill="#FFFFFF" rx="3"/>
+<text x="1049" y="465" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">authorized  auth=A-77Q (420 ms)</text>
+<circle cx="492" cy="507" r="11" fill="#1A73E8"/><text x="492" y="511.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">9</text>
+<rect x="506" y="499" width="160" height="18" fill="#FFFFFF" rx="3"/>
+<text x="509" y="511" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">payment p-3301 AUTHORIZED</text>
+<circle cx="492" cy="553" r="11" fill="#1E8E3E"/><text x="492" y="557.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">10</text>
+<rect x="506" y="545" width="289.36" height="18" fill="#FFFFFF" rx="3"/>
+<text x="509" y="557" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">one transaction: status=CONFIRMED + outbox row</text>
+<circle cx="852" cy="599" r="11" fill="#8430CE"/><text x="852" y="603.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">11</text>
+<rect x="866" y="591" width="221.6" height="18" fill="#FFFFFF" rx="3"/>
+<text x="869" y="603" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">outbox relay publishes order.placed</text>
+<circle cx="132" cy="645" r="11" fill="#1A73E8"/><text x="132" y="649.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">12</text>
+<rect x="146" y="637" width="314" height="18" fill="#FFFFFF" rx="3"/>
+<text x="149" y="649" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">201 Created  order o-88213  (p95 1.1 s end to end)</text>
+<circle cx="672" cy="691" r="11" fill="#8430CE"/><text x="672" y="695.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">13</text>
+<rect x="686" y="683" width="246.24" height="18" fill="#FFFFFF" rx="3"/>
+<text x="689" y="695" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#202124" text-anchor="start">order.placed: reservation r-5521 → sold</text>
+<text x="56" y="783" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#D93025" text-anchor="start">If something fails half way</text>
+<text x="56" y="810" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Step 3 fails (out of stock): return 409, nothing to undo.</text>
+<text x="56" y="826" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Step 8 declined: release reservation r-5521, order → PAYMENT_FAILED.</text>
+<text x="56" y="842" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Step 8 times out: order → PAYMENT_UNKNOWN, do NOT charge again.</text>
+<text x="56" y="858" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">   Reconciler asks the PSP by key o-88213 after 60 s and settles it.</text>
+<text x="56" y="874" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Shopper never gets step 12: the app retries with the same key,</text>
+<text x="56" y="890" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">   step 2 returns the first response. One order, one charge.</text>
+<text x="766" y="783" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1E8E3E" text-anchor="start">Why it holds</text>
+<text x="766" y="810" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Reservations expire on their own, so a crashed checkout never locks stock.</text>
+<text x="766" y="826" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Payment is authorized, not captured. Capture happens at shipping.</text>
+<text x="766" y="842" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">The outbox row commits with the order, so no event is ever lost</text>
+<text x="766" y="858" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">   and no event is published for an order that rolled back.</text>
+<text x="766" y="874" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">Everything after step 11 is asynchronous: email, fraud review,</text>
+<text x="766" y="890" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C4043" text-anchor="start">   warehouse pick, search update. Checkout does not wait for them.</text></svg>
